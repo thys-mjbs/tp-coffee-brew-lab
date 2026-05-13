@@ -142,10 +142,10 @@ Based on master framework Section 3.5 (Per-Site Visual Personality):
     [X] Milestone 3.3: Cold Brew Ratio Calculator (Tool 8) + Iced Coffee Pour Over Calculator (Tool 12)
     [X] Milestone 3.4: Caffeine Calculator (Tool 9) + Espresso Ratio Calculator (Tool 10) + Milk Coffee Ratio Calculator (Tool 11)
 
-[ ] Phase 4: Timer & Interactive Guide Tools (Borderline — Tools 13, 18, 22, 25)
-    [ ] Milestone 4.1: French Press Brew Timer & Guide (Tool 13) — countdown timer + steep guide, full SEO
-    [ ] Milestone 4.2: AeroPress Brew Timer (Tool 18) — multi-stage step-by-step timer, full SEO
-    [ ] Milestone 4.3: Coffee Bloom Timer (Tool 22) + Pour Over Brew Timer (Tool 25)
+[X] Phase 4: Timer & Interactive Guide Tools (Borderline — Tools 13, 18, 22, 25)
+    [X] Milestone 4.1: French Press Brew Timer & Guide (Tool 13) — countdown timer + steep guide, full SEO
+    [X] Milestone 4.2: AeroPress Brew Timer (Tool 18) — multi-stage step-by-step timer, full SEO
+    [X] Milestone 4.3: Coffee Bloom Timer (Tool 22) + Pour Over Brew Timer (Tool 25)
 
 [ ] Phase 5: Diagnostic, Reference & Recipe Tools (Borderline — Tools 14–17, 19–21)
     [ ] Milestone 5.1: Coffee Troubleshooter (Tool 14) — interactive bitter/sour/weak diagnosis flowchart
