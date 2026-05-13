@@ -133,8 +133,8 @@ Based on master framework Section 3.5 (Per-Site Visual Personality):
 [X] Phase 2: Core Ratio & Measurement Tools (Winnable — Tools 1–5)
     [X] Milestone 2.1: Coffee-to-Water Ratio Calculator (Tool 1) — full page with SEO content, schema, FAQs
     [ ] Milestone 2.2: French Press Ratio Calculator (Tool 2) — full page with SEO content, schema, FAQs
-    [ ] Milestone 2.3: Instant Coffee Calculator (Tool 3) + Coffee Measurement Converter (Tool 5)
-    [ ] Milestone 2.4: Coffee Beans per Cup Calculator (Tool 4) — full page with SEO content, schema, FAQs
+    [X] Milestone 2.3: Instant Coffee Calculator (Tool 3) + Coffee Measurement Converter (Tool 5)
+    [X] Milestone 2.4: Coffee Beans per Cup Calculator (Tool 4) — full page with SEO content, schema, FAQs
 
 [ ] Phase 3: Method-Specific Calculators (Winnable — Tools 6–12)
     [ ] Milestone 3.1: Pour Over & V60 Recipe Calculator (Tool 6) — Hoffmann + Kasuya presets, full SEO
