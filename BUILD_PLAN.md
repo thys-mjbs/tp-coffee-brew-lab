@@ -192,9 +192,9 @@ A tool **passes** if it offers at least one of these genuine advantages:
         AI Friction: PASS — both built as calculators, not static guides.
         - Tool 17 (Cold Foam): Milk type selector (whole / 2% / oat / coconut / heavy cream) + serving size (4/6/8/12oz) + flavor (plain / vanilla / sweet cream / brown sugar / caramel) + CopyButton. Badge system shows foam quality per milk type.
         - Tool 20 (Iced Coffee): Method selector (flash brew / cold brew dilution / shaken espresso / coffee ice cubes) + cup size (8/12/16/20oz). Each method computes exact coffee, water, and ice amounts + step-by-step instructions + CopyButton.
-    [ ] Milestone 5.5: Cold Brew Recipe Guide (Tool 19)
-        AI Friction — BUILD REQUIREMENT (must not be a static guide):
-        Build a batch-size configurator. Inputs: batch size (1 cup / 1 quart / half-gallon / 1 gallon) + strength (regular 1:8 / concentrate 1:5 / strong 1:4) + equipment (mason jar / French press / Toddy-style). Output: exact coffee grams + water grams + steep time + dilution ratio at serving + CopyButton. A static cold brew process article FAILS.
+    [X] Milestone 5.5: Cold Brew Recipe Guide (Tool 19)
+        AI Friction: PASS — built as a batch configurator, not a static guide.
+        Batch size (1 cup / 1 quart / half-gallon / 1 gallon) + strength (regular 1:8 / concentrate 1:5 / strong 1:4) + equipment (mason jar / French press / Toddy). Outputs exact coffee grams, water grams, steep time, estimated yield, and 6-step instructions tailored to equipment. CopyButton included.
 
 [ ] Phase 6: Specialty Calculators & Monetization Setup (Borderline — Tools 23–24 + Affiliate)
     [ ] Milestone 6.1: Espresso Dial-In Calculator (Tool 23) + Coffee Cost Calculator (Tool 24)
