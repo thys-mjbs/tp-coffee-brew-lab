@@ -130,8 +130,8 @@ Based on master framework Section 3.5 (Per-Site Visual Personality):
     - OG image / og-image.png (generate via ChatGPT prompt in master framework Section 3.5)
     These are not blocking — placeholder files will be added in Phase 8.
 
-[ ] Phase 2: Core Ratio & Measurement Tools (Winnable — Tools 1–5)
-    [ ] Milestone 2.1: Coffee-to-Water Ratio Calculator (Tool 1) — full page with SEO content, schema, FAQs
+[X] Phase 2: Core Ratio & Measurement Tools (Winnable — Tools 1–5)
+    [X] Milestone 2.1: Coffee-to-Water Ratio Calculator (Tool 1) — full page with SEO content, schema, FAQs
     [ ] Milestone 2.2: French Press Ratio Calculator (Tool 2) — full page with SEO content, schema, FAQs
     [ ] Milestone 2.3: Instant Coffee Calculator (Tool 3) + Coffee Measurement Converter (Tool 5)
     [ ] Milestone 2.4: Coffee Beans per Cup Calculator (Tool 4) — full page with SEO content, schema, FAQs
@@ -156,7 +156,7 @@ Based on master framework Section 3.5 (Per-Site Visual Personality):
 
 [ ] Phase 6: Specialty Calculators & Monetization Setup (Borderline — Tools 23–24 + Affiliate)
     [ ] Milestone 6.1: Espresso Dial-In Calculator (Tool 23) + Coffee Cost Calculator (Tool 24)
-    [ ] Milestone 6.2: Amazon affiliate setup — lib/affiliate/config.ts + AmazonLinks component
+    [X] Milestone 6.2: Amazon affiliate setup — lib/affiliate/config.ts + AmazonLinks component (done in 2.1)
     [ ] Milestone 6.3: Wire AmazonLinks into all 25 tool pages with method-relevant search terms
 
 [ ] Phase 7: Blog Content (Minimum 10 Posts at Launch)
