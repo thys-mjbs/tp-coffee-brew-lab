@@ -144,18 +144,63 @@ Based on master framework Section 3.5 (Per-Site Visual Personality):
 
 [X] Phase 4: Timer & Interactive Guide Tools (Borderline — Tools 13, 18, 22, 25)
     [X] Milestone 4.1: French Press Brew Timer & Guide (Tool 13) — countdown timer + steep guide, full SEO
+        AI Friction: PASS (real-time device — AI cannot run a countdown timer in browser)
     [X] Milestone 4.2: AeroPress Brew Timer (Tool 18) — multi-stage step-by-step timer, full SEO
+        AI Friction: PASS (real-time device — multi-stage countdown, AI cannot replicate)
     [X] Milestone 4.3: Coffee Bloom Timer (Tool 22) + Pour Over Brew Timer (Tool 25)
+        AI Friction: PASS (real-time device — bloom and pour-stage countdown timers)
 
-[ ] Phase 5: Diagnostic, Reference & Recipe Tools (Borderline — Tools 14–17, 19–21)
-    [ ] Milestone 5.1: Coffee Troubleshooter (Tool 14) — interactive bitter/sour/weak diagnosis flowchart
-    [ ] Milestone 5.2: Coffee Grind Size Guide (Tool 15) — method + grinder model reference tool
-    [ ] Milestone 5.3: Hario Switch Recipe Calculator (Tool 16) + Moka Pot Brew Calculator (Tool 21)
+---
+
+### AI Friction Standard
+
+Every tool on this site must pass the AI Friction Test before its milestone is marked complete.
+
+**The test:** "Would a typical user find it faster and easier to type a prompt into ChatGPT, Claude, or Gemini and get the same result?"
+
+A tool **passes** if it offers at least one of these genuine advantages:
+1. **Instant structured output** — results appear with zero prompting, no back-and-forth
+2. **Zero prompting required** — the tool does the work without the user forming a query
+3. **Speed** — result in under 3 seconds, no AI latency
+4. **Repeatability** — same inputs, same exact output every time with no variation
+5. **Precision** — standards-compliant values (FDA limits, SCA ratios, manufacturer settings)
+6. **Browser-side privacy** — no data leaves the device
+7. **Real-time / live input** — countdown timers, live sliders, instant recalculation
+
+**Copy buttons are required on all calculators and recipe tools.** A copy button that outputs structured plain text (amounts, steps, timings) is itself a friction advantage — AI chat cannot produce this in one click.
+
+**Build-time rule:** Recipe guides and method guides that do not include a calculator, configurator, or timer FAIL automatically. Build the calculator version, not the article version.
+
+**Retrofits applied (Phases 2–4):**
+- AeroPress Recipe Guide (Tool 7): rewritten as dose-adjustable ratio calculator with full step parameterisation and CopyButton
+- Caffeine Calculator (Tool 9): added CopyButton with formatted caffeine + daily-limit output
+- Coffee Troubleshooter (Tool 14): added CopyDiagnosis button for structured diagnosis + fix list
+- Grind Size Guide (Tool 15): added CopyButton on both method tab and grinder tab
+- Hario Switch Recipe (Tool 16): added CopyButton for full recipe as plain text
+- Moka Pot Calculator (Tool 21): added CopyButton for brew summary line
+
+---
+
+[X] Phase 5: Diagnostic, Reference & Recipe Tools (Borderline — Tools 14–17, 19–21)
+    [X] Milestone 5.1: Coffee Troubleshooter (Tool 14) — interactive bitter/sour/weak diagnosis flowchart
+        AI Friction: PASS (retrofitted) — CopyDiagnosis button outputs structured diagnosis + numbered fix list
+    [X] Milestone 5.2: Coffee Grind Size Guide (Tool 15) — method + grinder model reference tool
+        AI Friction: PASS (retrofitted) — CopyButton on both tabs outputs all grind settings as structured text
+    [X] Milestone 5.3: Hario Switch Recipe Calculator (Tool 16) + Moka Pot Brew Calculator (Tool 21)
+        AI Friction: PASS (retrofitted) — CopyButton on both tools copies full recipe as structured plain text
     [ ] Milestone 5.4: Cold Foam Recipe Guide (Tool 17) + Iced Coffee at Home Guide (Tool 20)
+        AI Friction — BUILD REQUIREMENT (must not be static guides):
+        - Tool 17 (Cold Foam): Build a milk volume calculator. Inputs: milk type (whole / oat / coconut / heavy cream) + serving size (4oz / 6oz / 8oz / 12oz). Output: exact milk amount + aeration method (frother / French press plunge / shake) + texture note + CopyButton. A static recipe article FAILS.
+        - Tool 20 (Iced Coffee): Build a method selector with dynamic ratio calculator. Methods: flash brew (hot-brew-over-ice ratio), cold brew concentrate dilution, shaken espresso, coffee ice cubes. Each method outputs exact dose + water + ice amounts for selected cup size + CopyButton. A static how-to guide FAILS.
     [ ] Milestone 5.5: Cold Brew Recipe Guide (Tool 19)
+        AI Friction — BUILD REQUIREMENT (must not be a static guide):
+        Build a batch-size configurator. Inputs: batch size (1 cup / 1 quart / half-gallon / 1 gallon) + strength (regular 1:8 / concentrate 1:5 / strong 1:4) + equipment (mason jar / French press / Toddy-style). Output: exact coffee grams + water grams + steep time + dilution ratio at serving + CopyButton. A static cold brew process article FAILS.
 
 [ ] Phase 6: Specialty Calculators & Monetization Setup (Borderline — Tools 23–24 + Affiliate)
     [ ] Milestone 6.1: Espresso Dial-In Calculator (Tool 23) + Coffee Cost Calculator (Tool 24)
+        AI Friction: Both PASS definitively without retrofits needed.
+        - Tool 23 (Espresso Dial-In): Precision recommendation engine. Inputs: current dose + yield + shot time + taste verdict (bitter/sour/balanced) → specific adjustment ("grind 1 notch finer", "reduce dose by 0.5g"). Deterministic, standards-based output — AI chat gives vague advice, this gives a specific number.
+        - Tool 24 (Coffee Cost): Precision cost math. Inputs: bag price + bag weight + dose per brew + brew ratio → cost per cup + cups per bag + comparison tier (budget / mid / specialty). Include CopyButton. AI cannot compute this without the user typing all inputs anyway, but this does it instantly in one click.
     [X] Milestone 6.2: Amazon affiliate setup — lib/affiliate/config.ts + AmazonLinks component (done in 2.1)
     [ ] Milestone 6.3: Wire AmazonLinks into all 25 tool pages with method-relevant search terms
 

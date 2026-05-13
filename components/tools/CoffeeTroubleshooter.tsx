@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useCallback } from "react"
 import Link from "next/link"
 
 type NodeId = string
@@ -749,6 +749,27 @@ const NODES: Record<NodeId, TroubleshootNode> = {
   },
 }
 
+function CopyDiagnosis({ node }: { node: DiagnosisNode }) {
+  const [copied, setCopied] = useState(false)
+  const text = [
+    `Coffee Troubleshooter: ${node.title}`,
+    "",
+    node.explanation,
+    "",
+    "What to try:",
+    ...node.fixes.map((f, i) => `${i + 1}. ${f}`),
+  ].join("\n")
+  const copy = useCallback(() => {
+    navigator.clipboard.writeText(text).then(() => { setCopied(true); setTimeout(() => setCopied(false), 1800) })
+  }, [text])
+  return (
+    <button onClick={copy}
+      className="min-h-[44px] w-full rounded-xl border border-surface-200 bg-white px-4 py-2.5 text-sm font-medium text-surface-600 transition-all hover:bg-surface-100 dark:border-surface-600 dark:bg-surface-800 dark:text-surface-300 dark:hover:bg-surface-700">
+      {copied ? "Copied to clipboard!" : "Copy this diagnosis"}
+    </button>
+  )
+}
+
 export function CoffeeTroubleshooter() {
   const [history, setHistory] = useState<NodeId[]>(["start"])
 
@@ -849,9 +870,11 @@ export function CoffeeTroubleshooter() {
               </div>
             )}
 
+            <CopyDiagnosis node={current} />
+
             <button
               onClick={reset}
-              className="mt-2 w-full min-h-[44px] rounded-xl border border-surface-200 bg-white px-4 py-2.5 text-sm font-medium text-surface-600 transition-all hover:bg-surface-100 dark:border-surface-600 dark:bg-surface-800 dark:text-surface-300 dark:hover:bg-surface-700"
+              className="w-full min-h-[44px] rounded-xl border border-surface-200 bg-white px-4 py-2.5 text-sm font-medium text-surface-600 transition-all hover:bg-surface-100 dark:border-surface-600 dark:bg-surface-800 dark:text-surface-300 dark:hover:bg-surface-700"
             >
               Diagnose a different problem
             </button>

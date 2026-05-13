@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useCallback } from "react"
 
 type SizeId = "1cup" | "3cup" | "6cup" | "9cup" | "custom"
 
@@ -35,6 +35,19 @@ const TECHNIQUE_STEPS = [
   "Run the bottom under cold water for 10 seconds to stop extraction.",
 ]
 
+function CopyButton({ value }: { value: string }) {
+  const [copied, setCopied] = useState(false)
+  const copy = useCallback(() => {
+    navigator.clipboard.writeText(value).then(() => { setCopied(true); setTimeout(() => setCopied(false), 1800) })
+  }, [value])
+  return (
+    <button onClick={copy}
+      className="rounded px-2 py-1 text-xs text-surface-400 transition-colors hover:bg-surface-200 hover:text-surface-700 dark:hover:bg-surface-700 dark:hover:text-surface-200">
+      {copied ? "Copied" : "Copy recipe"}
+    </button>
+  )
+}
+
 export function MokaPotCalculator() {
   const [sizeId, setSizeId]       = useState<SizeId>("3cup")
   const [customMl, setCustomMl]   = useState(200)
@@ -47,6 +60,8 @@ export function MokaPotCalculator() {
     : SIZES[sizeId].coffeeG
   const tablespoons = (coffeeG / 6).toFixed(1)
   const waterMl    = Math.round(chamberMl * 0.85)
+  const sizeLabel  = isCustom ? `Custom (${customMl}ml)` : SIZES[sizeId].label
+  const copyText   = `Moka pot ${sizeLabel}: ${coffeeG}g coffee / ${waterMl}ml water / Fine-Medium grind (${tablespoons} tbsp)`
 
   return (
     <div className="overflow-hidden rounded-2xl border border-surface-200 bg-surface-50 dark:border-surface-700 dark:bg-surface-900">
@@ -109,9 +124,12 @@ export function MokaPotCalculator() {
           </div>
         </div>
 
-        <p className="mt-3 text-xs text-surface-400 dark:text-surface-500">
-          Fill water to just below the safety valve. Fill the basket level — do not tamp. Use pre-boiled water for a cleaner cup.
-        </p>
+        <div className="mt-3 flex items-center justify-between gap-2">
+          <p className="flex-1 text-xs text-surface-400 dark:text-surface-500">
+            Fill water to just below the safety valve. Fill the basket level — do not tamp. Use pre-boiled water for a cleaner cup.
+          </p>
+          <CopyButton value={copyText} />
+        </div>
 
         <button
           onClick={() => setShowTips(!showTips)}

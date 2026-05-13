@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useCallback } from "react"
 
 type Method = "drip" | "frenchpress" | "espresso" | "coldbrew" | "instant" | "pourover"
 type Roast  = "light" | "medium" | "dark"
@@ -30,6 +30,19 @@ const ROAST_FACTOR: Record<Roast, { label: string; factor: number }> = {
 const FDA_DAILY_MG = 400  // FDA recommended daily limit for healthy adults
 
 function round0(n: number) { return Math.round(n) }
+
+function CopyButton({ value }: { value: string }) {
+  const [copied, setCopied] = useState(false)
+  const copy = useCallback(() => {
+    navigator.clipboard.writeText(value).then(() => { setCopied(true); setTimeout(() => setCopied(false), 1800) })
+  }, [value])
+  return (
+    <button onClick={copy}
+      className="rounded px-1.5 py-0.5 text-xs text-surface-400 transition-colors hover:bg-surface-200 hover:text-surface-700 dark:hover:bg-surface-700 dark:hover:text-surface-200">
+      {copied ? "Copied" : "Copy"}
+    </button>
+  )
+}
 
 export function CaffeineCalculator() {
   const [method, setMethod] = useState<Method>("drip")
@@ -129,9 +142,12 @@ export function CaffeineCalculator() {
           </p>
         </div>
 
-        <p className="mt-3 text-xs text-surface-400 dark:text-surface-500">
-          Caffeine estimates are approximate. Actual content varies by bean origin, roast batch, and brewing variables. Consult a healthcare provider if you have caffeine sensitivity.
-        </p>
+        <div className="mt-3 flex items-center justify-between gap-3">
+          <p className="text-xs text-surface-400 dark:text-surface-500 flex-1">
+            Caffeine estimates are approximate. Actual content varies by bean origin, roast batch, and brewing variables. Consult a healthcare provider if you have caffeine sensitivity.
+          </p>
+          <CopyButton value={`${cups} ${cups === 1 ? "serving" : "servings"} of ${METHOD_DATA[method].label} (${ROAST_FACTOR[roast].label.toLowerCase()}) = ${totalCaff}mg caffeine = ${pctDaily}% of FDA daily limit (400mg)`} />
+        </div>
       </div>
     </div>
   )

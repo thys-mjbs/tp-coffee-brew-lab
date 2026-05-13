@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useCallback } from "react"
 
 type MethodId =
   | "espresso"
@@ -241,6 +241,19 @@ const GRIND_COLOUR: Record<string, string> = {
 
 type Tab = "method" | "grinder"
 
+function CopyButton({ value }: { value: string }) {
+  const [copied, setCopied] = useState(false)
+  const copy = useCallback(() => {
+    navigator.clipboard.writeText(value).then(() => { setCopied(true); setTimeout(() => setCopied(false), 1800) })
+  }, [value])
+  return (
+    <button onClick={copy}
+      className="rounded px-2 py-1 text-xs text-surface-400 transition-colors hover:bg-surface-200 hover:text-surface-700 dark:hover:bg-surface-700 dark:hover:text-surface-200">
+      {copied ? "Copied" : "Copy"}
+    </button>
+  )
+}
+
 export function GrindSizeGuide() {
   const [tab, setTab]               = useState<Tab>("method")
   const [selectedMethod, setMethod] = useState<MethodId>("pourover")
@@ -305,9 +318,12 @@ export function GrindSizeGuide() {
             </div>
           </div>
 
-          <p className="text-xs text-surface-400 dark:text-surface-500">
-            Grind settings above are starting points. Adjust finer if the brew tastes sour or finishes too quickly; adjust coarser if it tastes bitter or drains slowly.
-          </p>
+          <div className="flex items-center justify-between gap-2">
+            <p className="text-xs text-surface-400 dark:text-surface-500 flex-1">
+              Starting point. Adjust finer if sour or too fast; coarser if bitter or slow.
+            </p>
+            <CopyButton value={`${method.label}: ${method.grind} grind | Brew time: ${method.targetTime} | Temp: ${method.waterTemp}\n${method.description}`} />
+          </div>
         </div>
       ) : (
         <div className="p-5 sm:p-6 space-y-4">
@@ -359,9 +375,12 @@ export function GrindSizeGuide() {
             </div>
           </div>
 
-          <p className="text-xs text-surface-400 dark:text-surface-500">
-            Settings are starting points based on community testing. Burrs wear over time and batch-to-batch calibration varies. Always dial in from these ranges rather than using them as fixed targets.
-          </p>
+          <div className="flex items-center justify-between gap-2">
+            <p className="text-xs text-surface-400 dark:text-surface-500 flex-1">
+              Starting points from community testing. Always dial in from these ranges.
+            </p>
+            <CopyButton value={`${grinder.label} grind settings:\n${METHOD_ORDER.map(mid => `${METHODS[mid].label}: ${grinder.settings[mid] ?? "No data"}`).join("\n")}`} />
+          </div>
         </div>
       )}
     </div>

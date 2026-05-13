@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useCallback } from "react"
 
 type RecipeId = "classic" | "hoffmann" | "light" | "strong"
 
@@ -100,6 +100,19 @@ const DOSE_PRESETS = [15, 20, 25, 30]
 function pad(n: number) { return n.toString().padStart(2, "0") }
 function fmt(s: number) { return `${Math.floor(s / 60)}:${pad(s % 60)}` }
 
+function CopyButton({ value }: { value: string }) {
+  const [copied, setCopied] = useState(false)
+  const copy = useCallback(() => {
+    navigator.clipboard.writeText(value).then(() => { setCopied(true); setTimeout(() => setCopied(false), 1800) })
+  }, [value])
+  return (
+    <button onClick={copy}
+      className="rounded px-2 py-1 text-xs text-surface-400 transition-colors hover:bg-surface-200 hover:text-surface-700 dark:hover:bg-surface-700 dark:hover:text-surface-200">
+      {copied ? "Copied" : "Copy recipe"}
+    </button>
+  )
+}
+
 export function HarioSwitchRecipe() {
   const [recipe, setRecipe]  = useState<RecipeId>("classic")
   const [doseG, setDoseG]    = useState(20)
@@ -108,6 +121,13 @@ export function HarioSwitchRecipe() {
   const totalWater = Math.round(doseG * r.ratio)
   const bloomMl   = Math.round(r.bloomMl(doseG))
   const pours     = r.pours(doseG, totalWater, bloomMl)
+
+  const copyText = [
+    `Hario Switch ${r.label}: ${doseG}g coffee / ${totalWater}ml water / 1:${r.ratio}`,
+    `Bloom: ${bloomMl}ml for ${fmt(r.bloomSec)} | Steep (closed): ${fmt(r.closedSteepSec)}`,
+    "",
+    ...pours.map((p, i) => `${i + 1}. ${p.label}${p.waterMl > 0 ? ` (+${p.waterMl}ml, ${p.cumMl}ml total)` : ""}: ${p.note}`),
+  ].join("\n")
 
   return (
     <div className="overflow-hidden rounded-2xl border border-surface-200 bg-surface-50 dark:border-surface-700 dark:bg-surface-900">
@@ -182,9 +202,12 @@ export function HarioSwitchRecipe() {
           ))}
         </ol>
 
-        <p className="mt-3 text-xs text-surface-400 dark:text-surface-500">
-          Grind: medium-fine (between V60 and drip). Water: 93 to 96C. Rinse paper filter before brewing.
-        </p>
+        <div className="mt-3 flex items-center justify-between gap-2">
+          <p className="text-xs text-surface-400 dark:text-surface-500 flex-1">
+            Grind: medium-fine. Water: 93 to 96C. Rinse filter before brewing.
+          </p>
+          <CopyButton value={copyText} />
+        </div>
       </div>
     </div>
   )
