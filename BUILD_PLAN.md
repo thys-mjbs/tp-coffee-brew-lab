@@ -118,12 +118,17 @@ Based on master framework Section 3.5 (Per-Site Visual Personality):
 
 ---
 
-[ ] Phase 1: Project Setup & Foundation
+[X] Phase 1: Project Setup & Foundation
     [X] Milestone 1.1: Initialize project, design system, and data layer
     [X] Milestone 1.2: Build shared layout (header, footer, navigation, breadcrumb)
     [X] Milestone 1.3: Build static pages (About, Privacy, Terms, Contact, 404) — approved
     [X] Milestone 1.4: Build homepage with tool grid — approved
     [X] Milestone 1.5: Set up Vercel Analytics and Speed Insights (GA4 deferred — add when ready)
+
+    NOTE: Two Phase 1 items deliberately deferred to Phase 8:
+    - Favicon (generate via ChatGPT prompt in master framework Section 3.5)
+    - OG image / og-image.png (generate via ChatGPT prompt in master framework Section 3.5)
+    These are not blocking — placeholder files will be added in Phase 8.
 
 [ ] Phase 2: Core Ratio & Measurement Tools (Winnable — Tools 1–5)
     [ ] Milestone 2.1: Coffee-to-Water Ratio Calculator (Tool 1) — full page with SEO content, schema, FAQs
