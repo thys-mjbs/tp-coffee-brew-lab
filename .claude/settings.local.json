@@ -4,7 +4,10 @@
       "Bash(npm -v)",
       "Bash(npx create-next-app@latest . --typescript --tailwind --eslint --app --turbopack --no-src-dir --import-alias \"@/*\")",
       "Read(//c/Users/MBenson/Documents/GitHub/**)",
-      "Bash(npx create-next-app@latest temp-coffee-next --typescript --tailwind --eslint --app --turbopack --no-src-dir --import-alias \"@/*\")"
+      "Bash(npx create-next-app@latest temp-coffee-next --typescript --tailwind --eslint --app --turbopack --no-src-dir --import-alias \"@/*\")",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)",
+      "Bash(git push *)"
     ]
   }
 }
