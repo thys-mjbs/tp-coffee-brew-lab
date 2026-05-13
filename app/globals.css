@@ -3,49 +3,62 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Brand: warm amber */
-  --color-brand-50: #fffbeb;
-  --color-brand-100: #fef3c7;
-  --color-brand-200: #fde68a;
-  --color-brand-300: #fcd34d;
-  --color-brand-400: #fbbf24;
-  --color-brand-500: #f59e0b;
-  --color-brand-600: #d97706;
-  --color-brand-700: #b45309;
-  --color-brand-800: #92400e;
-  --color-brand-900: #78350f;
-  --color-brand-950: #451a03;
+  /* Brand: Desert Sun (primary action) */
+  --color-brand-50:  #fdf5eb;
+  --color-brand-100: #fae8ca;
+  --color-brand-200: #f4d09a;
+  --color-brand-300: #ecb56a;
+  --color-brand-400: #e09840;
+  --color-brand-500: #d68228;
+  --color-brand-600: #c87620;
+  --color-brand-700: #a85e18;
+  --color-brand-800: #884810;
+  --color-brand-900: #6a340a;
+  --color-brand-950: #3d1a04;
 
-  /* Warm cream surfaces */
-  --color-surface-50: #faf9f7;
-  --color-surface-100: #f5f3ef;
-  --color-surface-200: #ede8e0;
-  --color-surface-300: #ddd5c8;
-  --color-surface-400: #c4b8a8;
-  --color-surface-500: #a89888;
-  --color-surface-600: #8c7c6c;
-  --color-surface-700: #6e6054;
-  --color-surface-800: #3d2e24;
-  --color-surface-900: #1c0f08;
-  --color-surface-950: #120a04;
+  /* Green: Emerald + Moss */
+  --color-green-50:  #edf5ed;
+  --color-green-100: #d4e8d4;
+  --color-green-200: #b8d4b8;
+  --color-green-300: #93c193;
+  --color-green-400: #78ae78;
+  --color-green-500: #6a9a6a;
+  --color-green-600: #5c7d5c;
+  --color-green-700: #4a634a;
+  --color-green-800: #374a37;
+  --color-green-900: #263326;
+  --color-green-950: #141c14;
+
+  /* Surface: Cream to Tan */
+  --color-surface-50:  #f6f5f0;
+  --color-surface-100: #edeae2;
+  --color-surface-200: #d8d2c4;
+  --color-surface-300: #bfb8a8;
+  --color-surface-400: #a09080;
+  --color-surface-500: #7a6858;
+  --color-surface-600: #604e3c;
+  --color-surface-700: #503c2c;
+  --color-surface-800: #453724;
+  --color-surface-900: #2c2018;
+  --color-surface-950: #1a1008;
 
   /* Fonts */
-  --font-sans: var(--font-outfit), "Outfit", system-ui, sans-serif;
-  --font-display: var(--font-fraunces), "Fraunces", Georgia, serif;
-  --font-mono: var(--font-jetbrains), "JetBrains Mono", "Courier New", monospace;
+  --font-sans:    var(--font-outfit),    "Outfit",         system-ui, sans-serif;
+  --font-display: var(--font-fraunces),  "Fraunces",       Georgia,   serif;
+  --font-mono:    var(--font-jetbrains), "JetBrains Mono", monospace;
+}
+
+/* Light / dark base */
+:root {
+  --bg: #f6f5f0;
+  --fg: #453724;
+}
+.dark {
+  --bg: #453724;
+  --fg: #f6f5f0;
 }
 
 body {
   background-color: var(--bg);
   color: var(--fg);
-}
-
-:root {
-  --bg: #faf9f7;
-  --fg: #1c0f08;
-}
-
-.dark {
-  --bg: #1c0f08;
-  --fg: #faf9f7;
 }

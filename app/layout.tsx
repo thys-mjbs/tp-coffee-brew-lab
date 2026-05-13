@@ -1,6 +1,8 @@
 import type { Metadata } from "next"
 import { Outfit, Fraunces, JetBrains_Mono } from "next/font/google"
 import { ThemeProvider } from "@/components/providers/ThemeProvider"
+import { Header } from "@/components/layout/Header"
+import { Footer } from "@/components/layout/Footer"
 import "./globals.css"
 
 const outfit = Outfit({
@@ -61,7 +63,9 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col antialiased">
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          {children}
+          <Header />
+          <main className="flex-1">{children}</main>
+          <Footer />
         </ThemeProvider>
       </body>
     </html>
