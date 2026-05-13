@@ -188,10 +188,10 @@ A tool **passes** if it offers at least one of these genuine advantages:
         AI Friction: PASS (retrofitted) — CopyButton on both tabs outputs all grind settings as structured text
     [X] Milestone 5.3: Hario Switch Recipe Calculator (Tool 16) + Moka Pot Brew Calculator (Tool 21)
         AI Friction: PASS (retrofitted) — CopyButton on both tools copies full recipe as structured plain text
-    [ ] Milestone 5.4: Cold Foam Recipe Guide (Tool 17) + Iced Coffee at Home Guide (Tool 20)
-        AI Friction — BUILD REQUIREMENT (must not be static guides):
-        - Tool 17 (Cold Foam): Build a milk volume calculator. Inputs: milk type (whole / oat / coconut / heavy cream) + serving size (4oz / 6oz / 8oz / 12oz). Output: exact milk amount + aeration method (frother / French press plunge / shake) + texture note + CopyButton. A static recipe article FAILS.
-        - Tool 20 (Iced Coffee): Build a method selector with dynamic ratio calculator. Methods: flash brew (hot-brew-over-ice ratio), cold brew concentrate dilution, shaken espresso, coffee ice cubes. Each method outputs exact dose + water + ice amounts for selected cup size + CopyButton. A static how-to guide FAILS.
+    [X] Milestone 5.4: Cold Foam Recipe Guide (Tool 17) + Iced Coffee at Home Guide (Tool 20)
+        AI Friction: PASS — both built as calculators, not static guides.
+        - Tool 17 (Cold Foam): Milk type selector (whole / 2% / oat / coconut / heavy cream) + serving size (4/6/8/12oz) + flavor (plain / vanilla / sweet cream / brown sugar / caramel) + CopyButton. Badge system shows foam quality per milk type.
+        - Tool 20 (Iced Coffee): Method selector (flash brew / cold brew dilution / shaken espresso / coffee ice cubes) + cup size (8/12/16/20oz). Each method computes exact coffee, water, and ice amounts + step-by-step instructions + CopyButton.
     [ ] Milestone 5.5: Cold Brew Recipe Guide (Tool 19)
         AI Friction — BUILD REQUIREMENT (must not be a static guide):
         Build a batch-size configurator. Inputs: batch size (1 cup / 1 quart / half-gallon / 1 gallon) + strength (regular 1:8 / concentrate 1:5 / strong 1:4) + equipment (mason jar / French press / Toddy-style). Output: exact coffee grams + water grams + steep time + dilution ratio at serving + CopyButton. A static cold brew process article FAILS.
