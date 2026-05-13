@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Brand: warm amber */
+  --color-brand-50: #fffbeb;
+  --color-brand-100: #fef3c7;
+  --color-brand-200: #fde68a;
+  --color-brand-300: #fcd34d;
+  --color-brand-400: #fbbf24;
+  --color-brand-500: #f59e0b;
+  --color-brand-600: #d97706;
+  --color-brand-700: #b45309;
+  --color-brand-800: #92400e;
+  --color-brand-900: #78350f;
+  --color-brand-950: #451a03;
+
+  /* Warm cream surfaces */
+  --color-surface-50: #faf9f7;
+  --color-surface-100: #f5f3ef;
+  --color-surface-200: #ede8e0;
+  --color-surface-300: #ddd5c8;
+  --color-surface-400: #c4b8a8;
+  --color-surface-500: #a89888;
+  --color-surface-600: #8c7c6c;
+  --color-surface-700: #6e6054;
+  --color-surface-800: #3d2e24;
+  --color-surface-900: #1c0f08;
+  --color-surface-950: #120a04;
+
+  /* Fonts */
+  --font-sans: var(--font-outfit), "Outfit", system-ui, sans-serif;
+  --font-display: var(--font-fraunces), "Fraunces", Georgia, serif;
+  --font-mono: var(--font-jetbrains), "JetBrains Mono", "Courier New", monospace;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--fg);
+}
+
+:root {
+  --bg: #faf9f7;
+  --fg: #1c0f08;
+}
+
+.dark {
+  --bg: #1c0f08;
+  --fg: #faf9f7;
+}
