@@ -122,8 +122,8 @@ Based on master framework Section 3.5 (Per-Site Visual Personality):
     [X] Milestone 1.1: Initialize project, design system, and data layer
     [X] Milestone 1.2: Build shared layout (header, footer, navigation, breadcrumb)
     [X] Milestone 1.3: Build static pages (About, Privacy, Terms, Contact, 404) — approved
-    [X] Milestone 1.4: Build homepage with tool grid
-    [ ] Milestone 1.5: Set up analytics (GA4, Vercel Analytics, Vercel Speed Insights)
+    [X] Milestone 1.4: Build homepage with tool grid — approved
+    [X] Milestone 1.5: Set up Vercel Analytics and Speed Insights (GA4 deferred — add when ready)
 
 [ ] Phase 2: Core Ratio & Measurement Tools (Winnable — Tools 1–5)
     [ ] Milestone 2.1: Coffee-to-Water Ratio Calculator (Tool 1) — full page with SEO content, schema, FAQs
