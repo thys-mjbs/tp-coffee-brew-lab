@@ -25,10 +25,10 @@ export default function ContactPage() {
         <div className="rounded-xl border border-surface-200 bg-surface-100 p-6 dark:border-surface-700 dark:bg-surface-800">
           <p className="text-sm font-medium text-surface-600 dark:text-surface-400 mb-1">Email</p>
           <a
-            href="mailto:hello@brewlab.coffee"
+            href="mailto:thys@mjbstrategic.com"
             className="text-brand-600 hover:text-brand-700 dark:text-brand-400 dark:hover:text-brand-300 font-medium"
           >
-            hello@brewlab.coffee
+            thys@mjbstrategic.com
           </a>
         </div>
 
