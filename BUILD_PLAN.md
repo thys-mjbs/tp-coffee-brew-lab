@@ -132,7 +132,7 @@ Based on master framework Section 3.5 (Per-Site Visual Personality):
 
 [X] Phase 2: Core Ratio & Measurement Tools (Winnable — Tools 1–5)
     [X] Milestone 2.1: Coffee-to-Water Ratio Calculator (Tool 1) — full page with SEO content, schema, FAQs
-    [ ] Milestone 2.2: French Press Ratio Calculator (Tool 2) — full page with SEO content, schema, FAQs
+    [X] Milestone 2.2: French Press Ratio Calculator (Tool 2) — full page with SEO content, schema, FAQs
     [X] Milestone 2.3: Instant Coffee Calculator (Tool 3) + Coffee Measurement Converter (Tool 5)
     [X] Milestone 2.4: Coffee Beans per Cup Calculator (Tool 4) — full page with SEO content, schema, FAQs
 
@@ -177,6 +177,59 @@ Based on master framework Section 3.5 (Per-Site Visual Personality):
     [ ] Milestone 9.2: Serving-size variant pages — /coffee-ratio/for-1-cup, /for-4-cups, /for-12-cups
     [ ] Milestone 9.3: Spanish language variants for top 10 tools
     [ ] Milestone 9.4: Portuguese + French language variants for top 10 tools
+
+---
+
+## DOMAIN CHECKPOINT — Resume Here After Custom Domain Is Live
+
+When the custom domain is purchased and set in Vercel, return to this section before starting Phase 10.
+
+Tasks to complete at domain handoff:
+- Set NEXT_PUBLIC_APP_URL in Vercel environment variables (Production + Preview)
+- Set up Paystack account and verify the domain against Paystack's requirements
+- Register Google Search Console for the new domain
+- Resubmit sitemap.xml to Search Console
+- Confirm canonical URLs in all 25 tool pages are resolving correctly
+- Then proceed with Phase 10 below
+
+---
+
+[ ] Phase 10: Downloadable Assets + Paystack Monetization (BLOCKED — requires custom domain)
+
+    CONTEXT: One price per downloadable asset (set via admin panel). Free version of each asset
+    is watermarked/branded with the site URL. Paid version is clean and print-ready. Paystack
+    is the payment processor — it requires a verified domain to go live. Do not begin any
+    milestone in this phase until the domain checkpoint above is complete.
+
+    [ ] Milestone 10.1: Asset planning — audit all 25 tools and decide which get a downloadable
+        asset. Likely candidates: French Press brew card, V60 brew card, AeroPress brew card,
+        Espresso dial-in reference card, Grind Size reference card, Cold Brew recipe card.
+        Output: a confirmed asset list with one free (branded) and one paid (clean) version each.
+
+    [ ] Milestone 10.2: Design and generate downloadable brew cards
+        - Build PDF templates using @react-pdf/renderer (one component per card style)
+        - Free version: includes brewlab.coffee URL watermark in footer
+        - Paid version: clean, no branding, high-resolution print-ready
+        - Cards to cover: French Press, V60/Pour Over, AeroPress, Espresso, Grind Size reference
+
+    [ ] Milestone 10.3: Admin panel — price management
+        - Route: /admin (protected, not indexed)
+        - Auth: username + password (credentials set via environment variables — no DB needed at first)
+        - UI: single price field per asset, save to a config file or environment variable
+        - No Stripe — Paystack only
+        - Username/password implementation deferred until domain is live and Paystack is verified
+
+    [ ] Milestone 10.4: Paystack integration
+        - One-time payment per asset (no subscription)
+        - Payment Link or Paystack Popup — evaluate which requires less backend
+        - On successful payment: deliver download URL (time-limited signed URL or redirect)
+        - Add PAYSTACK_PUBLIC_KEY and PAYSTACK_SECRET_KEY to Vercel environment variables
+
+    [ ] Milestone 10.5: Retrofit tool pages with download CTAs
+        - Add "Download brew card" section to each relevant tool page
+        - Show free (branded) download immediately — no gate
+        - Show paid (clean) download behind Paystack payment flow
+        - CTA placement: below the calculator widget, above AmazonLinks
 
 ---
 
