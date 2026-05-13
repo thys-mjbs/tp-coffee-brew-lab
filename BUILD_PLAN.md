@@ -136,11 +136,11 @@ Based on master framework Section 3.5 (Per-Site Visual Personality):
     [X] Milestone 2.3: Instant Coffee Calculator (Tool 3) + Coffee Measurement Converter (Tool 5)
     [X] Milestone 2.4: Coffee Beans per Cup Calculator (Tool 4) — full page with SEO content, schema, FAQs
 
-[ ] Phase 3: Method-Specific Calculators (Winnable — Tools 6–12)
-    [ ] Milestone 3.1: Pour Over & V60 Recipe Calculator (Tool 6) — Hoffmann + Kasuya presets, full SEO
-    [ ] Milestone 3.2: AeroPress Recipe Guide (Tool 7) — standard, inverted, Hoffmann methods, full SEO
-    [ ] Milestone 3.3: Cold Brew Ratio Calculator (Tool 8) + Iced Coffee Pour Over Calculator (Tool 12)
-    [ ] Milestone 3.4: Caffeine Calculator (Tool 9) + Espresso Ratio Calculator (Tool 10) + Milk Coffee Ratio Calculator (Tool 11)
+[X] Phase 3: Method-Specific Calculators (Winnable — Tools 6–12)
+    [X] Milestone 3.1: Pour Over & V60 Recipe Calculator (Tool 6) — Hoffmann + Kasuya presets, full SEO
+    [X] Milestone 3.2: AeroPress Recipe Guide (Tool 7) — standard, inverted, Hoffmann methods, full SEO
+    [X] Milestone 3.3: Cold Brew Ratio Calculator (Tool 8) + Iced Coffee Pour Over Calculator (Tool 12)
+    [X] Milestone 3.4: Caffeine Calculator (Tool 9) + Espresso Ratio Calculator (Tool 10) + Milk Coffee Ratio Calculator (Tool 11)
 
 [ ] Phase 4: Timer & Interactive Guide Tools (Borderline — Tools 13, 18, 22, 25)
     [ ] Milestone 4.1: French Press Brew Timer & Guide (Tool 13) — countdown timer + steep guide, full SEO
