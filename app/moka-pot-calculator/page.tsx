@@ -1,5 +1,4 @@
-import type { Metadata } from "next"
-import Script from "next/script"
+﻿import type { Metadata } from "next"
 import { MokaPotCalculator } from "@/components/tools/MokaPotCalculator"
 import { AmazonLinks } from "@/components/affiliate/AmazonLinks"
 import { RelatedTools } from "@/components/tools/RelatedTools"
@@ -10,7 +9,7 @@ import { webApplicationSchema, faqSchema } from "@/lib/schema"
 const tool = getToolBySlug("moka-pot-calculator")!
 
 export const metadata: Metadata = {
-  title: "Moka Pot Brew Calculator — Coffee and Water for Every Size",
+  title: "Moka Pot Brew Calculator â€” Coffee and Water for Every Size",
   description:
     "Calculate how much coffee and water to use in your moka pot. Covers 1-cup, 3-cup, 6-cup, and 9-cup sizes with grind size advice and technique tips to avoid bitter results.",
   alternates: { canonical: `${process.env.NEXT_PUBLIC_APP_URL ?? "https://brewlab.coffee"}/moka-pot-calculator` },
@@ -59,8 +58,8 @@ export default function MokaPotCalculatorPage() {
 
   return (
     <>
-      <Script id="schema-webapp" type="application/ld+json" strategy="beforeInteractive">{JSON.stringify(appSchema)}</Script>
-      <Script id="schema-faq" type="application/ld+json" strategy="beforeInteractive">{JSON.stringify(faqData)}</Script>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(appSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqData) }} />
 
       <div className="mx-auto max-w-3xl px-4 py-10 sm:px-6">
         <Breadcrumb items={[{ label: tool.shortTitle }]} />

@@ -17,7 +17,10 @@
       "PowerShell(node -e \"const p=require\\('./node_modules/next/package.json'\\); console.log\\(p.version\\)\" 2>&1)",
       "PowerShell(npx next build 2>&1 | Select-Object -Last 50)",
       "PowerShell(npx next build 2>&1 | Select-Object -Last 20)",
-      "PowerShell(git push *)"
+      "PowerShell(git push *)",
+      "PowerShell(npx next build 2>&1 | Select-Object -Last 10)",
+      "Bash(node -e ' *)",
+      "PowerShell(npx next build 2>&1 | Select-Object -Last 8)"
     ]
   }
 }

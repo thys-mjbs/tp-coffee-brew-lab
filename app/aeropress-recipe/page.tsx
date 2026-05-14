@@ -1,5 +1,4 @@
-import type { Metadata } from "next"
-import Script from "next/script"
+﻿import type { Metadata } from "next"
 import { AeroPressRecipe } from "@/components/tools/AeroPressRecipe"
 import { AmazonLinks } from "@/components/affiliate/AmazonLinks"
 import { RelatedTools } from "@/components/tools/RelatedTools"
@@ -10,7 +9,7 @@ import { webApplicationSchema, faqSchema } from "@/lib/schema"
 const tool = getToolBySlug("aeropress-recipe")!
 
 export const metadata: Metadata = {
-  title: "AeroPress Recipe Guide — Standard, Inverted, Hoffmann, and Iced Methods",
+  title: "AeroPress Recipe Guide â€” Standard, Inverted, Hoffmann, and Iced Methods",
   description:
     "The best AeroPress recipes in one place: standard, inverted, James Hoffmann, and iced AeroPress. Step-by-step instructions with ratio, grind, temperature, and timing.",
   alternates: { canonical: `${process.env.NEXT_PUBLIC_APP_URL ?? "https://brewlab.coffee"}/aeropress-recipe` },
@@ -24,7 +23,7 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: "What is the best AeroPress recipe for beginners?",
-    a: "The standard method is the easiest starting point: 17g of coffee, 240ml of water at 94C, a 30-second bloom, a brief stir, then press at 1 minute. Total time is under 2 minutes and the technique is forgiving — even if your grind is slightly off, the result is usually drinkable. Once you are comfortable with that, try the James Hoffmann method for a more refined and consistently excellent cup.",
+    a: "The standard method is the easiest starting point: 17g of coffee, 240ml of water at 94C, a 30-second bloom, a brief stir, then press at 1 minute. Total time is under 2 minutes and the technique is forgiving â€” even if your grind is slightly off, the result is usually drinkable. Once you are comfortable with that, try the James Hoffmann method for a more refined and consistently excellent cup.",
   },
   {
     q: "What is the James Hoffmann AeroPress recipe?",
@@ -32,15 +31,15 @@ const faqs = [
   },
   {
     q: "What is the inverted AeroPress method?",
-    a: "The inverted method places the AeroPress upside down with the plunger partially inserted at the bottom. This creates a sealed chamber that prevents water from dripping through during the steep, allowing for a longer, more controlled extraction. It produces a fuller-bodied cup than the standard method. The main challenge is the flip — practice the motion before you have a full cup of hot coffee in your hands.",
+    a: "The inverted method places the AeroPress upside down with the plunger partially inserted at the bottom. This creates a sealed chamber that prevents water from dripping through during the steep, allowing for a longer, more controlled extraction. It produces a fuller-bodied cup than the standard method. The main challenge is the flip â€” practice the motion before you have a full cup of hot coffee in your hands.",
   },
   {
     q: "How fine should I grind for AeroPress?",
-    a: "Medium-fine is the standard recommendation for AeroPress — between drip coffee and espresso, roughly the texture of table salt. For the Hoffmann method, a slightly coarser medium grind works well because the longer steep and no-stir technique compensates. For shorter steep times (standard method under 2 minutes), a finer grind extracts more efficiently. Adjust grind size based on taste: too sour means grind finer or steep longer; too bitter means grind coarser or steep shorter.",
+    a: "Medium-fine is the standard recommendation for AeroPress â€” between drip coffee and espresso, roughly the texture of table salt. For the Hoffmann method, a slightly coarser medium grind works well because the longer steep and no-stir technique compensates. For shorter steep times (standard method under 2 minutes), a finer grind extracts more efficiently. Adjust grind size based on taste: too sour means grind finer or steep longer; too bitter means grind coarser or steep shorter.",
   },
   {
     q: "Can you make espresso-style coffee with an AeroPress?",
-    a: "AeroPress cannot produce true espresso — it does not generate the 9 bar of pressure required. However, using a small amount of water (around 50 to 60ml) and a fine grind, you can produce a concentrated shot that works well as a base for milk drinks like lattes and flat whites. This is sometimes called 'AeroPress espresso' or an 'AeroPress lungo.' The Iced AeroPress method on this page uses a similar concentrated brew principle.",
+    a: "AeroPress cannot produce true espresso â€” it does not generate the 9 bar of pressure required. However, using a small amount of water (around 50 to 60ml) and a fine grind, you can produce a concentrated shot that works well as a base for milk drinks like lattes and flat whites. This is sometimes called 'AeroPress espresso' or an 'AeroPress lungo.' The Iced AeroPress method on this page uses a similar concentrated brew principle.",
   },
   {
     q: "How do you make iced coffee with an AeroPress?",
@@ -48,11 +47,11 @@ const faqs = [
   },
   {
     q: "Do you need to rinse the AeroPress paper filter?",
-    a: "Yes — rinsing the paper filter with hot water before brewing removes the papery taste that unrinsed filters can impart. It also pre-heats the AeroPress chamber and your cup, which helps maintain water temperature during the brew. This step takes 10 seconds and makes a noticeable difference in the final cup, especially at lighter roast levels where subtle flavours are easier to detect.",
+    a: "Yes â€” rinsing the paper filter with hot water before brewing removes the papery taste that unrinsed filters can impart. It also pre-heats the AeroPress chamber and your cup, which helps maintain water temperature during the brew. This step takes 10 seconds and makes a noticeable difference in the final cup, especially at lighter roast levels where subtle flavours are easier to detect.",
   },
   {
     q: "Can you reuse AeroPress paper filters?",
-    a: "AeroPress paper filters can be rinsed and reused a few times before they start to affect flow rate. Rinse the used filter immediately after brewing, let it dry, and store it flat. Most users get 2 to 4 uses from a single filter. Alternatively, a metal reusable filter produces a slightly oilier cup similar to French press — no paper taste, slightly more body, less clarity. Both work well; it depends on your cup preference.",
+    a: "AeroPress paper filters can be rinsed and reused a few times before they start to affect flow rate. Rinse the used filter immediately after brewing, let it dry, and store it flat. Most users get 2 to 4 uses from a single filter. Alternatively, a metal reusable filter produces a slightly oilier cup similar to French press â€” no paper taste, slightly more body, less clarity. Both work well; it depends on your cup preference.",
   },
 ]
 
@@ -63,8 +62,8 @@ export default function AeroPressRecipePage() {
 
   return (
     <>
-      <Script id="schema-webapp" type="application/ld+json" strategy="beforeInteractive">{JSON.stringify(appSchema)}</Script>
-      <Script id="schema-faq" type="application/ld+json" strategy="beforeInteractive">{JSON.stringify(faqData)}</Script>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(appSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqData) }} />
 
       <div className="mx-auto max-w-3xl px-4 py-10 sm:px-6">
         <Breadcrumb items={[{ label: tool.shortTitle }]} />
@@ -74,7 +73,7 @@ export default function AeroPressRecipePage() {
             AeroPress Recipe Guide
           </h1>
           <p className="mt-3 text-base text-surface-600 dark:text-surface-300 leading-relaxed">
-            Four AeroPress methods — standard, inverted, James Hoffmann, and iced — with step-by-step
+            Four AeroPress methods â€” standard, inverted, James Hoffmann, and iced â€” with step-by-step
             instructions, exact ratios, and timing for each.
           </p>
         </div>
@@ -92,7 +91,7 @@ export default function AeroPressRecipePage() {
           </h2>
           <p>
             AeroPress is a full-immersion brewer with pressure-assisted filtration. The grounds
-            steep in the water for the entire brew time — like French press — but instead of
+            steep in the water for the entire brew time â€” like French press â€” but instead of
             plunging a metal mesh through the liquid, you push the water through a paper or metal
             filter at the bottom. The paper filter removes oils and fine particles, producing a
             cup that is cleaner than French press but richer and more concentrated than drip.
@@ -110,8 +109,8 @@ export default function AeroPressRecipePage() {
           </h2>
           <p>
             Start with standard. It is the method AeroPress was designed for, it takes under
-            2 minutes, and it teaches you the core variables — grind size, water temperature, and
-            steep time — without any technique risk. Once you are comfortable, try the Hoffmann
+            2 minutes, and it teaches you the core variables â€” grind size, water temperature, and
+            steep time â€” without any technique risk. Once you are comfortable, try the Hoffmann
             method: it is nearly as simple but produces a noticeably more refined cup. The
             inverted method is worth learning eventually, but master the flip motion with cold
             water first.
@@ -123,7 +122,7 @@ export default function AeroPressRecipePage() {
           <p>
             AeroPress responds quickly to grind adjustments. If the cup is sour or weak, grind
             finer or extend the steep by 15 to 30 seconds. If it is bitter or harsh, grind
-            coarser or reduce the steep time. Water temperature is the secondary lever — lower
+            coarser or reduce the steep time. Water temperature is the secondary lever â€” lower
             temperatures extract less aggressively, which can help with dark roasts or pre-ground
             coffee that tends toward bitterness.
           </p>

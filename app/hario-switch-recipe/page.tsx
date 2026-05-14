@@ -1,5 +1,4 @@
-import type { Metadata } from "next"
-import Script from "next/script"
+﻿import type { Metadata } from "next"
 import { HarioSwitchRecipe } from "@/components/tools/HarioSwitchRecipe"
 import { AmazonLinks } from "@/components/affiliate/AmazonLinks"
 import { RelatedTools } from "@/components/tools/RelatedTools"
@@ -10,7 +9,7 @@ import { webApplicationSchema, faqSchema } from "@/lib/schema"
 const tool = getToolBySlug("hario-switch-recipe")!
 
 export const metadata: Metadata = {
-  title: "Hario Switch Recipe Calculator — Immersion and Drip Methods",
+  title: "Hario Switch Recipe Calculator â€” Immersion and Drip Methods",
   description:
     "Recipes and water amounts for the Hario Immersion Switch. Classic immersion, James Hoffmann, light roast, and bold methods with step-by-step instructions.",
   alternates: { canonical: `${process.env.NEXT_PUBLIC_APP_URL ?? "https://brewlab.coffee"}/hario-switch-recipe` },
@@ -55,8 +54,8 @@ export default function HarioSwitchRecipePage() {
 
   return (
     <>
-      <Script id="schema-webapp" type="application/ld+json" strategy="beforeInteractive">{JSON.stringify(appSchema)}</Script>
-      <Script id="schema-faq" type="application/ld+json" strategy="beforeInteractive">{JSON.stringify(faqData)}</Script>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(appSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqData) }} />
 
       <div className="mx-auto max-w-3xl px-4 py-10 sm:px-6">
         <Breadcrumb items={[{ label: tool.shortTitle }]} />

@@ -1,5 +1,4 @@
-import type { Metadata } from "next"
-import Script from "next/script"
+﻿import type { Metadata } from "next"
 import { ColdFoamRecipe } from "@/components/tools/ColdFoamRecipe"
 import { AmazonLinks } from "@/components/affiliate/AmazonLinks"
 import { RelatedTools } from "@/components/tools/RelatedTools"
@@ -10,13 +9,13 @@ import { webApplicationSchema, faqSchema } from "@/lib/schema"
 const tool = getToolBySlug("cold-foam-recipe")!
 
 export const metadata: Metadata = {
-  title: "Cold Foam Recipe — Homemade Vanilla, Sweet Cream and Plain Cold Foam",
+  title: "Cold Foam Recipe â€” Homemade Vanilla, Sweet Cream and Plain Cold Foam",
   description:
     "Make cold foam at home in under 30 seconds. Select your milk type and serving size to get exact amounts and frothing instructions. Includes vanilla, sweet cream, brown sugar, and caramel variations.",
   alternates: { canonical: `${process.env.NEXT_PUBLIC_APP_URL ?? "https://brewlab.coffee"}/cold-foam-recipe` },
   openGraph: {
-    title: "Cold Foam Recipe — Homemade Vanilla, Sweet Cream and Plain",
-    description: "Milk volume calculator for homemade cold foam. Pick your milk type and serving size — get exact amounts, frothing method, and flavor additions instantly.",
+    title: "Cold Foam Recipe â€” Homemade Vanilla, Sweet Cream and Plain",
+    description: "Milk volume calculator for homemade cold foam. Pick your milk type and serving size â€” get exact amounts, frothing method, and flavor additions instantly.",
     type: "website",
   },
 }
@@ -40,7 +39,7 @@ const faqs = [
   },
   {
     q: "Why does my cold foam melt too fast?",
-    a: "Cold foam breaks down quickly for a few reasons. The most common cause is using warm milk — always froth milk straight from the fridge. Skim milk and low-fat plant milks produce lighter foam that dissipates faster. Using whole milk or adding a small amount of heavy cream will produce denser foam that lasts longer on top of the drink. Frothing for long enough also matters: under-frothed foam will be thin and watery.",
+    a: "Cold foam breaks down quickly for a few reasons. The most common cause is using warm milk â€” always froth milk straight from the fridge. Skim milk and low-fat plant milks produce lighter foam that dissipates faster. Using whole milk or adding a small amount of heavy cream will produce denser foam that lasts longer on top of the drink. Frothing for long enough also matters: under-frothed foam will be thin and watery.",
   },
   {
     q: "Can you make cold foam with oat milk?",
@@ -48,11 +47,11 @@ const faqs = [
   },
   {
     q: "How much cold foam should go on a drink?",
-    a: "For a 12oz drink, a 6oz cold foam serving is the standard. For an 8oz drink, 4oz of cold foam is usually enough. For larger 16 to 20oz drinks, 8oz of foam works well. The calculator on this page gives you the right milk amount for each serving size. You can adjust to taste — more foam gives a creamier sip, less foam lets the coffee flavour come through more directly.",
+    a: "For a 12oz drink, a 6oz cold foam serving is the standard. For an 8oz drink, 4oz of cold foam is usually enough. For larger 16 to 20oz drinks, 8oz of foam works well. The calculator on this page gives you the right milk amount for each serving size. You can adjust to taste â€” more foam gives a creamier sip, less foam lets the coffee flavour come through more directly.",
   },
   {
     q: "Can you make cold foam with coconut milk?",
-    a: "Yes, but use full-fat canned coconut milk rather than the refrigerated carton version. The fat content in full-fat canned coconut milk is high enough to froth. Chill it thoroughly before frothing — cold temperature is especially important for coconut milk. Froth for 30-40 seconds. The resulting foam has a mild coconut flavour that pairs well with cold brew and works with most syrups.",
+    a: "Yes, but use full-fat canned coconut milk rather than the refrigerated carton version. The fat content in full-fat canned coconut milk is high enough to froth. Chill it thoroughly before frothing â€” cold temperature is especially important for coconut milk. Froth for 30-40 seconds. The resulting foam has a mild coconut flavour that pairs well with cold brew and works with most syrups.",
   },
 ]
 
@@ -63,8 +62,8 @@ export default function ColdFoamRecipePage() {
 
   return (
     <>
-      <Script id="schema-webapp" type="application/ld+json" strategy="beforeInteractive">{JSON.stringify(appSchema)}</Script>
-      <Script id="schema-faq" type="application/ld+json" strategy="beforeInteractive">{JSON.stringify(faqData)}</Script>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(appSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqData) }} />
 
       <div className="mx-auto max-w-3xl px-4 py-10 sm:px-6">
         <Breadcrumb items={[{ label: tool.shortTitle }]} />

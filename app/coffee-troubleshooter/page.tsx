@@ -1,5 +1,4 @@
-import type { Metadata } from "next"
-import Script from "next/script"
+﻿import type { Metadata } from "next"
 import { CoffeeTroubleshooter } from "@/components/tools/CoffeeTroubleshooter"
 import { AmazonLinks } from "@/components/affiliate/AmazonLinks"
 import { RelatedTools } from "@/components/tools/RelatedTools"
@@ -10,7 +9,7 @@ import { webApplicationSchema, faqSchema } from "@/lib/schema"
 const tool = getToolBySlug("coffee-troubleshooter")!
 
 export const metadata: Metadata = {
-  title: "Coffee Troubleshooter — Fix Bitter, Sour, or Weak Coffee",
+  title: "Coffee Troubleshooter â€” Fix Bitter, Sour, or Weak Coffee",
   description:
     "Answer a few questions about your brew and get a specific fix for bitter, sour, weak, or strong coffee. Covers espresso, pour over, French press, and AeroPress.",
   alternates: { canonical: `${process.env.NEXT_PUBLIC_APP_URL ?? "https://brewlab.coffee"}/coffee-troubleshooter` },
@@ -63,8 +62,8 @@ export default function CoffeeTroubleshooterPage() {
 
   return (
     <>
-      <Script id="schema-webapp" type="application/ld+json" strategy="beforeInteractive">{JSON.stringify(appSchema)}</Script>
-      <Script id="schema-faq" type="application/ld+json" strategy="beforeInteractive">{JSON.stringify(faqData)}</Script>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(appSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqData) }} />
 
       <div className="mx-auto max-w-3xl px-4 py-10 sm:px-6">
         <Breadcrumb items={[{ label: tool.shortTitle }]} />

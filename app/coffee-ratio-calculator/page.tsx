@@ -1,5 +1,4 @@
-import type { Metadata } from "next"
-import Script from "next/script"
+﻿import type { Metadata } from "next"
 import { CoffeeRatioCalculator } from "@/components/tools/CoffeeRatioCalculator"
 import { AmazonLinks } from "@/components/affiliate/AmazonLinks"
 import { RelatedTools } from "@/components/tools/RelatedTools"
@@ -10,9 +9,9 @@ import { webApplicationSchema, faqSchema } from "@/lib/schema"
 const tool = getToolBySlug("coffee-ratio-calculator")!
 
 export const metadata: Metadata = {
-  title: "Coffee-to-Water Ratio Calculator — How Many Grams or Tablespoons per Cup",
+  title: "Coffee-to-Water Ratio Calculator â€” How Many Grams or Tablespoons per Cup",
   description:
-    "Calculate exactly how much ground coffee to use per cup — in grams, tablespoons, teaspoons, or scoops. Adjustable for cup size and strength. Free, instant, no sign-up.",
+    "Calculate exactly how much ground coffee to use per cup â€” in grams, tablespoons, teaspoons, or scoops. Adjustable for cup size and strength. Free, instant, no sign-up.",
   alternates: { canonical: `${process.env.NEXT_PUBLIC_APP_URL ?? "https://brewlab.coffee"}/coffee-ratio-calculator` },
   openGraph: {
     title: "Coffee-to-Water Ratio Calculator",
@@ -24,7 +23,7 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: "What is the ideal coffee-to-water ratio for drip coffee?",
-    a: "The Specialty Coffee Association (SCA) recommends a ratio of 1:18 (1g of coffee per 18ml of water) as its Golden Cup standard, which produces a lighter, more delicate cup. Most home brewers prefer 1:15 to 1:17. A ratio of 1:16 — roughly 2 tablespoons per 6 oz of water — is the most popular starting point and what this calculator uses as its Medium setting.",
+    a: "The Specialty Coffee Association (SCA) recommends a ratio of 1:18 (1g of coffee per 18ml of water) as its Golden Cup standard, which produces a lighter, more delicate cup. Most home brewers prefer 1:15 to 1:17. A ratio of 1:16 â€” roughly 2 tablespoons per 6 oz of water â€” is the most popular starting point and what this calculator uses as its Medium setting.",
   },
   {
     q: "How many tablespoons of coffee do I need per cup?",
@@ -32,15 +31,15 @@ const faqs = [
   },
   {
     q: "What does a 1:16 coffee ratio mean?",
-    a: "A 1:16 ratio means you use 1 gram of ground coffee for every 16ml of water. For 250ml of water, that is 15.6g of coffee — or about 2.6 tablespoons. The lower the second number, the stronger the coffee: 1:12 is very strong, 1:18 is light.",
+    a: "A 1:16 ratio means you use 1 gram of ground coffee for every 16ml of water. For 250ml of water, that is 15.6g of coffee â€” or about 2.6 tablespoons. The lower the second number, the stronger the coffee: 1:12 is very strong, 1:18 is light.",
   },
   {
     q: "How much coffee do I need for a full 12-cup coffee maker?",
-    a: "A 12-cup coffee maker typically holds 12 x 148ml cups, which equals about 1,776ml of water. At a medium 1:16 ratio, that requires 111g of coffee — roughly 18.5 tablespoons or 9.3 standard scoops. Use the Quick Cups selector and choose the Coffee Maker cup size in the calculator above to get the precise amount.",
+    a: "A 12-cup coffee maker typically holds 12 x 148ml cups, which equals about 1,776ml of water. At a medium 1:16 ratio, that requires 111g of coffee â€” roughly 18.5 tablespoons or 9.3 standard scoops. Use the Quick Cups selector and choose the Coffee Maker cup size in the calculator above to get the precise amount.",
   },
   {
     q: "Should I measure coffee by weight or volume?",
-    a: "Weight (grams) is always more accurate. Ground coffee density varies significantly depending on grind size, roast level, and how settled the grounds are — a tablespoon of espresso-fine coffee weighs nearly twice what a tablespoon of coarsely ground coffee weighs. A basic kitchen scale removes all that guesswork. That said, tablespoon and scoop measurements in this calculator use a medium-grind average of 6g per tablespoon, which is a reliable starting point for most drip coffee.",
+    a: "Weight (grams) is always more accurate. Ground coffee density varies significantly depending on grind size, roast level, and how settled the grounds are â€” a tablespoon of espresso-fine coffee weighs nearly twice what a tablespoon of coarsely ground coffee weighs. A basic kitchen scale removes all that guesswork. That said, tablespoon and scoop measurements in this calculator use a medium-grind average of 6g per tablespoon, which is a reliable starting point for most drip coffee.",
   },
   {
     q: "What is the SCA Golden Cup standard for coffee?",
@@ -48,7 +47,7 @@ const faqs = [
   },
   {
     q: "Why does my coffee taste weak even when I follow the ratio?",
-    a: "Ratio is only one variable. Weak coffee at the correct ratio usually means one of three things: the grind is too coarse (water passes through too quickly and under-extracts), the water is not hot enough (below 88C / 190F), or the coffee is stale (degassed beans extract less flavour). Adjust grind size first — a slightly finer grind often solves the problem without changing the amount of coffee.",
+    a: "Ratio is only one variable. Weak coffee at the correct ratio usually means one of three things: the grind is too coarse (water passes through too quickly and under-extracts), the water is not hot enough (below 88C / 190F), or the coffee is stale (degassed beans extract less flavour). Adjust grind size first â€” a slightly finer grind often solves the problem without changing the amount of coffee.",
   },
   {
     q: "How do I measure coffee without a scale?",
@@ -67,16 +66,12 @@ export default function CoffeeRatioCalculatorPage() {
 
   return (
     <>
-      <Script id="schema-webapp" type="application/ld+json" strategy="beforeInteractive">
-        {JSON.stringify(appSchema)}
-      </Script>
-      <Script id="schema-faq" type="application/ld+json" strategy="beforeInteractive">
-        {JSON.stringify(faqSchemaData)}
-      </Script>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(appSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchemaData) }} />
       <div className="mx-auto max-w-3xl px-4 py-10 sm:px-6">
         <Breadcrumb items={[{ label: tool.shortTitle }]} />
 
-        {/* ── Hero ── */}
+        {/* â”€â”€ Hero â”€â”€ */}
         <div className="mt-6 mb-8">
           <h1 className="font-display text-3xl font-bold leading-tight text-surface-800 dark:text-surface-50 sm:text-4xl">
             Coffee-to-Water Ratio Calculator
@@ -87,10 +82,10 @@ export default function CoffeeRatioCalculatorPage() {
           </p>
         </div>
 
-        {/* ── Calculator ── */}
+        {/* â”€â”€ Calculator â”€â”€ */}
         <CoffeeRatioCalculator />
 
-        {/* ── Affiliate ── */}
+        {/* â”€â”€ Affiliate â”€â”€ */}
         <div className="mt-8">
           <AmazonLinks
             searchTerms={tool.amazonTerms}
@@ -98,7 +93,7 @@ export default function CoffeeRatioCalculatorPage() {
           />
         </div>
 
-        {/* ── Body copy ── */}
+        {/* â”€â”€ Body copy â”€â”€ */}
         <article className="mt-12 space-y-6 text-surface-700 dark:text-surface-300 leading-relaxed text-[0.9375rem]">
 
           <h2 className="text-xl font-semibold text-surface-800 dark:text-surface-100">
@@ -107,7 +102,7 @@ export default function CoffeeRatioCalculatorPage() {
           <p>
             For a standard 250ml mug at a medium 1:16 ratio, you need 15.6g of ground coffee.
             Round that up to 16g if you prefer a slightly bolder result. For a smaller 148ml coffee
-            maker cup, the same ratio calls for 9.25g — just under one standard scoop.
+            maker cup, the same ratio calls for 9.25g â€” just under one standard scoop.
           </p>
           <p>
             Grams is the most reliable unit to work with because ground coffee density varies
@@ -123,7 +118,7 @@ export default function CoffeeRatioCalculatorPage() {
           </h2>
           <p>
             The Specialty Coffee Association recommends 55g of coffee per litre of water as its
-            Golden Cup standard — approximately a 1:18 ratio — which produces a clean, light cup
+            Golden Cup standard â€” approximately a 1:18 ratio â€” which produces a clean, light cup
             with high clarity. Most home brewers find this on the mild side and settle somewhere
             between 1:14 and 1:16 for a more balanced, full-flavoured result.
           </p>
@@ -160,7 +155,7 @@ export default function CoffeeRatioCalculatorPage() {
 
         </article>
 
-        {/* ── FAQ ── */}
+        {/* â”€â”€ FAQ â”€â”€ */}
         <section className="mt-12">
           <h2 className="text-xl font-semibold text-surface-800 dark:text-surface-100 mb-6">
             Frequently asked questions
@@ -179,7 +174,7 @@ export default function CoffeeRatioCalculatorPage() {
           </div>
         </section>
 
-        {/* ── Related tools ── */}
+        {/* â”€â”€ Related tools â”€â”€ */}
         <div className="mt-12">
           <RelatedTools tools={relatedTools} />
         </div>

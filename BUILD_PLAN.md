@@ -260,8 +260,8 @@ A tool **passes** if it offers at least one of these genuine advantages:
     [X] Milestone 8.1: Sitemap.xml, robots.txt, dynamic per-tool OG images (opengraph-image.tsx)
     [X] Milestone 8.2: Site-wide OG image (og-image.png placeholder), favicon placeholder, apple-touch-icon placeholder
     [X] Milestone 8.3: Full internal link audit — every tool links to at least 3 related tools
-    [ ] Milestone 8.4: Schema validation — WebApplication, FAQPage, BreadcrumbList on every tool page
-    [ ] Milestone 8.5: Core Web Vitals audit — PageSpeed Insights mobile score target 85+, INP, CLS
+    [X] Milestone 8.4: Schema validation — WebApplication, FAQPage, BreadcrumbList on every tool page
+    [X] Milestone 8.5: Core Web Vitals audit — PageSpeed Insights mobile score target 85+, INP, CLS
 
 [ ] Phase 9: Programmatic SEO Expansion
     [ ] Milestone 9.1: Add tracking columns to keywords_serp.csv; cross-reference all 25 tools against keyword list

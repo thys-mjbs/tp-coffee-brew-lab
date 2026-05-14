@@ -1,5 +1,4 @@
-import type { Metadata } from "next"
-import Script from "next/script"
+﻿import type { Metadata } from "next"
 import { PourOverTimer } from "@/components/tools/PourOverTimer"
 import { AmazonLinks } from "@/components/affiliate/AmazonLinks"
 import { RelatedTools } from "@/components/tools/RelatedTools"
@@ -10,7 +9,7 @@ import { webApplicationSchema, faqSchema } from "@/lib/schema"
 const tool = getToolBySlug("pour-over-timer")!
 
 export const metadata: Metadata = {
-  title: "Pour Over Brew Timer — V60 Stage-by-Stage Countdown with Pour Alerts",
+  title: "Pour Over Brew Timer â€” V60 Stage-by-Stage Countdown with Pour Alerts",
   description:
     "A step-by-step pour over timer for V60, Chemex, and Kalita Wave. Guides you through bloom, each pour, and drawdown with on-screen instructions. Supports 4-stage, Hoffmann, and Kasuya 4:6 methods.",
   alternates: { canonical: `${process.env.NEXT_PUBLIC_APP_URL ?? "https://brewlab.coffee"}/pour-over-timer` },
@@ -28,7 +27,7 @@ const faqs = [
   },
   {
     q: "How many pours does V60 need?",
-    a: "The number of pours depends on the method. The 4-stage method uses a bloom plus three equal pours, totalling four stages. The James Hoffmann method uses one bloom pour and one continuous main pour — two stages total. The Tetsu Kasuya 4:6 method uses five pours with no separate bloom. All methods are supported in the timer above.",
+    a: "The number of pours depends on the method. The 4-stage method uses a bloom plus three equal pours, totalling four stages. The James Hoffmann method uses one bloom pour and one continuous main pour â€” two stages total. The Tetsu Kasuya 4:6 method uses five pours with no separate bloom. All methods are supported in the timer above.",
   },
   {
     q: "What is the 4-stage V60 method?",
@@ -36,7 +35,7 @@ const faqs = [
   },
   {
     q: "How do I know when to pour in pour over?",
-    a: "In the 4-stage method, pour when the water level drops to just above the coffee bed — typically 30 to 45 seconds between pours. This timer handles the timing automatically: each stage countdown tells you exactly when to pour and how much water to add. For the Hoffmann method, the main pour is continuous and slow — the timer countdown prompts you to pour and then waits for natural drawdown.",
+    a: "In the 4-stage method, pour when the water level drops to just above the coffee bed â€” typically 30 to 45 seconds between pours. This timer handles the timing automatically: each stage countdown tells you exactly when to pour and how much water to add. For the Hoffmann method, the main pour is continuous and slow â€” the timer countdown prompts you to pour and then waits for natural drawdown.",
   },
   {
     q: "What grind size is best for pour over timing?",
@@ -44,7 +43,7 @@ const faqs = [
   },
   {
     q: "Does water flow rate matter in pour over?",
-    a: "Yes — pour rate affects how much agitation the coffee bed experiences during extraction. Pouring too fast creates turbulence that can dislodge grounds and cause channelling. Pouring too slowly allows the water level to drop too low between pours, which can expose grounds to air and cause uneven extraction. A gooseneck kettle gives you precise control over flow rate; the timer handles the timing so you can focus on keeping a steady, controlled pour.",
+    a: "Yes â€” pour rate affects how much agitation the coffee bed experiences during extraction. Pouring too fast creates turbulence that can dislodge grounds and cause channelling. Pouring too slowly allows the water level to drop too low between pours, which can expose grounds to air and cause uneven extraction. A gooseneck kettle gives you precise control over flow rate; the timer handles the timing so you can focus on keeping a steady, controlled pour.",
   },
 ]
 
@@ -55,8 +54,8 @@ export default function PourOverTimerPage() {
 
   return (
     <>
-      <Script id="schema-webapp" type="application/ld+json" strategy="beforeInteractive">{JSON.stringify(appSchema)}</Script>
-      <Script id="schema-faq" type="application/ld+json" strategy="beforeInteractive">{JSON.stringify(faqData)}</Script>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(appSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqData) }} />
 
       <div className="mx-auto max-w-3xl px-4 py-10 sm:px-6">
         <Breadcrumb items={[{ label: tool.shortTitle }]} />
@@ -66,8 +65,8 @@ export default function PourOverTimerPage() {
             Pour Over Brew Timer
           </h1>
           <p className="mt-3 text-base text-surface-600 dark:text-surface-300 leading-relaxed">
-            Select your pour method and dose, then let the timer guide you through every stage —
-            bloom, each pour, and drawdown — with exact water amounts and timing.
+            Select your pour method and dose, then let the timer guide you through every stage â€”
+            bloom, each pour, and drawdown â€” with exact water amounts and timing.
           </p>
         </div>
 
@@ -93,7 +92,7 @@ export default function PourOverTimerPage() {
           </p>
           <h2 className="text-xl font-semibold text-surface-800 dark:text-surface-100">Choosing the right pour method</h2>
           <p>
-            The 4-stage method is the best starting point — it is widely used, well-documented,
+            The 4-stage method is the best starting point â€” it is widely used, well-documented,
             and produces consistent results across different grind sizes and doses. The Hoffmann
             method simplifies the technique to one main pour and is excellent for beginners who
             want to minimise the number of variables. The Kasuya 4:6 method gives you independent

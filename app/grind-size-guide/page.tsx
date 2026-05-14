@@ -1,5 +1,4 @@
-import type { Metadata } from "next"
-import Script from "next/script"
+﻿import type { Metadata } from "next"
 import { GrindSizeGuide } from "@/components/tools/GrindSizeGuide"
 import { AmazonLinks } from "@/components/affiliate/AmazonLinks"
 import { RelatedTools } from "@/components/tools/RelatedTools"
@@ -10,7 +9,7 @@ import { webApplicationSchema, faqSchema } from "@/lib/schema"
 const tool = getToolBySlug("grind-size-guide")!
 
 export const metadata: Metadata = {
-  title: "Coffee Grind Size Guide — Settings for Every Method and Grinder",
+  title: "Coffee Grind Size Guide â€” Settings for Every Method and Grinder",
   description:
     "Find the right grind size for espresso, V60, French press, AeroPress, cold brew, and moka pot. Includes reference settings for Baratza, Breville, Comandante, 1Zpresso, and Timemore grinders.",
   alternates: { canonical: `${process.env.NEXT_PUBLIC_APP_URL ?? "https://brewlab.coffee"}/grind-size-guide` },
@@ -63,8 +62,8 @@ export default function GrindSizeGuidePage() {
 
   return (
     <>
-      <Script id="schema-webapp" type="application/ld+json" strategy="beforeInteractive">{JSON.stringify(appSchema)}</Script>
-      <Script id="schema-faq" type="application/ld+json" strategy="beforeInteractive">{JSON.stringify(faqData)}</Script>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(appSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqData) }} />
 
       <div className="mx-auto max-w-3xl px-4 py-10 sm:px-6">
         <Breadcrumb items={[{ label: tool.shortTitle }]} />
@@ -110,7 +109,7 @@ export default function GrindSizeGuidePage() {
           </p>
           <p>
             The settings in this guide apply to burr grinders only. If you are using a blade grinder,
-            the main thing grind size does is change the ratio of fine to coarse — a shorter blend produces
+            the main thing grind size does is change the ratio of fine to coarse â€” a shorter blend produces
             more large chunks, a longer blend produces more fine dust. Neither is as consistent as a burr grinder at any setting.
           </p>
         </article>

@@ -1,5 +1,4 @@
-import type { Metadata } from "next"
-import Script from "next/script"
+﻿import type { Metadata } from "next"
 import { ColdBrewRecipe } from "@/components/tools/ColdBrewRecipe"
 import { AmazonLinks } from "@/components/affiliate/AmazonLinks"
 import { RelatedTools } from "@/components/tools/RelatedTools"
@@ -10,7 +9,7 @@ import { webApplicationSchema, faqSchema } from "@/lib/schema"
 const tool = getToolBySlug("cold-brew-recipe")!
 
 export const metadata: Metadata = {
-  title: "Cold Brew Coffee Recipe — Batch Size, Ratio and Steep Time Calculator",
+  title: "Cold Brew Coffee Recipe â€” Batch Size, Ratio and Steep Time Calculator",
   description:
     "Calculate exact coffee and water amounts for cold brew at home. Choose your batch size, strength (regular, concentrate, or strong), and equipment to get gram weights, steep time, and step-by-step instructions.",
   alternates: { canonical: `${process.env.NEXT_PUBLIC_APP_URL ?? "https://brewlab.coffee"}/cold-brew-recipe` },
@@ -36,7 +35,7 @@ const faqs = [
   },
   {
     q: "What grind size should I use for cold brew?",
-    a: "Use a coarse grind — similar to French press or slightly coarser. Coarser grinding produces a cleaner result because fine particles extract faster, and with a 12-24 hour steep, very fine grinds can over-extract and turn bitter. You do not need to measure grind size precisely: if your cold brew tastes bitter or muddy, grind coarser or steep for fewer hours. If it tastes thin and weak, grind slightly finer or steep longer.",
+    a: "Use a coarse grind â€” similar to French press or slightly coarser. Coarser grinding produces a cleaner result because fine particles extract faster, and with a 12-24 hour steep, very fine grinds can over-extract and turn bitter. You do not need to measure grind size precisely: if your cold brew tastes bitter or muddy, grind coarser or steep for fewer hours. If it tastes thin and weak, grind slightly finer or steep longer.",
   },
   {
     q: "How long does cold brew last in the fridge?",
@@ -63,8 +62,8 @@ export default function ColdBrewRecipePage() {
 
   return (
     <>
-      <Script id="schema-webapp" type="application/ld+json" strategy="beforeInteractive">{JSON.stringify(appSchema)}</Script>
-      <Script id="schema-faq" type="application/ld+json" strategy="beforeInteractive">{JSON.stringify(faqData)}</Script>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(appSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqData) }} />
 
       <div className="mx-auto max-w-3xl px-4 py-10 sm:px-6">
         <Breadcrumb items={[{ label: tool.shortTitle }]} />
@@ -91,7 +90,7 @@ export default function ColdBrewRecipePage() {
             Cold brew and iced coffee are both cold coffee drinks, but they taste distinctly different.
             Cold brew is never exposed to heat, which means the chemical reactions that produce acidity
             and some bitterness during hot brewing never occur. The result is a naturally smoother, sweeter
-            cup with lower perceived acidity. This is not about the coffee being weaker — well-made cold
+            cup with lower perceived acidity. This is not about the coffee being weaker â€” well-made cold
             brew has more caffeine per volume than typical drip coffee because the long steep extracts
             more caffeine from the grounds.
           </p>
@@ -104,8 +103,8 @@ export default function ColdBrewRecipePage() {
           <h2 className="text-xl font-semibold text-surface-800 dark:text-surface-100">Choosing between regular and concentrate</h2>
           <p>
             If you drink cold brew with only a small amount of milk or straight over ice, brew at 1:8.
-            If you regularly make milk-based iced drinks — cold brew lattes, iced cortados, or cold brew
-            with oat milk — concentrate at 1:5 is more flexible. It dilutes at serving so you can adjust
+            If you regularly make milk-based iced drinks â€” cold brew lattes, iced cortados, or cold brew
+            with oat milk â€” concentrate at 1:5 is more flexible. It dilutes at serving so you can adjust
             the strength each time. The calculator above shows the steep time and exact amounts for each
             approach across any batch size from a single cup to a full gallon.
           </p>

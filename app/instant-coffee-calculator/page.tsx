@@ -1,5 +1,4 @@
-import type { Metadata } from "next"
-import Script from "next/script"
+﻿import type { Metadata } from "next"
 import { InstantCoffeeCalculator } from "@/components/tools/InstantCoffeeCalculator"
 import { AmazonLinks } from "@/components/affiliate/AmazonLinks"
 import { RelatedTools } from "@/components/tools/RelatedTools"
@@ -10,7 +9,7 @@ import { webApplicationSchema, faqSchema } from "@/lib/schema"
 const tool = getToolBySlug("instant-coffee-calculator")!
 
 export const metadata: Metadata = {
-  title: "Instant Coffee Calculator — Teaspoons and Grams per Cup",
+  title: "Instant Coffee Calculator â€” Teaspoons and Grams per Cup",
   description:
     "How many teaspoons or grams of instant coffee per cup? Enter your cup size, strength, and brand to get the exact measurement. Covers Nescafe, Cafe Bustelo, and Folgers.",
   alternates: { canonical: `${process.env.NEXT_PUBLIC_APP_URL ?? "https://brewlab.coffee"}/instant-coffee-calculator` },
@@ -24,7 +23,7 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: "How many teaspoons of instant coffee do I use per cup?",
-    a: "For a standard 250ml cup at medium strength, use 1.5 to 2 level teaspoons of instant coffee. At mild strength, 1 to 1.5 teaspoons is enough. For a strong cup, use 2.5 to 3 teaspoons. Always use level spoonfuls, not heaped — a heaped teaspoon can hold up to twice as much coffee as a level one, making results inconsistent.",
+    a: "For a standard 250ml cup at medium strength, use 1.5 to 2 level teaspoons of instant coffee. At mild strength, 1 to 1.5 teaspoons is enough. For a strong cup, use 2.5 to 3 teaspoons. Always use level spoonfuls, not heaped â€” a heaped teaspoon can hold up to twice as much coffee as a level one, making results inconsistent.",
   },
   {
     q: "How much instant coffee do I use for a large 480ml mug?",
@@ -36,19 +35,19 @@ const faqs = [
   },
   {
     q: "What is the ratio for instant coffee to water?",
-    a: "Instant coffee dissolves completely in water rather than being filtered, so ratios work differently than ground coffee. A medium-strength instant coffee uses approximately 1.2g of instant powder per 100ml of water. For 250ml, that is 3g — about 1.7 level teaspoons of standard instant coffee. This is equivalent to a roughly 1:83 ratio by weight, much weaker than brewed coffee by mass because instant coffee is highly concentrated before drying.",
+    a: "Instant coffee dissolves completely in water rather than being filtered, so ratios work differently than ground coffee. A medium-strength instant coffee uses approximately 1.2g of instant powder per 100ml of water. For 250ml, that is 3g â€” about 1.7 level teaspoons of standard instant coffee. This is equivalent to a roughly 1:83 ratio by weight, much weaker than brewed coffee by mass because instant coffee is highly concentrated before drying.",
   },
   {
     q: "Should I use boiling water for instant coffee?",
-    a: "Just off the boil is ideal — around 90 to 96C (194 to 205F). Boiling water directly from the kettle (100C) can make instant coffee taste slightly bitter. Let it rest for 30 seconds after boiling. Cold water will not dissolve instant coffee granules properly, producing a gritty or uneven cup.",
+    a: "Just off the boil is ideal â€” around 90 to 96C (194 to 205F). Boiling water directly from the kettle (100C) can make instant coffee taste slightly bitter. Let it rest for 30 seconds after boiling. Cold water will not dissolve instant coffee granules properly, producing a gritty or uneven cup.",
   },
   {
     q: "How many grams of instant coffee are in a teaspoon?",
-    a: "A level teaspoon of standard instant coffee granules (Nescafe Classic, generic brands) contains approximately 1.8g. Cafe Bustelo contains about 2.2g per level teaspoon due to its denser espresso-ground powder. Folgers instant crystals contain approximately 1.7g per level teaspoon. These are averages — actual density can vary between batches and how settled the container is.",
+    a: "A level teaspoon of standard instant coffee granules (Nescafe Classic, generic brands) contains approximately 1.8g. Cafe Bustelo contains about 2.2g per level teaspoon due to its denser espresso-ground powder. Folgers instant crystals contain approximately 1.7g per level teaspoon. These are averages â€” actual density can vary between batches and how settled the container is.",
   },
   {
     q: "Can I make iced instant coffee?",
-    a: "Yes. Brew your instant coffee at double strength (double the amount of coffee, same water volume), then pour over ice. The ice dilutes the brew back to a regular strength as it melts. For a 250ml iced drink, brew with 150ml of hot water at double strength, then add 100ml of ice. The calculator is designed for hot coffee — double the result and halve the water volume for an iced version.",
+    a: "Yes. Brew your instant coffee at double strength (double the amount of coffee, same water volume), then pour over ice. The ice dilutes the brew back to a regular strength as it melts. For a 250ml iced drink, brew with 150ml of hot water at double strength, then add 100ml of ice. The calculator is designed for hot coffee â€” double the result and halve the water volume for an iced version.",
   },
 ]
 
@@ -59,12 +58,8 @@ export default function InstantCoffeeCalculatorPage() {
 
   return (
     <>
-      <Script id="schema-webapp" type="application/ld+json" strategy="beforeInteractive">
-        {JSON.stringify(appSchema)}
-      </Script>
-      <Script id="schema-faq" type="application/ld+json" strategy="beforeInteractive">
-        {JSON.stringify(faqData)}
-      </Script>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(appSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqData) }} />
 
       <div className="mx-auto max-w-3xl px-4 py-10 sm:px-6">
         <Breadcrumb items={[{ label: tool.shortTitle }]} />
@@ -92,7 +87,7 @@ export default function InstantCoffeeCalculatorPage() {
           </h2>
           <p>
             Most instant coffee packaging says "1 to 2 teaspoons per cup," which is too vague to be
-            useful — that range covers the difference between mild and very strong. The exact amount
+            useful â€” that range covers the difference between mild and very strong. The exact amount
             depends on three things: the size of your cup, how strong you want it, and the density
             of the brand you use. A standard 250ml cup of medium-strength Nescafe takes 1.7 level
             teaspoons (3g). That same cup with Cafe Bustelo needs slightly less volume (1.4 teaspoons)

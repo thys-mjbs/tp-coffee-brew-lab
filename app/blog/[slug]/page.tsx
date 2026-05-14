@@ -1,6 +1,5 @@
 import type { Metadata } from "next"
 import { notFound } from "next/navigation"
-import Script from "next/script"
 import Link from "next/link"
 import { Breadcrumb } from "@/components/layout/Breadcrumb"
 import { RelatedTools } from "@/components/tools/RelatedTools"
@@ -47,9 +46,7 @@ export default async function BlogPostPage(
 
   return (
     <>
-      <Script id="schema-blog" type="application/ld+json" strategy="beforeInteractive">
-        {JSON.stringify(schema)}
-      </Script>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
 
       <div className="mx-auto max-w-3xl px-4 py-10 sm:px-6">
         <Breadcrumb items={[{ label: "Guides", href: "/blog" }, { label: post.title }]} />
