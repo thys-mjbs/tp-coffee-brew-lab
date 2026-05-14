@@ -1,5 +1,6 @@
 import Link from "next/link"
 import { ThemeToggle } from "./ThemeToggle"
+import { LanguageSwitcher } from "./LanguageSwitcher"
 
 const navLinks = [
   { href: "/", label: "All Tools" },
@@ -48,6 +49,7 @@ export function Header() {
           >
             Blog
           </Link>
+          <LanguageSwitcher />
           <ThemeToggle />
         </div>
       </div>

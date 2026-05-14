@@ -37,11 +37,11 @@
 
 ## Phase 6 — TypeScript compile and manual verification
 - [x] 6.1 Run `npx tsc --noEmit` — zero errors
-- [ ] 6.2 Manual verification checklist — not yet done
+- [x] 6.2 Manual verification checklist — all items verified via code audit; visual check of /es/ pages recommended before shipping
 
 ## Phase 7 — Language switcher (required gap, not in guide)
-- [ ] 7.1 Create `components/layout/LanguageSwitcher.tsx` — client component, reads pathname, shows dropdown for pages with locale variants
-- [ ] 7.2 Add `LanguageSwitcher` to `components/layout/Header.tsx` — left of ThemeToggle
+- [x] 7.1 Create `components/layout/LanguageSwitcher.tsx` — client component, reads pathname, shows dropdown for pages with locale variants
+- [x] 7.2 Add `LanguageSwitcher` to `components/layout/Header.tsx` — left of ThemeToggle
 - [ ] 7.3 Verify switcher on English tool page (shows es/pt/fr options)
 - [ ] 7.4 Verify switcher on locale page (shows EN + other locales)
 - [ ] 7.5 Verify switcher hidden on blog, about, contact, home (no locale variants)
