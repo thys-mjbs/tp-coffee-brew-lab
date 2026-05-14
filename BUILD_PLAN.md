@@ -205,10 +205,56 @@ A tool **passes** if it offers at least one of these genuine advantages:
     [X] Milestone 6.3: Wire AmazonLinks into all 25 tool pages with method-relevant search terms
 
 [X] Phase 7: Blog Content (Minimum 10 Posts at Launch)
+
+    KEYWORD RULE: Every blog post MUST target a specific keyword phrase from
+    framework/keywords_serp.csv. Open the CSV, find all WINNABLE and BORDERLINE rows
+    for the topic, pick the highest-volume phrase as the primary target. That phrase
+    MUST appear in the H1 and within the first 100 words. See "Blog Post Checklist"
+    section below before writing any post.
+
     [X] Milestone 7.1: Blog infrastructure (layout, post template, schema, index page)
-    [X] Milestone 7.2: Blog posts 1–3 (Golden Ratio, Perfect V60, French Press Guide)
-    [ ] Milestone 7.3: Blog posts 4–6 (AeroPress Recipes, Espresso Basics, Cold Brew at Home)
-    [ ] Milestone 7.4: Blog posts 7–10 (Moka Pot Mistakes, Water Temperature, Dial In Espresso, Coffee Glossary)
+    [X] Milestone 7.2: Blog posts 1-3
+        Post 1 — Primary: "how many coffee grounds per cup" (1300/mo, WINNABLE)
+          H1: How Much Ground Coffee Per Cup? The Golden Ratio Explained
+          Slug: /blog/the-golden-ratio
+          Secondary: "how much ground coffee per cup of water" (1000), "how many grams coffee beans per cup" (1000)
+        Post 2 — Primary: "v60 recipe" (2400/mo, WINNABLE)
+          H1: The Perfect V60 Recipe: James Hoffmann's Method Explained
+          Slug: /blog/perfect-v60-recipe
+          Secondary: "v60 pour over recipe" (260), "hoffmann v60 recipe" (320)
+        Post 3 — Primary: "how long to let french press steep" (2900/mo, BORDERLINE)
+          H1: How Long to Steep French Press Coffee (Complete Brew Guide)
+          Slug: /blog/french-press-guide
+          Secondary: "french press steep time" cluster, "how long should french press steep"
+    [ ] Milestone 7.3: Blog posts 4-6
+        Post 4 — Primary: "inverted aeropress method" (2400/mo, WINNABLE)
+          H1: The Inverted AeroPress Method: Step-by-Step Recipe Guide
+          Slug: /blog/aeropress-inverted-method
+          Secondary: "hoffmann aeropress recipe" (320), "aeropress coffee recipe" (590)
+        Post 5 — Primary: "best grind size for espresso" (320/mo, BORDERLINE)
+          H1: Espresso Grind Size: The Beginner's Guide to Dialling In
+          Slug: /blog/espresso-grind-size-guide
+          Secondary: "espresso grind size chart" (390), "why is my espresso sour" (590)
+        Post 6 — Primary: "french press cold brew ratio" (720/mo, WINNABLE)
+          H1: Cold Brew at Home: Ratios, Steep Time, and the French Press Method
+          Slug: /blog/cold-brew-at-home
+          Secondary: "cold brew at home recipe" (320), "aeropress cold brew recipe" (140)
+    [ ] Milestone 7.4: Blog posts 7-10
+        Post 7 — Primary: "best grind size for moka pot" (140/mo, BORDERLINE) [limited CSV coverage]
+          H1: Moka Pot Grind Size and the 5 Most Common Brew Mistakes
+          Slug: /blog/moka-pot-mistakes
+          Note: No cluster in CSV — use to support /moka-pot-calculator internal linking
+        Post 8 — Primary: "how to steep coffee" (210/mo, WINNABLE) [Water Temp topic retargeted]
+          H1: How to Steep Coffee: Brew Times, Water Temperature, and Method Guide
+          Slug: /blog/how-to-steep-coffee
+          Secondary: Water temp guidance woven in as supporting content (no direct CSV keyword found)
+        Post 9 — Primary: "why is my espresso sour" (590/mo, BORDERLINE) or "espresso too bitter" (720/mo, BORDERLINE)
+          H1: Why Is My Espresso Sour or Bitter? How to Dial In Your Shot
+          Slug: /blog/espresso-dial-in-guide
+          Secondary: "why is my espresso bitter" (720), "espresso too bitter" (720)
+        Post 10 — No direct CSV keyword for "Coffee Glossary" — low SEO value as standalone
+          ACTION: Retarget to "how to use cold brew" (170/mo, WINNABLE) or leave as reference-only
+          Slug TBD: /blog/coffee-glossary (reference post, no primary keyword target)
 
 [ ] Phase 8: SEO Infrastructure & Launch Polish
     [ ] Milestone 8.1: Sitemap.xml, robots.txt, dynamic per-tool OG images (opengraph-image.tsx)
@@ -316,6 +362,40 @@ The existing GitHub repo will be used. The Next.js app will be initialized insid
 - [ ] No keyword used more than 4 times in body content
 - [ ] No em dashes anywhere in copy
 - [ ] Data-handling tools (if any) explicitly state browser-side processing
+
+---
+
+## Blog Post Checklist (Apply to Every Blog Post Before Marking Its Milestone Complete)
+
+### Keyword targeting (must do FIRST — before writing a word)
+- [ ] Opened framework/keywords_serp.csv and found all WINNABLE and BORDERLINE rows relevant to the topic
+- [ ] Identified the single highest-volume phrase as the primary keyword target
+- [ ] Primary keyword noted alongside the milestone entry in this BUILD_PLAN.md
+- [ ] Primary keyword appears verbatim in the H1 title
+- [ ] Primary keyword appears within the first 100 words of the post body
+- [ ] Secondary keywords (same SERP cluster) used in at least 2 H2 headings
+
+### Content structure
+- [ ] Post opens by answering the primary query directly (no preamble)
+- [ ] H2s are question-format (mirrors how the keyword would be searched)
+- [ ] Step-by-step section or method table included where relevant
+- [ ] No keyword used more than 4 times across the entire post
+- [ ] No em dashes anywhere in copy
+- [ ] Reading time 5-8 minutes (approx 1200-2000 words)
+
+### Internal linking
+- [ ] At least 2 links to related tools (use relatedToolSlugs in lib/blog.ts)
+- [ ] At least 1 link to another blog post where one exists
+
+### SEO metadata
+- [ ] Slug reflects the primary keyword phrase (not just the topic label)
+- [ ] Meta description (lib/blog.ts description field) includes primary keyword and a specific number or fact
+- [ ] BlogPosting JSON-LD schema injected via blogPostingSchema() in app/blog/[slug]/page.tsx
+- [ ] BreadcrumbList schema present on post page
+
+### Registry
+- [ ] Post added to lib/blog.ts allPosts array with correct slug, title, description, excerpt, relatedToolSlugs
+- [ ] Content component created at content/blog/[slug].tsx
 
 ---
 
