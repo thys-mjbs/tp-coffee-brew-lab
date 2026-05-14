@@ -22,7 +22,15 @@
       "Bash(node -e ' *)",
       "PowerShell(npx next build 2>&1 | Select-Object -Last 8)",
       "Bash(node *)",
-      "Bash(npm install *)"
+      "Bash(npm install *)",
+      "Bash(git -C \"C:\\\\Users\\\\MBenson\\\\Documents\\\\GitHub\\\\tp-coffee-brew-lab-build-framework\" status --short)",
+      "Bash(git -C \"C:\\\\Users\\\\MBenson\\\\Documents\\\\GitHub\\\\tp-coffee-brew-lab-build-framework\" add docs/add-a-language-prompt.md)",
+      "Bash(git -C 'C:\\\\Users\\\\MBenson\\\\Documents\\\\GitHub\\\\tp-coffee-brew-lab-build-framework' commit -m ' *)",
+      "Bash(git -C \"C:\\\\Users\\\\MBenson\\\\Documents\\\\GitHub\\\\tp-coffee-brew-lab-build-framework\" push origin main)",
+      "Bash(git -C \"C:\\\\Users\\\\MBenson\\\\Documents\\\\GitHub\\\\tp-coffee-brew-lab-build-framework\" add app/[lang]/[slug]/page.tsx docs/build-plan-es.md)",
+      "Bash(git -C \"C:\\\\Users\\\\MBenson\\\\Documents\\\\GitHub\\\\tp-coffee-brew-lab-build-framework\" add components/ShareBar.tsx \"app/[lang]/[slug]/page.tsx\" docs/build-plan-es.md)",
+      "Bash(git -C \"C:\\\\Users\\\\MBenson\\\\Documents\\\\GitHub\\\\tp-coffee-brew-lab-build-framework\" add \"app/[lang]/[slug]/page.tsx\" docs/build-plan-es.md)",
+      "Bash(git -C \"C:\\\\Users\\\\MBenson\\\\Documents\\\\GitHub\\\\tp-coffee-brew-lab-build-framework\" add docs/build-plan-es.md)"
     ]
   }
 }

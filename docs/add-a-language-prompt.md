@@ -1128,8 +1128,8 @@ Plus 7 additional strings outside the variants file:
 Use these values throughout the guide wherever you see a symbolic placeholder. Do not fill in values anywhere else in the document.
 
 ```
-LANG_CODE    = xx
-LANGUAGE     = Language Name In English
-NATIVE_NAME  = Name as native speakers write it (e.g. Português, Français, Deutsch)
-LANG_UPPER   = XX
+LANG_CODE    = es
+LANGUAGE     = Spanish
+NATIVE_NAME  = Español
+LANG_UPPER   = ES
 ```
