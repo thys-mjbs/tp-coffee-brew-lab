@@ -33,7 +33,7 @@
 
 ## Phase 5 — Sitemap and hreflang
 - [x] 5.1 es pages in sitemap — confirmed via `getAllI18nParams()` in `app/sitemap.ts`
-- [ ] 5.2 Hreflang — currently only cross-references `en` + current locale; does not link to pt/fr variants
+- [x] 5.2 Hreflang — `generateMetadata` now builds `allLanguages` from `supportedLangs`; all locale variants cross-referenced
 
 ## Phase 6 — TypeScript compile and manual verification
 - [ ] 6.1 Run `npx tsc --noEmit` — not yet verified

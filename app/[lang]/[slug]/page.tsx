@@ -6,7 +6,7 @@ import { RelatedTools } from "@/components/tools/RelatedTools"
 import { ToolRenderer } from "@/components/tools/ToolRenderer"
 import { getRelatedTools } from "@/lib/tools"
 import { faqSchema, breadcrumbSchema } from "@/lib/schema"
-import { getAllI18nParams, getI18nVariant } from "@/lib/i18nVariants"
+import { getAllI18nParams, getI18nVariant, supportedLangs } from "@/lib/i18nVariants"
 import { ShareBar } from "@/components/ShareBar"
 
 const appUrl = process.env.NEXT_PUBLIC_APP_URL ?? "https://brewlab.coffee"
@@ -43,12 +43,19 @@ export async function generateMetadata(
   const enUrl = `${appUrl}/${slug}`
   const thisUrl = `${appUrl}/${lang}/${slug}`
 
+  const allLanguages: Record<string, string> = { en: enUrl }
+  for (const l of supportedLangs) {
+    if (getI18nVariant(l, slug)) {
+      allLanguages[l] = `${appUrl}/${l}/${slug}`
+    }
+  }
+
   return {
     title: variant.metaTitle,
     description: variant.metaDescription,
     alternates: {
       canonical: thisUrl,
-      languages: { en: enUrl, [lang]: thisUrl },
+      languages: allLanguages,
     },
     openGraph: {
       title: variant.metaTitle,
