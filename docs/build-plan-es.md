@@ -36,7 +36,7 @@
 - [x] 5.2 Hreflang — `generateMetadata` now builds `allLanguages` from `supportedLangs`; all locale variants cross-referenced
 
 ## Phase 6 — TypeScript compile and manual verification
-- [ ] 6.1 Run `npx tsc --noEmit` — not yet verified
+- [x] 6.1 Run `npx tsc --noEmit` — zero errors
 - [ ] 6.2 Manual verification checklist — not yet done
 
 ## Phase 7 — Language switcher (required gap, not in guide)
