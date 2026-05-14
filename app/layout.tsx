@@ -41,17 +41,9 @@ export const metadata: Metadata = {
     locale: "en_GB",
     url: appUrl,
     siteName: "Coffee Brew Lab",
-    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Coffee Brew Lab" }],
+    images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: "Coffee Brew Lab" }],
   },
-  twitter: { card: "summary_large_image", images: ["/og-image.png"] },
-  icons: {
-    icon: [
-      { url: "/favicon-32x32.png", sizes: "32x32" },
-      { url: "/favicon-16x16.png", sizes: "16x16" },
-    ],
-    shortcut: "/favicon.ico",
-    apple: "/apple-touch-icon.png",
-  },
+  twitter: { card: "summary_large_image", images: ["/opengraph-image"] },
 }
 
 export default function RootLayout({
