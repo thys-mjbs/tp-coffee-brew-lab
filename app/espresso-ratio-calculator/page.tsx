@@ -5,6 +5,7 @@ import { RelatedTools } from "@/components/tools/RelatedTools"
 import { Breadcrumb } from "@/components/layout/Breadcrumb"
 import { getToolBySlug, getRelatedTools } from "@/lib/tools"
 import { webApplicationSchema, faqSchema } from "@/lib/schema"
+import { ShareBar } from "@/components/ShareBar"
 
 const tool = getToolBySlug("espresso-ratio-calculator")!
 
@@ -75,6 +76,8 @@ export default function EspressoRatioCalculatorPage() {
         </div>
 
         <EspressoRatioCalculator />
+
+        <ShareBar title="Espresso Ratio Calculator — Coffee Brew Lab" url={`${process.env.NEXT_PUBLIC_APP_URL ?? "https://brewlab.coffee"}/espresso-ratio-calculator`} />
 
         <div className="mt-8">
           <AmazonLinks searchTerms={tool.amazonTerms} heading="Espresso gear worth the investment" />

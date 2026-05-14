@@ -5,6 +5,7 @@ import { RelatedTools } from "@/components/tools/RelatedTools"
 import { Breadcrumb } from "@/components/layout/Breadcrumb"
 import { getToolBySlug, getRelatedTools } from "@/lib/tools"
 import { webApplicationSchema, faqSchema } from "@/lib/schema"
+import { ShareBar } from "@/components/ShareBar"
 
 const tool = getToolBySlug("caffeine-calculator")!
 
@@ -71,6 +72,8 @@ export default function CaffeineCalculatorPage() {
         </div>
 
         <CaffeineCalculator />
+
+        <ShareBar title="Coffee Caffeine Calculator — Coffee Brew Lab" url={`${process.env.NEXT_PUBLIC_APP_URL ?? "https://brewlab.coffee"}/caffeine-calculator`} />
 
         <div className="mt-8">
           <AmazonLinks searchTerms={tool.amazonTerms} heading="Coffee for any caffeine need" />

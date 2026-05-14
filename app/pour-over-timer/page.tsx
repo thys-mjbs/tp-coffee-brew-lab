@@ -5,6 +5,7 @@ import { RelatedTools } from "@/components/tools/RelatedTools"
 import { Breadcrumb } from "@/components/layout/Breadcrumb"
 import { getToolBySlug, getRelatedTools } from "@/lib/tools"
 import { webApplicationSchema, faqSchema } from "@/lib/schema"
+import { ShareBar } from "@/components/ShareBar"
 
 const tool = getToolBySlug("pour-over-timer")!
 
@@ -71,6 +72,8 @@ export default function PourOverTimerPage() {
         </div>
 
         <PourOverTimer />
+
+        <ShareBar title="Pour Over Brew Timer — Coffee Brew Lab" url={`${process.env.NEXT_PUBLIC_APP_URL ?? "https://brewlab.coffee"}/pour-over-timer`} />
 
         <div className="mt-8">
           <AmazonLinks searchTerms={tool.amazonTerms} heading="Pour over gear" />

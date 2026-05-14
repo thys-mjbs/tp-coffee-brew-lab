@@ -5,6 +5,7 @@ import { RelatedTools } from "@/components/tools/RelatedTools"
 import { Breadcrumb } from "@/components/layout/Breadcrumb"
 import { getToolBySlug, getRelatedTools } from "@/lib/tools"
 import { webApplicationSchema, faqSchema } from "@/lib/schema"
+import { ShareBar } from "@/components/ShareBar"
 
 const tool = getToolBySlug("coffee-measurement-converter")!
 
@@ -72,6 +73,8 @@ export default function CoffeeMeasurementConverterPage() {
         </div>
 
         <CoffeeMeasurementConverter />
+
+        <ShareBar title="Coffee Measurement Converter — Coffee Brew Lab" url={`${process.env.NEXT_PUBLIC_APP_URL ?? "https://brewlab.coffee"}/coffee-measurement-converter`} />
 
         <div className="mt-8">
           <AmazonLinks searchTerms={tool.amazonTerms} heading="Make measuring easier" />

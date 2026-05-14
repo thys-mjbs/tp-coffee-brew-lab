@@ -5,6 +5,7 @@ import { RelatedTools } from "@/components/tools/RelatedTools"
 import { Breadcrumb } from "@/components/layout/Breadcrumb"
 import { getToolBySlug, getRelatedTools } from "@/lib/tools"
 import { webApplicationSchema, faqSchema } from "@/lib/schema"
+import { ShareBar } from "@/components/ShareBar"
 
 const tool = getToolBySlug("coffee-beans-per-cup")!
 
@@ -76,6 +77,8 @@ export default function CoffeeBeansPerCupPage() {
         </div>
 
         <CoffeeBeansPerCupCalculator />
+
+        <ShareBar title="Coffee Beans per Cup Calculator — Coffee Brew Lab" url={`${process.env.NEXT_PUBLIC_APP_URL ?? "https://brewlab.coffee"}/coffee-beans-per-cup`} />
 
         <div className="mt-8">
           <AmazonLinks searchTerms={tool.amazonTerms} heading="Grind your own beans" />

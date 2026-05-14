@@ -7,6 +7,7 @@ import { ToolRenderer } from "@/components/tools/ToolRenderer"
 import { getRelatedTools } from "@/lib/tools"
 import { faqSchema, breadcrumbSchema } from "@/lib/schema"
 import { getAllI18nParams, getI18nVariant } from "@/lib/i18nVariants"
+import { ShareBar } from "@/components/ShareBar"
 
 const appUrl = process.env.NEXT_PUBLIC_APP_URL ?? "https://brewlab.coffee"
 
@@ -79,6 +80,8 @@ export default async function LangToolPage(
         </div>
 
         <ToolRenderer slug={slug} />
+
+        <ShareBar title={`${variant.h1} — Coffee Brew Lab`} url={`${appUrl}/${lang}/${slug}`} />
 
         <section className="mt-12 space-y-6">
           <h2 className="text-lg font-semibold text-surface-800 dark:text-surface-100">
