@@ -16,7 +16,7 @@ const organizationSchema = {
   "@type": "Organization",
   name: "Coffee Brew Lab",
   url: appUrl,
-  logo: `${appUrl}/og-image.png`,
+  logo: `${appUrl}/apple-icon`,
   description: "Free coffee brewing calculators and ratio guides for every brew method.",
   contactPoint: { "@type": "ContactPoint", contactType: "customer support", url: `${appUrl}/contact` },
 }
