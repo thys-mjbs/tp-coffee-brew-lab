@@ -45,3 +45,13 @@
 - [ ] 7.3 Verify switcher on English tool page (shows es/pt/fr options)
 - [ ] 7.4 Verify switcher on locale page (shows EN + other locales)
 - [ ] 7.5 Verify switcher hidden on blog, about, contact, home (no locale variants)
+
+## Phase 8 — Tool UI translation (Spanish)
+- [x] 8.1 Create `lib/toolUiStrings.ts` with interfaces + ES strings for all 10 tools; update `ToolRenderer` + locale page to pass lang
+
+- [ ] 8.2 Update `CoffeeRatioCalculator` + `FrenchPressRatioCalculator` to use strings prop
+- [ ] 8.3 Update `InstantCoffeeCalculator` + `CoffeeBeansPerCupCalculator` to use strings prop
+- [ ] 8.4 Update `CoffeeMeasurementConverter` + `PourOverCalculator` to use strings prop
+- [ ] 8.5 Update `AeroPressRecipe` + `ColdBrewRatioCalculator` to use strings prop
+- [ ] 8.6 Update `CaffeineCalculator` + `EspressoRatioCalculator` to use strings prop
+- [ ] 8.7 TypeScript check + visual verification of all 10 tools in Spanish

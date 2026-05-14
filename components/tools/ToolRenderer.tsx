@@ -10,8 +10,10 @@ import { AeroPressRecipe } from "./AeroPressRecipe"
 import { ColdBrewRatioCalculator } from "./ColdBrewRatioCalculator"
 import { CaffeineCalculator } from "./CaffeineCalculator"
 import { EspressoRatioCalculator } from "./EspressoRatioCalculator"
+import { toolUiStrings } from "@/lib/toolUiStrings"
 
-const components: Record<string, React.ComponentType> = {
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const components: Record<string, React.ComponentType<any>> = {
   "coffee-ratio-calculator": CoffeeRatioCalculator,
   "french-press-ratio-calculator": FrenchPressRatioCalculator,
   "instant-coffee-calculator": InstantCoffeeCalculator,
@@ -24,8 +26,10 @@ const components: Record<string, React.ComponentType> = {
   "espresso-ratio-calculator": EspressoRatioCalculator,
 }
 
-export function ToolRenderer({ slug }: { slug: string }) {
+export function ToolRenderer({ slug, lang }: { slug: string; lang?: string }) {
   const Component = components[slug]
   if (!Component) return null
-  return <Component />
+  const langMap = lang && lang !== "en" ? toolUiStrings[lang] as Record<string, unknown> : undefined
+  const strings = langMap?.[slug]
+  return <Component strings={strings} />
 }

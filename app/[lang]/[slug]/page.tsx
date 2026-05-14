@@ -98,7 +98,7 @@ export default async function LangToolPage(
           </p>
         </div>
 
-        <ToolRenderer slug={slug} />
+        <ToolRenderer slug={slug} lang={lang} />
 
         <ShareBar title={`${variant.h1} – Coffee Brew Lab`} url={`${appUrl}/${lang}/${slug}`} labels={shareLabels[lang]} />
 
