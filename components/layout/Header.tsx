@@ -3,7 +3,7 @@ import { ThemeToggle } from "./ThemeToggle"
 
 const navLinks = [
   { href: "/", label: "All Tools" },
-  { href: "/blog", label: "Guides" },
+  { href: "/blog", label: "Blog" },
   { href: "/about", label: "About" },
 ]
 
@@ -41,7 +41,13 @@ export function Header() {
           ))}
         </nav>
 
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-3">
+          <Link
+            href="/blog"
+            className="text-sm font-medium text-surface-600 transition-colors hover:text-brand-600 dark:text-surface-400 dark:hover:text-brand-400 sm:hidden"
+          >
+            Blog
+          </Link>
           <ThemeToggle />
         </div>
       </div>

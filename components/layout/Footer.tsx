@@ -11,7 +11,7 @@ const toolLinks = [
 
 const siteLinks = [
   { href: "/about", label: "About" },
-  { href: "/blog", label: "Guides" },
+  { href: "/blog", label: "Blog" },
   { href: "/contact", label: "Contact" },
   { href: "/privacy", label: "Privacy Policy" },
   { href: "/terms", label: "Terms of Service" },
