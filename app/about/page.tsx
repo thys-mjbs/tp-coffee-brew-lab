@@ -33,7 +33,7 @@ export default function AboutPage() {
 
         <p>
           The site was built because the most useful coffee ratio information online is scattered
-          across brand websites, Reddit threads, and YouTube comments — none of which give you an
+          across brand websites, Reddit threads, and YouTube comments – none of which give you an
           interactive calculator that adjusts to your actual equipment and serving size. Coffee Brew
           Lab puts all of that in one place, organised by brew method, and usable in seconds.
         </p>

@@ -4,7 +4,7 @@ export default function Content() {
   return (
     <>
       <p>
-        The best grind size for moka pot is medium-fine — finer than drip coffee but
+        The best grind size for moka pot is medium-fine – finer than drip coffee but
         noticeably coarser than espresso. On most hand grinders, that is around 20-25 clicks
         from zero. On a Baratza Encore, settings 10-14 work well. A fine espresso grind
         causes the moka pot to over-extract, build dangerous pressure, and produce bitter,
@@ -12,8 +12,8 @@ export default function Content() {
         watery result.
       </p>
       <p>
-        Getting the grind right solves most moka pot problems. The other issues — bitterness,
-        weak coffee, gurgling, and grounds in the cup — almost all trace back to grind size
+        Getting the grind right solves most moka pot problems. The other issues – bitterness,
+        weak coffee, gurgling, and grounds in the cup – almost all trace back to grind size
         or one of the five mistakes below.
       </p>
 
@@ -24,7 +24,7 @@ export default function Content() {
         <li><strong>1Zpresso JX-Pro:</strong> 2.5 to 3.5 (outer dial)</li>
         <li><strong>Timemore C2:</strong> 18-24 clicks from zero</li>
         <li><strong>Hario Skerton / Mini Mill:</strong> 3-5 clicks from finger-tight</li>
-        <li><strong>Pre-ground filter coffee:</strong> Too coarse — buy specifically labelled "moka pot" grind or espresso grind if pre-ground is the only option</li>
+        <li><strong>Pre-ground filter coffee:</strong> Too coarse – buy specifically labelled "moka pot" grind or espresso grind if pre-ground is the only option</li>
       </ul>
       <p>
         The{" "}
@@ -39,7 +39,7 @@ export default function Content() {
       <ul>
         <li>
           <strong>Grinding too fine.</strong> The most common cause of bitter, harsh moka
-          pot coffee and the main safety risk — a fine grind restricts flow and causes
+          pot coffee and the main safety risk – a fine grind restricts flow and causes
           pressure to build beyond the safety valve's design. Medium-fine is the target.
           If the plunger on your moka pot ever spurts suddenly or the valve releases steam
           loudly, the grind is too fine.
@@ -48,13 +48,13 @@ export default function Content() {
           <strong>Packing the grounds.</strong> Never tamp or compress the grounds in the
           basket. Unlike espresso, the moka pot forces water through with steam pressure, not
           a pump. A compressed puck restricts flow severely. Fill the basket level and brush
-          off the excess — that is all.
+          off the excess – that is all.
         </li>
         <li>
           <strong>Starting with cold water in the base.</strong> Cold water means the bottom
           of the pot sits on heat for longer before brewing starts, scorching the coffee
           basket before extraction begins. Start with pre-boiled or very hot water from the
-          kettle in the base — this shortens heat time and reduces bitter, burnt notes.
+          kettle in the base – this shortens heat time and reduces bitter, burnt notes.
         </li>
         <li>
           <strong>Using high heat.</strong> High heat causes the brew to rush through too
@@ -66,13 +66,13 @@ export default function Content() {
           <strong>Letting it boil dry.</strong> Once the upper chamber is full and you hear
           the gurgling, bubbling sound, remove it from heat immediately. Leaving it on while
           empty scorches the residual coffee and produces a bitter, acrid finish. Move quickly
-          — the transition from full to overcooked happens in under 30 seconds.
+          – the transition from full to overcooked happens in under 30 seconds.
         </li>
       </ul>
 
       <h2>Moka pot coffee to water ratio</h2>
       <p>
-        The moka pot basket determines your dose — fill it level, no more. Water fills the
+        The moka pot basket determines your dose – fill it level, no more. Water fills the
         base up to the safety valve, not above it. The ratio is determined by your pot's
         design, not a variable you control directly. Most 3-cup moka pots use around 15-18g
         of coffee to 100ml of water; 6-cup pots use 28-32g to 200ml.
@@ -95,7 +95,7 @@ export default function Content() {
       <p>
         If the coffee is still bitter after fixing grind and technique, the pot itself may
         have coffee oil buildup. Wash the basket, gasket, and filter plate with warm water
-        and a soft brush. Avoid soap in the upper chamber — it strips the seasoning that
+        and a soft brush. Avoid soap in the upper chamber – it strips the seasoning that
         reduces metallic taste over time.
       </p>
 
@@ -103,7 +103,7 @@ export default function Content() {
       <p>
         A correctly set-up moka pot brewing on medium-low heat takes 4-6 minutes from cold
         or 3-4 minutes if you start with hot water in the base. The coffee should rise into
-        the upper chamber in a slow, even stream — not a sudden spurt (too fine or too hot)
+        the upper chamber in a slow, even stream – not a sudden spurt (too fine or too hot)
         and not a thin drip that takes over 8 minutes (too coarse or too low a heat).
       </p>
       <p>

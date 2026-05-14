@@ -7,7 +7,7 @@ export default function Content() {
         The most common question in home coffee brewing is also the most practical:
         how many coffee grounds per cup? The answer depends on your brew method,
         but there is a standard starting point that works across almost every filter
-        method — the Golden Ratio.
+        method – the Golden Ratio.
       </p>
       <p>
         The Specialty Coffee Association (SCA) defines the Golden Ratio as <strong>55 grams
@@ -45,7 +45,7 @@ export default function Content() {
       </p>
       <p>
         Most drip machines measure in "cups" of 6 fluid ounces (180ml), not the standard
-        250ml cup — so a "12-cup" machine produces about 2.1 litres, not 3 litres. Always
+        250ml cup – so a "12-cup" machine produces about 2.1 litres, not 3 litres. Always
         check your machine's actual brew volume before calculating. The{" "}
         <Link href="/coffee-ratio-calculator" className="text-brand-600 hover:text-brand-700 dark:text-brand-400 dark:hover:text-brand-300 underline underline-offset-2">
           Coffee-to-Water Ratio Calculator
@@ -58,14 +58,14 @@ export default function Content() {
         A ratio scales to any brew volume. Whether you are making a single 200ml cup or a
         2-litre batch, the same 1:15 ratio produces the same flavour intensity. Absolute
         amounts like "use 3 tablespoons" only work for one specific cup size. The ratio
-        adapts automatically — once you know your preferred ratio, you can calculate any
+        adapts automatically – once you know your preferred ratio, you can calculate any
         brew volume instantly.
       </p>
 
       <h2>How many grams of coffee per cup by method</h2>
       <p>
         Different brew methods use different ratios because they extract at different rates.
-        These are standard starting ranges — adjust toward your preference from there:
+        These are standard starting ranges – adjust toward your preference from there:
       </p>
       <ul>
         <li><strong>Pour over (V60, Chemex, Kalita):</strong> 14-17g per 250ml cup (1:15 to 1:17)</li>

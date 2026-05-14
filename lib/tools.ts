@@ -16,7 +16,7 @@ export const tools: Tool[] = [
     title: "Coffee-to-Water Ratio Calculator",
     shortTitle: "Ratio Calculator",
     description:
-      "Calculate exactly how much ground coffee to use per cup, per pot, or per litre — in grams, tablespoons, or scoops. Works for any drip or filter method.",
+      "Calculate exactly how much ground coffee to use per cup, per pot, or per litre – in grams, tablespoons, or scoops. Works for any drip or filter method.",
     category: "ratio",
     amazonTerms: ["coffee scale", "coffee measuring scoop", "drip coffee maker"],
     relatedSlugs: ["french-press-ratio-calculator", "coffee-measurement-converter", "coffee-beans-per-cup", "pour-over-calculator"],
@@ -86,7 +86,7 @@ export const tools: Tool[] = [
     title: "Cold Brew Ratio Calculator",
     shortTitle: "Cold Brew Ratio",
     description:
-      "Calculate the right coffee-to-water ratio for cold brew — whether you want a concentrate (1:4) or ready-to-drink (1:8). Works for French press, mason jar, and dedicated brewers.",
+      "Calculate the right coffee-to-water ratio for cold brew – whether you want a concentrate (1:4) or ready-to-drink (1:8). Works for French press, mason jar, and dedicated brewers.",
     category: "ratio",
     amazonTerms: ["cold brew coffee maker", "cold brew pitcher", "wide mouth mason jar"],
     relatedSlugs: ["cold-brew-recipe", "french-press-ratio-calculator", "coffee-ratio-calculator", "iced-coffee-at-home"],
@@ -146,7 +146,7 @@ export const tools: Tool[] = [
     title: "Coffee Troubleshooter",
     shortTitle: "Troubleshooter",
     description:
-      "Is your coffee too bitter, too sour, too weak, or too strong? Answer a few questions about your brew and get a specific fix — grind, ratio, temperature, or technique.",
+      "Is your coffee too bitter, too sour, too weak, or too strong? Answer a few questions about your brew and get a specific fix – grind, ratio, temperature, or technique.",
     category: "guide",
     amazonTerms: ["burr coffee grinder", "coffee scale", "water filter for coffee"],
     relatedSlugs: ["grind-size-guide", "espresso-dial-in", "coffee-ratio-calculator", "french-press-timer"],
@@ -226,7 +226,7 @@ export const tools: Tool[] = [
     title: "Coffee Bloom Timer",
     shortTitle: "Bloom Timer",
     description:
-      "A dedicated timer for the coffee bloom (pre-infusion). Set your bloom time — typically 30 to 45 seconds — get an alert, then continue your pour. Works for V60, Chemex, Kalita, and AeroPress.",
+      "A dedicated timer for the coffee bloom (pre-infusion). Set your bloom time – typically 30 to 45 seconds – get an alert, then continue your pour. Works for V60, Chemex, Kalita, and AeroPress.",
     category: "timer",
     amazonTerms: ["gooseneck kettle", "v60 pour over set", "coffee scale with timer"],
     relatedSlugs: ["pour-over-timer", "pour-over-calculator", "aeropress-timer", "french-press-timer"],

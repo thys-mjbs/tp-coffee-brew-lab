@@ -10,7 +10,7 @@ import { ShareBar } from "@/components/ShareBar"
 const tool = getToolBySlug("coffee-troubleshooter")!
 
 export const metadata: Metadata = {
-  title: "Coffee Troubleshooter â€” Fix Bitter, Sour, or Weak Coffee",
+  title: "Coffee Troubleshooter – Fix Bitter, Sour, or Weak Coffee",
   description:
     "Answer a few questions about your brew and get a specific fix for bitter, sour, weak, or strong coffee. Covers espresso, pour over, French press, and AeroPress.",
   alternates: { canonical: `${process.env.NEXT_PUBLIC_APP_URL ?? "https://brewlab.coffee"}/coffee-troubleshooter` },
@@ -81,7 +81,7 @@ export default function CoffeeTroubleshooterPage() {
 
         <CoffeeTroubleshooter />
 
-        <ShareBar title="Coffee Troubleshooter — Coffee Brew Lab" url={`${process.env.NEXT_PUBLIC_APP_URL ?? "https://brewlab.coffee"}/coffee-troubleshooter`} />
+        <ShareBar title="Coffee Troubleshooter – Coffee Brew Lab" url={`${process.env.NEXT_PUBLIC_APP_URL ?? "https://brewlab.coffee"}/coffee-troubleshooter`} />
 
         <div className="mt-8">
           <AmazonLinks searchTerms={tool.amazonTerms} heading="Gear that helps dial in your brew" />

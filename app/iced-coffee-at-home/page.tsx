@@ -10,9 +10,9 @@ import { ShareBar } from "@/components/ShareBar"
 const tool = getToolBySlug("iced-coffee-at-home")!
 
 export const metadata: Metadata = {
-  title: "Iced Coffee at Home â€” Flash Brew, Cold Brew, Shaken Espresso and Coffee Ice Cubes",
+  title: "Iced Coffee at Home – Flash Brew, Cold Brew, Shaken Espresso and Coffee Ice Cubes",
   description:
-    "Make iced coffee at home four different ways. Select your method and cup size to get exact amounts and step-by-step instructions â€” flash brew, cold brew dilution, shaken espresso, or coffee ice cubes.",
+    "Make iced coffee at home four different ways. Select your method and cup size to get exact amounts and step-by-step instructions – flash brew, cold brew dilution, shaken espresso, or coffee ice cubes.",
   alternates: { canonical: `${process.env.NEXT_PUBLIC_APP_URL ?? "https://brewlab.coffee"}/iced-coffee-at-home` },
   openGraph: {
     title: "Iced Coffee at Home Guide",
@@ -40,7 +40,7 @@ const faqs = [
   },
   {
     q: "What is the difference between cold brew and iced coffee?",
-    a: "Cold brew is made by steeping coarse-ground coffee in cold water for 12-18 hours with no heat. It produces a smooth, low-acid concentrate with a naturally sweet flavour. Iced coffee is brewed hot (using a pour-over, drip machine, or espresso machine) and then chilled. Hot-brewed methods are faster and highlight more bright, acidic flavours. Cold brew is smoother and more forgiving. Neither is better overall â€” they produce genuinely different tasting results.",
+    a: "Cold brew is made by steeping coarse-ground coffee in cold water for 12-18 hours with no heat. It produces a smooth, low-acid concentrate with a naturally sweet flavour. Iced coffee is brewed hot (using a pour-over, drip machine, or espresso machine) and then chilled. Hot-brewed methods are faster and highlight more bright, acidic flavours. Cold brew is smoother and more forgiving. Neither is better overall – they produce genuinely different tasting results.",
   },
   {
     q: "How do you make a shaken espresso at home?",
@@ -81,7 +81,7 @@ export default function IcedCoffeeAtHomePage() {
 
         <IcedCoffeeAtHome />
 
-        <ShareBar title="Iced Coffee at Home Guide — Coffee Brew Lab" url={`${process.env.NEXT_PUBLIC_APP_URL ?? "https://brewlab.coffee"}/iced-coffee-at-home`} />
+        <ShareBar title="Iced Coffee at Home Guide – Coffee Brew Lab" url={`${process.env.NEXT_PUBLIC_APP_URL ?? "https://brewlab.coffee"}/iced-coffee-at-home`} />
 
         <div className="mt-8">
           <AmazonLinks searchTerms={tool.amazonTerms} heading="Iced coffee equipment" />

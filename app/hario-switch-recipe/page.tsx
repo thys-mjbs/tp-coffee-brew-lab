@@ -10,7 +10,7 @@ import { ShareBar } from "@/components/ShareBar"
 const tool = getToolBySlug("hario-switch-recipe")!
 
 export const metadata: Metadata = {
-  title: "Hario Switch Recipe Calculator â€” Immersion and Drip Methods",
+  title: "Hario Switch Recipe Calculator – Immersion and Drip Methods",
   description:
     "Recipes and water amounts for the Hario Immersion Switch. Classic immersion, James Hoffmann, light roast, and bold methods with step-by-step instructions.",
   alternates: { canonical: `${process.env.NEXT_PUBLIC_APP_URL ?? "https://brewlab.coffee"}/hario-switch-recipe` },
@@ -73,7 +73,7 @@ export default function HarioSwitchRecipePage() {
 
         <HarioSwitchRecipe />
 
-        <ShareBar title="Hario Switch Recipe Calculator — Coffee Brew Lab" url={`${process.env.NEXT_PUBLIC_APP_URL ?? "https://brewlab.coffee"}/hario-switch-recipe`} />
+        <ShareBar title="Hario Switch Recipe Calculator – Coffee Brew Lab" url={`${process.env.NEXT_PUBLIC_APP_URL ?? "https://brewlab.coffee"}/hario-switch-recipe`} />
 
         <div className="mt-8">
           <AmazonLinks searchTerms={tool.amazonTerms} heading="Hario Switch essentials" />

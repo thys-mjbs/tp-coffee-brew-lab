@@ -10,7 +10,7 @@ import { ShareBar } from "@/components/ShareBar"
 const tool = getToolBySlug("grind-size-guide")!
 
 export const metadata: Metadata = {
-  title: "Coffee Grind Size Guide â€” Settings for Every Method and Grinder",
+  title: "Coffee Grind Size Guide – Settings for Every Method and Grinder",
   description:
     "Find the right grind size for espresso, V60, French press, AeroPress, cold brew, and moka pot. Includes reference settings for Baratza, Breville, Comandante, 1Zpresso, and Timemore grinders.",
   alternates: { canonical: `${process.env.NEXT_PUBLIC_APP_URL ?? "https://brewlab.coffee"}/grind-size-guide` },
@@ -82,7 +82,7 @@ export default function GrindSizeGuidePage() {
 
         <GrindSizeGuide />
 
-        <ShareBar title="Coffee Grind Size Guide — Coffee Brew Lab" url={`${process.env.NEXT_PUBLIC_APP_URL ?? "https://brewlab.coffee"}/grind-size-guide`} />
+        <ShareBar title="Coffee Grind Size Guide – Coffee Brew Lab" url={`${process.env.NEXT_PUBLIC_APP_URL ?? "https://brewlab.coffee"}/grind-size-guide`} />
 
         <div className="mt-8">
           <AmazonLinks searchTerms={tool.amazonTerms} heading="Grinders worth considering" />
@@ -112,7 +112,7 @@ export default function GrindSizeGuidePage() {
           </p>
           <p>
             The settings in this guide apply to burr grinders only. If you are using a blade grinder,
-            the main thing grind size does is change the ratio of fine to coarse â€” a shorter blend produces
+            the main thing grind size does is change the ratio of fine to coarse – a shorter blend produces
             more large chunks, a longer blend produces more fine dust. Neither is as consistent as a burr grinder at any setting.
           </p>
         </article>

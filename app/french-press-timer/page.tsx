@@ -10,13 +10,13 @@ import { ShareBar } from "@/components/ShareBar"
 const tool = getToolBySlug("french-press-timer")!
 
 export const metadata: Metadata = {
-  title: "French Press Brew Timer â€” How Long to Steep French Press Coffee",
+  title: "French Press Brew Timer – How Long to Steep French Press Coffee",
   description:
     "A step-by-step French press timer with bloom and steep countdown. Select your steep time, press Start, and get prompted through each stage of the brew.",
   alternates: { canonical: `${process.env.NEXT_PUBLIC_APP_URL ?? "https://brewlab.coffee"}/french-press-timer` },
   openGraph: {
     title: "French Press Brew Timer",
-    description: "How long should you steep French press coffee? Use the timer â€” bloom + steep with step-by-step prompts.",
+    description: "How long should you steep French press coffee? Use the timer – bloom + steep with step-by-step prompts.",
     type: "website",
   },
 }
@@ -28,23 +28,23 @@ const faqs = [
   },
   {
     q: "What is the bloom phase in French press brewing?",
-    a: "The bloom is a 30-second pre-infusion where you pour a small amount of water â€” typically two times the weight of your coffee â€” over the grounds before adding the rest. The hot water releases trapped CO2 from the grounds (visible as bubbling or rising), which improves even extraction during the full steep. Fresher beans produce a more visible bloom. This timer handles the bloom automatically before starting the steep countdown.",
+    a: "The bloom is a 30-second pre-infusion where you pour a small amount of water – typically two times the weight of your coffee – over the grounds before adding the rest. The hot water releases trapped CO2 from the grounds (visible as bubbling or rising), which improves even extraction during the full steep. Fresher beans produce a more visible bloom. This timer handles the bloom automatically before starting the steep countdown.",
   },
   {
     q: "Should I stir French press coffee during steeping?",
-    a: "A gentle stir immediately after the bloom pour helps ensure all grounds are saturated. After that, do not stir during the steep â€” disturbing the grounds increases fine particle migration into the cup and can cause over-extraction. Let the grounds sit undisturbed until the steep timer completes, then press slowly.",
+    a: "A gentle stir immediately after the bloom pour helps ensure all grounds are saturated. After that, do not stir during the steep – disturbing the grounds increases fine particle migration into the cup and can cause over-extraction. Let the grounds sit undisturbed until the steep timer completes, then press slowly.",
   },
   {
     q: "Why should you pour French press coffee immediately after pressing?",
-    a: "Even after pressing, the coffee grounds are still in contact with the hot liquid. Leaving the pressed coffee in the French press continues extraction â€” within a few minutes the cup becomes more bitter and astringent. Pour into cups or a separate carafe immediately after plunging. If you are not serving all the coffee at once, decant it into a thermos or carafe to stop extraction.",
+    a: "Even after pressing, the coffee grounds are still in contact with the hot liquid. Leaving the pressed coffee in the French press continues extraction – within a few minutes the cup becomes more bitter and astringent. Pour into cups or a separate carafe immediately after plunging. If you are not serving all the coffee at once, decant it into a thermos or carafe to stop extraction.",
   },
   {
     q: "What happens if I steep French press too long?",
-    a: "Over-steeping causes over-extraction â€” the coffee pulls more of the bitter, astringent compounds that extract last. The cup becomes harsh and tannic, similar to tea that has been steeped too long. If you regularly find your French press bitter, try reducing steep time to three and a half minutes before adjusting grind size or ratio.",
+    a: "Over-steeping causes over-extraction – the coffee pulls more of the bitter, astringent compounds that extract last. The cup becomes harsh and tannic, similar to tea that has been steeped too long. If you regularly find your French press bitter, try reducing steep time to three and a half minutes before adjusting grind size or ratio.",
   },
   {
     q: "Does French press need a bloom?",
-    a: "Technically no â€” French press will brew without a separate bloom step. But adding a 30-second bloom with a small amount of water before filling produces a more even extraction because it pre-saturates the grounds and releases CO2. The improvement is most noticeable with fresh specialty beans. For older or commercial coffee, the difference is less pronounced but still worth the extra 30 seconds.",
+    a: "Technically no – French press will brew without a separate bloom step. But adding a 30-second bloom with a small amount of water before filling produces a more even extraction because it pre-saturates the grounds and releases CO2. The improvement is most noticeable with fresh specialty beans. For older or commercial coffee, the difference is less pronounced but still worth the extra 30 seconds.",
   },
   {
     q: "What water temperature is best for French press?",
@@ -77,7 +77,7 @@ export default function FrenchPressTimerPage() {
 
         <FrenchPressTimer />
 
-        <ShareBar title="French Press Brew Timer and Guide — Coffee Brew Lab" url={`${process.env.NEXT_PUBLIC_APP_URL ?? "https://brewlab.coffee"}/french-press-timer`} />
+        <ShareBar title="French Press Brew Timer and Guide – Coffee Brew Lab" url={`${process.env.NEXT_PUBLIC_APP_URL ?? "https://brewlab.coffee"}/french-press-timer`} />
 
         <div className="mt-8">
           <AmazonLinks searchTerms={tool.amazonTerms} heading="French press gear" />
@@ -91,7 +91,7 @@ export default function FrenchPressTimerPage() {
           <p>
             The most common question about French press is how long to let it steep. Four minutes
             is the widely recommended answer, and it is a reliable starting point. But steep time
-            is not fixed â€” it interacts with grind size, water temperature, and dose. A coarser
+            is not fixed – it interacts with grind size, water temperature, and dose. A coarser
             grind at the same steep time produces a weaker cup than a standard grind; a longer
             steep compensates. A finer grind (unusual for French press but sometimes used) extracts
             faster and may need only three to three and a half minutes.
@@ -108,14 +108,14 @@ export default function FrenchPressTimerPage() {
           </h2>
           <p>
             This timer uses a two-stage process: a 30-second bloom followed by the main steep.
-            During the bloom, a small amount of water saturates the grounds and releases CO2 gas â€”
+            During the bloom, a small amount of water saturates the grounds and releases CO2 gas –
             the fizzing or rising you see on the surface. This degassing is important because CO2
             interferes with extraction; releasing it early means the main steep extracts more
             evenly and completely.
           </p>
           <p>
             After the bloom, pour the remaining water to your target amount and leave it
-            undisturbed for the full steep. The timer handles the transition automatically â€” you
+            undisturbed for the full steep. The timer handles the transition automatically – you
             will see the phase change from Bloom to Steeping at the 30-second mark.
           </p>
 

@@ -19,13 +19,13 @@ export default function Content() {
       <p>
         In the standard AeroPress position, water begins draining through the filter the
         moment you add it. This means the first water in has a shorter contact time than
-        the last water in — an uneven extraction by design. The inverted position solves
+        the last water in – an uneven extraction by design. The inverted position solves
         this: nothing drains until you flip and press, so every gram of water steeps for
         exactly the same amount of time.
       </p>
       <p>
         The result is a more controlled brew with a fuller, cleaner body. You also get a
-        proper bloom — the carbon dioxide trapped in fresh coffee grounds has time to escape
+        proper bloom – the carbon dioxide trapped in fresh coffee grounds has time to escape
         before the main extraction begins.
       </p>
 
@@ -66,7 +66,7 @@ export default function Content() {
         <li>
           <strong>Flip and press:</strong> Place your mug on top of the filter cap, flip
           the whole assembly in one smooth motion, and press slowly over 20-30 seconds.
-          Stop pressing when you hear a hiss — that is the air piston reaching the grounds.
+          Stop pressing when you hear a hiss – that is the air piston reaching the grounds.
         </li>
       </ul>
       <p>
@@ -83,7 +83,7 @@ export default function Content() {
         a longer steep, a stir before pressing, and a slower press for clarity.
       </p>
       <ul>
-        <li><strong>Coffee:</strong> 11g (finer grind — nearly espresso-fine)</li>
+        <li><strong>Coffee:</strong> 11g (finer grind – nearly espresso-fine)</li>
         <li><strong>Water:</strong> 200g at 100°C (boiling water works well here)</li>
         <li><strong>Ratio:</strong> approximately 1:18</li>
         <li><strong>Steep time:</strong> 2:00 minutes</li>
@@ -101,7 +101,7 @@ export default function Content() {
         The standard method starts with the AeroPress in its normal orientation (plunger
         up, filter at the bottom). Water drains as it is added, limiting effective steep
         time and requiring you to press before the brew is complete. The inverted method
-        gives you full immersion — every gram of water in contact with the grounds for
+        gives you full immersion – every gram of water in contact with the grounds for
         the full steep duration.
       </p>
       <p>
@@ -128,7 +128,7 @@ export default function Content() {
       <h2>How long to steep in the inverted AeroPress?</h2>
       <p>
         For most inverted AeroPress recipes: steep for 1:30 to 2:00 minutes total (including
-        the 30-second bloom). Fine grinds extract faster — if your grind is closer to
+        the 30-second bloom). Fine grinds extract faster – if your grind is closer to
         espresso-fine, 1:00 to 1:15 minutes is enough. Coarser grinds need longer contact
         time to reach the same extraction.
       </p>

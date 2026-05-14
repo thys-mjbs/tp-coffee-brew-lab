@@ -10,7 +10,7 @@ import { ShareBar } from "@/components/ShareBar"
 const tool = getToolBySlug("french-press-ratio-calculator")!
 
 export const metadata: Metadata = {
-  title: "French Press Ratio Calculator â€” Grams and Tablespoons for Any Press Size",
+  title: "French Press Ratio Calculator – Grams and Tablespoons for Any Press Size",
   description:
     "Get the exact coffee-to-water ratio for your French press. Choose your press size and strength, and get your dose in grams, tablespoons, and scoops instantly.",
   alternates: { canonical: `${process.env.NEXT_PUBLIC_APP_URL ?? "https://brewlab.coffee"}/french-press-ratio-calculator` },
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: "What is the best coffee-to-water ratio for French press?",
-    a: "A ratio of 1:15 (1g of coffee per 15ml of water) is the most popular starting point for French press and gives a balanced, full-bodied cup. For a richer result, move to 1:13. For something lighter and cleaner, try 1:17. The standard 8-cup (1 litre) press needs about 67g of coffee at 1:15 â€” roughly 9.5 tablespoons of coarsely ground coffee.",
+    a: "A ratio of 1:15 (1g of coffee per 15ml of water) is the most popular starting point for French press and gives a balanced, full-bodied cup. For a richer result, move to 1:13. For something lighter and cleaner, try 1:17. The standard 8-cup (1 litre) press needs about 67g of coffee at 1:15 – roughly 9.5 tablespoons of coarsely ground coffee.",
   },
   {
     q: "How many tablespoons of coffee do I use for a French press?",
@@ -32,11 +32,11 @@ const faqs = [
   },
   {
     q: "How long should I steep French press coffee?",
-    a: "Four minutes is the standard steep time for French press and works well for most grind sizes and roast levels. If your coffee tastes bitter, try 3 minutes or a coarser grind. If it tastes weak or sour, try 4.5 minutes or a slightly finer grind. Do not leave the plunger down after pressing â€” once pressed, pour the coffee into cups or a carafe to stop extraction.",
+    a: "Four minutes is the standard steep time for French press and works well for most grind sizes and roast levels. If your coffee tastes bitter, try 3 minutes or a coarser grind. If it tastes weak or sour, try 4.5 minutes or a slightly finer grind. Do not leave the plunger down after pressing – once pressed, pour the coffee into cups or a carafe to stop extraction.",
   },
   {
     q: "What grind size should I use for French press?",
-    a: "French press requires a coarse grind, roughly the texture of coarse sea salt or raw sugar. A finer grind passes through the metal mesh filter, making the coffee muddy and over-extracted. If you notice a thick layer of sludge at the bottom of your cup, your grind is too fine. Most burr grinders have a dedicated French press setting â€” for Baratza Encore users, setting 28 to 32 is a reliable starting point.",
+    a: "French press requires a coarse grind, roughly the texture of coarse sea salt or raw sugar. A finer grind passes through the metal mesh filter, making the coffee muddy and over-extracted. If you notice a thick layer of sludge at the bottom of your cup, your grind is too fine. Most burr grinders have a dedicated French press setting – for Baratza Encore users, setting 28 to 32 is a reliable starting point.",
   },
   {
     q: "Does the French press ratio differ from drip coffee?",
@@ -44,15 +44,15 @@ const faqs = [
   },
   {
     q: "How much coffee do I need for a 1 litre French press?",
-    a: "A 1 litre (8-cup) French press needs approximately 67g of coffee at a 1:15 ratio â€” about 9.5 tablespoons or 4.8 standard scoops of coarsely ground coffee. At a stronger 1:13 ratio, that rises to about 77g (11 tablespoons). Use the calculator above to get the exact amount for your preferred strength.",
+    a: "A 1 litre (8-cup) French press needs approximately 67g of coffee at a 1:15 ratio – about 9.5 tablespoons or 4.8 standard scoops of coarsely ground coffee. At a stronger 1:13 ratio, that rises to about 77g (11 tablespoons). Use the calculator above to get the exact amount for your preferred strength.",
   },
   {
     q: "Why does my French press coffee taste bitter?",
-    a: "Bitterness in French press almost always comes from over-extraction â€” the grind is too fine, the steep time is too long, or both. Try a coarser grind first (this is the most common fix), then reduce steep time to 3.5 minutes if bitterness persists. Water that is too hot (above 96C / 205F) can also cause bitterness â€” let boiling water rest for 30 seconds before pouring.",
+    a: "Bitterness in French press almost always comes from over-extraction – the grind is too fine, the steep time is too long, or both. Try a coarser grind first (this is the most common fix), then reduce steep time to 3.5 minutes if bitterness persists. Water that is too hot (above 96C / 205F) can also cause bitterness – let boiling water rest for 30 seconds before pouring.",
   },
   {
     q: "Can I use the same ratio for cold brew in a French press?",
-    a: "No. Cold brew uses a much higher ratio â€” typically 1:4 (concentrate) to 1:8 (ready-to-drink) â€” because cold water extracts coffee very slowly over 12 to 24 hours. Using a standard 1:15 French press ratio for cold brew will produce an extremely weak result. Use the Cold Brew Ratio Calculator for cold brew-specific measurements.",
+    a: "No. Cold brew uses a much higher ratio – typically 1:4 (concentrate) to 1:8 (ready-to-drink) – because cold water extracts coffee very slowly over 12 to 24 hours. Using a standard 1:15 French press ratio for cold brew will produce an extremely weak result. Use the Cold Brew Ratio Calculator for cold brew-specific measurements.",
   },
 ]
 
@@ -76,7 +76,7 @@ export default function FrenchPressRatioCalculatorPage() {
           </h1>
           <p className="mt-3 text-base text-surface-600 dark:text-surface-300 leading-relaxed">
             Select your press size and strength preference to get the exact amount of coarsely ground
-            coffee you need â€” in grams, tablespoons, and scoops.
+            coffee you need – in grams, tablespoons, and scoops.
           </p>
         </div>
 
@@ -84,7 +84,7 @@ export default function FrenchPressRatioCalculatorPage() {
         <FrenchPressRatioCalculator />
 
         {/* â”€â”€ Affiliate â”€â”€ */}
-        <ShareBar title="French Press Ratio Calculator — Coffee Brew Lab" url={`${process.env.NEXT_PUBLIC_APP_URL ?? "https://brewlab.coffee"}/french-press-ratio-calculator`} />
+        <ShareBar title="French Press Ratio Calculator – Coffee Brew Lab" url={`${process.env.NEXT_PUBLIC_APP_URL ?? "https://brewlab.coffee"}/french-press-ratio-calculator`} />
 
         <div className="mt-8">
           <AmazonLinks
@@ -102,13 +102,13 @@ export default function FrenchPressRatioCalculatorPage() {
           <p>
             The short answer: 1g of coffee per 15ml of water (a 1:15 ratio) is the most common and
             reliable starting point. For a standard 500ml press, that works out to about 33g of
-            coarsely ground coffee â€” roughly 4.7 tablespoons or 2.4 standard scoops. For a full
+            coarsely ground coffee – roughly 4.7 tablespoons or 2.4 standard scoops. For a full
             1 litre press, you need about 67g (9.5 tablespoons). These are the numbers the
             calculator uses for its Medium setting.
           </p>
           <p>
-            French press uses immersion brewing â€” the grounds sit in the water for the entire steep
-            â€” which makes it more forgiving than drip but also more sensitive to grind size. Too
+            French press uses immersion brewing – the grounds sit in the water for the entire steep
+            – which makes it more forgiving than drip but also more sensitive to grind size. Too
             fine a grind and coffee passes through the mesh filter into your cup; too coarse and the
             coffee under-extracts and tastes thin. A coarse, even grind (burr grinders deliver this
             much better than blade grinders) lets you dial in the ratio with precision.

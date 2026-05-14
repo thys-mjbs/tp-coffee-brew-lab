@@ -10,7 +10,7 @@ import { ShareBar } from "@/components/ShareBar"
 const tool = getToolBySlug("cold-brew-ratio-calculator")!
 
 export const metadata: Metadata = {
-  title: "Cold Brew Ratio Calculator â€” Concentrate and Ready-to-Drink",
+  title: "Cold Brew Ratio Calculator – Concentrate and Ready-to-Drink",
   description:
     "Calculate the right coffee-to-water ratio for cold brew. Choose concentrate (1:4) or ready-to-drink (1:8), enter your water amount, and get the exact coffee dose.",
   alternates: { canonical: `${process.env.NEXT_PUBLIC_APP_URL ?? "https://brewlab.coffee"}/cold-brew-ratio-calculator` },
@@ -24,19 +24,19 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: "What is the best ratio for cold brew coffee?",
-    a: "There are two standard cold brew ratios depending on how you plan to drink it. For a concentrate (to be diluted before drinking): 1:4 â€” 1g of coffee per 4ml of water, or 250g per litre. For ready-to-drink cold brew: 1:8 â€” 1g of coffee per 8ml of water, or 125g per litre. The concentrate is stronger and keeps longer; it is diluted 50/50 with water, milk, or oat milk before serving.",
+    a: "There are two standard cold brew ratios depending on how you plan to drink it. For a concentrate (to be diluted before drinking): 1:4 – 1g of coffee per 4ml of water, or 250g per litre. For ready-to-drink cold brew: 1:8 – 1g of coffee per 8ml of water, or 125g per litre. The concentrate is stronger and keeps longer; it is diluted 50/50 with water, milk, or oat milk before serving.",
   },
   {
     q: "How long should cold brew steep?",
-    a: "Twelve to twenty-four hours in the refrigerator is the standard range. Twelve hours produces a lighter, slightly brighter cup. Twenty to twenty-four hours gives a richer, heavier body. Do not steep at room temperature for more than twelve hours â€” the warmer environment accelerates extraction and can produce sour or fermented off-notes. Always steep cold brew in the refrigerator.",
+    a: "Twelve to twenty-four hours in the refrigerator is the standard range. Twelve hours produces a lighter, slightly brighter cup. Twenty to twenty-four hours gives a richer, heavier body. Do not steep at room temperature for more than twelve hours – the warmer environment accelerates extraction and can produce sour or fermented off-notes. Always steep cold brew in the refrigerator.",
   },
   {
     q: "What grind size is best for cold brew?",
-    a: "Coarse grind â€” similar to coarse sea salt or raw sugar â€” is ideal for cold brew. Cold water extracts coffee much more slowly than hot water, so the extended steep time compensates for the coarser grind. A finer grind increases surface area and can lead to over-extraction after 12 to 24 hours, producing a bitter or astringent result. It also makes the final strain much harder.",
+    a: "Coarse grind – similar to coarse sea salt or raw sugar – is ideal for cold brew. Cold water extracts coffee much more slowly than hot water, so the extended steep time compensates for the coarser grind. A finer grind increases surface area and can lead to over-extraction after 12 to 24 hours, producing a bitter or astringent result. It also makes the final strain much harder.",
   },
   {
     q: "Can I make cold brew in a French press?",
-    a: "Yes â€” a French press works very well for cold brew. Add your coarsely ground coffee and cold water, stir to combine, and place the lid on top without pressing the plunger down. Refrigerate for 12 to 24 hours, then slowly press and pour. For the clearest result, pour through a paper filter after pressing to catch any fine particles that passed through the metal mesh.",
+    a: "Yes – a French press works very well for cold brew. Add your coarsely ground coffee and cold water, stir to combine, and place the lid on top without pressing the plunger down. Refrigerate for 12 to 24 hours, then slowly press and pour. For the clearest result, pour through a paper filter after pressing to catch any fine particles that passed through the metal mesh.",
   },
   {
     q: "How long does cold brew last in the fridge?",
@@ -44,11 +44,11 @@ const faqs = [
   },
   {
     q: "How do you dilute cold brew concentrate?",
-    a: "Dilute cold brew concentrate in a 1:1 ratio with water, milk, oat milk, or any preferred liquid. For a 250ml glass, use 125ml of concentrate and 125ml of your chosen diluent. Adjust to taste â€” some prefer a stronger 2:1 concentrate-to-water ratio, others a lighter 1:2. Diluting with milk rather than water adds sweetness and body without sugar.",
+    a: "Dilute cold brew concentrate in a 1:1 ratio with water, milk, oat milk, or any preferred liquid. For a 250ml glass, use 125ml of concentrate and 125ml of your chosen diluent. Adjust to taste – some prefer a stronger 2:1 concentrate-to-water ratio, others a lighter 1:2. Diluting with milk rather than water adds sweetness and body without sugar.",
   },
   {
     q: "Is cold brew stronger than regular coffee?",
-    a: "Cold brew concentrate is significantly stronger than regular drip coffee by caffeine content per volume â€” roughly 2 to 2.5 times more concentrated. However, once diluted 1:1 before drinking, a standard serving of cold brew has a similar caffeine content to drip coffee. Ready-to-drink cold brew at 1:8 is slightly weaker than standard drip. The flavour profile is smoother and less acidic regardless of caffeine level.",
+    a: "Cold brew concentrate is significantly stronger than regular drip coffee by caffeine content per volume – roughly 2 to 2.5 times more concentrated. However, once diluted 1:1 before drinking, a standard serving of cold brew has a similar caffeine content to drip coffee. Ready-to-drink cold brew at 1:8 is slightly weaker than standard drip. The flavour profile is smoother and less acidic regardless of caffeine level.",
   },
 ]
 
@@ -77,7 +77,7 @@ export default function ColdBrewRatioCalculatorPage() {
 
         <ColdBrewRatioCalculator />
 
-        <ShareBar title="Cold Brew Ratio Calculator — Coffee Brew Lab" url={`${process.env.NEXT_PUBLIC_APP_URL ?? "https://brewlab.coffee"}/cold-brew-ratio-calculator`} />
+        <ShareBar title="Cold Brew Ratio Calculator – Coffee Brew Lab" url={`${process.env.NEXT_PUBLIC_APP_URL ?? "https://brewlab.coffee"}/cold-brew-ratio-calculator`} />
 
         <div className="mt-8">
           <AmazonLinks searchTerms={tool.amazonTerms} heading="Cold brew equipment" />
@@ -91,7 +91,7 @@ export default function ColdBrewRatioCalculatorPage() {
           <p>
             The main choice in cold brew is how strong to make the initial batch. A 1:4
             concentrate uses four times more coffee per litre than ready-to-drink cold brew, but
-            it is diluted before drinking â€” typically 50/50 with water or milk. This approach
+            it is diluted before drinking – typically 50/50 with water or milk. This approach
             takes up less space in the fridge, keeps longer, and gives you flexibility at serving
             time. A 1:8 ready-to-drink batch is brewed at drinking strength and poured straight
             over ice.
@@ -107,7 +107,7 @@ export default function ColdBrewRatioCalculatorPage() {
           </h2>
           <p>
             Cold water extracts different chemical compounds than hot water at the same contact
-            time. Hot extraction pulls out acids and volatile aromatics quickly â€” which gives
+            time. Hot extraction pulls out acids and volatile aromatics quickly – which gives
             regular coffee its brightness and complexity but also its acidity. Cold water
             extracts far fewer of these acidic compounds even over 24 hours, producing a cup that
             is noticeably smoother, lower in acidity, and often described as chocolatey or

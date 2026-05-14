@@ -3,7 +3,7 @@ import { ToolCard } from "@/components/tools/ToolCard"
 import { tools, getToolsByCategory } from "@/lib/tools"
 
 export const metadata: Metadata = {
-  title: "Coffee Brew Lab — Ratio Calculators and Guides for Every Method",
+  title: "Coffee Brew Lab – Ratio Calculators and Guides for Every Method",
   description:
     "Free coffee brewing calculators and ratio guides for home baristas. French press, V60, AeroPress, espresso, cold brew, and more. No sign-up required.",
   alternates: { canonical: process.env.NEXT_PUBLIC_APP_URL },

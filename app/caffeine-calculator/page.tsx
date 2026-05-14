@@ -10,13 +10,13 @@ import { ShareBar } from "@/components/ShareBar"
 const tool = getToolBySlug("caffeine-calculator")!
 
 export const metadata: Metadata = {
-  title: "Coffee Caffeine Calculator â€” mg per Cup by Brew Method and Roast",
+  title: "Coffee Caffeine Calculator – mg per Cup by Brew Method and Roast",
   description:
     "Estimate the caffeine in your coffee by brew method, roast level, and number of cups. Compare espresso, drip, cold brew, French press, pour over, and instant coffee.",
   alternates: { canonical: `${process.env.NEXT_PUBLIC_APP_URL ?? "https://brewlab.coffee"}/caffeine-calculator` },
   openGraph: {
     title: "Coffee Caffeine Calculator",
-    description: "How much caffeine is in your coffee? Estimate by brew method, roast, and number of cups â€” with daily limit tracking.",
+    description: "How much caffeine is in your coffee? Estimate by brew method, roast, and number of cups – with daily limit tracking.",
     type: "website",
   },
 }
@@ -28,19 +28,19 @@ const faqs = [
   },
   {
     q: "Does espresso have more caffeine than drip coffee?",
-    a: "Per serving, no â€” a standard double espresso (60ml) contains roughly 120 to 130mg of caffeine, comparable to a drip coffee cup. Per millilitre, espresso has far more caffeine (around 2.5mg/ml vs 0.4mg/ml for drip). The confusion arises because espresso is consumed in much smaller volumes. If you drink a large latte with a double shot, the caffeine content is similar to one cup of drip coffee.",
+    a: "Per serving, no – a standard double espresso (60ml) contains roughly 120 to 130mg of caffeine, comparable to a drip coffee cup. Per millilitre, espresso has far more caffeine (around 2.5mg/ml vs 0.4mg/ml for drip). The confusion arises because espresso is consumed in much smaller volumes. If you drink a large latte with a double shot, the caffeine content is similar to one cup of drip coffee.",
   },
   {
     q: "Does roast level affect caffeine content?",
-    a: "Yes, slightly. Light roast coffee contains marginally more caffeine by weight than dark roast because roasting drives out a small amount of caffeine along with moisture and CO2. However, the difference is small â€” approximately 5 percent more caffeine in light roast versus dark roast. The bigger variable is dose: using more coffee has a far greater effect on caffeine than roast level.",
+    a: "Yes, slightly. Light roast coffee contains marginally more caffeine by weight than dark roast because roasting drives out a small amount of caffeine along with moisture and CO2. However, the difference is small – approximately 5 percent more caffeine in light roast versus dark roast. The bigger variable is dose: using more coffee has a far greater effect on caffeine than roast level.",
   },
   {
     q: "Is cold brew high in caffeine?",
-    a: "Cold brew concentrate is very high in caffeine per volume â€” roughly 200 to 250mg per 250ml of concentrate, because the high coffee-to-water ratio extracts a large total amount of caffeine over the long steep. However, concentrate is diluted 1:1 before drinking, which brings a serving to around 100 to 125mg â€” comparable to drip coffee. Ready-to-drink cold brew at 1:8 ratio contains about 85 to 95mg per 250ml serving.",
+    a: "Cold brew concentrate is very high in caffeine per volume – roughly 200 to 250mg per 250ml of concentrate, because the high coffee-to-water ratio extracts a large total amount of caffeine over the long steep. However, concentrate is diluted 1:1 before drinking, which brings a serving to around 100 to 125mg – comparable to drip coffee. Ready-to-drink cold brew at 1:8 ratio contains about 85 to 95mg per 250ml serving.",
   },
   {
     q: "What is the FDA recommended daily caffeine limit?",
-    a: "The FDA recommends no more than 400mg of caffeine per day for healthy adults, which is equivalent to approximately 3 to 4 standard cups of drip coffee. Pregnant individuals are advised to limit intake to 200mg per day. Caffeine sensitivity varies significantly between individuals â€” some people experience anxiety, disrupted sleep, or palpitations at much lower doses than 400mg.",
+    a: "The FDA recommends no more than 400mg of caffeine per day for healthy adults, which is equivalent to approximately 3 to 4 standard cups of drip coffee. Pregnant individuals are advised to limit intake to 200mg per day. Caffeine sensitivity varies significantly between individuals – some people experience anxiety, disrupted sleep, or palpitations at much lower doses than 400mg.",
   },
   {
     q: "How much caffeine is in instant coffee?",
@@ -73,7 +73,7 @@ export default function CaffeineCalculatorPage() {
 
         <CaffeineCalculator />
 
-        <ShareBar title="Coffee Caffeine Calculator — Coffee Brew Lab" url={`${process.env.NEXT_PUBLIC_APP_URL ?? "https://brewlab.coffee"}/caffeine-calculator`} />
+        <ShareBar title="Coffee Caffeine Calculator – Coffee Brew Lab" url={`${process.env.NEXT_PUBLIC_APP_URL ?? "https://brewlab.coffee"}/caffeine-calculator`} />
 
         <div className="mt-8">
           <AmazonLinks searchTerms={tool.amazonTerms} heading="Coffee for any caffeine need" />
@@ -86,14 +86,14 @@ export default function CaffeineCalculatorPage() {
           </h2>
           <p>
             The caffeine content of coffee depends on four variables: brew method, dose, grind
-            size, and roast level. Of these, dose has the largest effect â€” more coffee always
+            size, and roast level. Of these, dose has the largest effect – more coffee always
             means more caffeine. Brew method comes second: immersion methods like French press
             and cold brew extract a high percentage of the total caffeine from the grounds, while
             espresso's short contact time extracts less per gram but uses a dense dose in a small
             volume.
           </p>
           <p>
-            Grind size affects extraction speed but not total caffeine ceiling â€” a finer grind
+            Grind size affects extraction speed but not total caffeine ceiling – a finer grind
             extracts faster and may pull slightly more caffeine in the same brew time. Roast level
             has a small but real effect: light roasts retain marginally more caffeine by weight
             than dark roasts because roasting drives off some caffeine along with moisture.
@@ -107,7 +107,7 @@ export default function CaffeineCalculatorPage() {
             than Robusta), growing altitude, processing method, and even which part of the plant
             the bean came from. A single-origin light roast specialty Arabica may contain 25
             percent less caffeine than a supermarket dark blend that uses some Robusta. The
-            estimates in this calculator use average Arabica figures â€” treat them as a useful
+            estimates in this calculator use average Arabica figures – treat them as a useful
             guide rather than a precise measurement.
           </p>
 

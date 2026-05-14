@@ -10,7 +10,7 @@ import { ShareBar } from "@/components/ShareBar"
 const tool = getToolBySlug("coffee-cost-calculator")!
 
 export const metadata: Metadata = {
-  title: "Coffee Cost Calculator â€” Cost per Cup from Bag Price, Weight, and Dose",
+  title: "Coffee Cost Calculator – Cost per Cup from Bag Price, Weight, and Dose",
   description:
     "Calculate your coffee cost per cup from the bag price, bag weight, and your dose. Compare budget, mid-range, and specialty coffee. See monthly and yearly cost at a glance.",
   alternates: { canonical: `${process.env.NEXT_PUBLIC_APP_URL ?? "https://brewlab.coffee"}/coffee-cost-calculator` },
@@ -32,19 +32,19 @@ const faqs = [
   },
   {
     q: "Is specialty coffee worth the higher cost per cup?",
-    a: "Specialty coffee typically costs $0.70-$1.50 per cup brewed at home, compared to $0.10-$0.30 for supermarket coffee. That gap is significant at scale â€” over a year, specialty coffee at $1.00/cup costs around $365 versus $45 for budget coffee. However, specialty coffee contains traceable single-origin beans roasted for flavour, while budget coffee optimises for cost. If you enjoy the flavour difference, specialty coffee at home is still far cheaper than a cafe at $3-$6 per cup.",
+    a: "Specialty coffee typically costs $0.70-$1.50 per cup brewed at home, compared to $0.10-$0.30 for supermarket coffee. That gap is significant at scale – over a year, specialty coffee at $1.00/cup costs around $365 versus $45 for budget coffee. However, specialty coffee contains traceable single-origin beans roasted for flavour, while budget coffee optimises for cost. If you enjoy the flavour difference, specialty coffee at home is still far cheaper than a cafe at $3-$6 per cup.",
   },
   {
     q: "How many cups of coffee are in a 250g bag?",
-    a: "A 250g bag brewed at 15g per cup (standard pour over dose) gives you 16 cups. At 18g per cup (espresso), it gives you 13 double shots. At 20g per cup (French press), it gives you 12 cups. At 30g per cup (cold brew), it gives you 8 servings. The yield depends almost entirely on your dose per cup â€” higher dose means fewer cups per bag.",
+    a: "A 250g bag brewed at 15g per cup (standard pour over dose) gives you 16 cups. At 18g per cup (espresso), it gives you 13 double shots. At 20g per cup (French press), it gives you 12 cups. At 30g per cup (cold brew), it gives you 8 servings. The yield depends almost entirely on your dose per cup – higher dose means fewer cups per bag.",
   },
   {
     q: "How many cups are in a 1lb (454g) bag of coffee?",
-    a: "A 454g bag (1 pound) at 15g per cup gives you 30 cups. At 18g per espresso double shot, it gives you 25 shots. At 20g per French press cup, it gives you 22 cups. At 30g per cold brew serving, it gives you 15 servings. A 1-pound bag is a common retail size in the US â€” use the calculator to see the exact cup count and cost per serving for any price point.",
+    a: "A 454g bag (1 pound) at 15g per cup gives you 30 cups. At 18g per espresso double shot, it gives you 25 shots. At 20g per French press cup, it gives you 22 cups. At 30g per cold brew serving, it gives you 15 servings. A 1-pound bag is a common retail size in the US – use the calculator to see the exact cup count and cost per serving for any price point.",
   },
   {
     q: "What is the budget, mid-range, and specialty coffee cost threshold?",
-    a: "At typical home brew doses, budget coffee costs under $0.30 per cup, mid-range coffee costs $0.30-$0.70 per cup, and specialty coffee costs over $0.70 per cup. These are home brew costs â€” not cafe prices. The tier thresholds used in this calculator reflect what you would pay for a bag from a supermarket (budget), a local roaster's everyday blend (mid), or a premium single-origin from a specialty roaster (specialty).",
+    a: "At typical home brew doses, budget coffee costs under $0.30 per cup, mid-range coffee costs $0.30-$0.70 per cup, and specialty coffee costs over $0.70 per cup. These are home brew costs – not cafe prices. The tier thresholds used in this calculator reflect what you would pay for a bag from a supermarket (budget), a local roaster's everyday blend (mid), or a premium single-origin from a specialty roaster (specialty).",
   },
   {
     q: "How does dose size affect cost per cup?",
@@ -77,7 +77,7 @@ export default function CoffeeCostCalculatorPage() {
 
         <CoffeeCostCalculator />
 
-        <ShareBar title="Coffee Cost Calculator — Coffee Brew Lab" url={`${process.env.NEXT_PUBLIC_APP_URL ?? "https://brewlab.coffee"}/coffee-cost-calculator`} />
+        <ShareBar title="Coffee Cost Calculator – Coffee Brew Lab" url={`${process.env.NEXT_PUBLIC_APP_URL ?? "https://brewlab.coffee"}/coffee-cost-calculator`} />
 
         <div className="mt-8">
           <AmazonLinks searchTerms={tool.amazonTerms} heading="Coffee worth buying" />
@@ -92,7 +92,7 @@ export default function CoffeeCostCalculatorPage() {
             Most people compare coffee by bag price, but cost per cup depends equally on how much
             coffee you use per brew. A $20 bag that brews 30 cups at 15g per cup costs $0.67 per
             cup. The same $20 bag brewed at 25g per cup (cold brew dose) gives only 18 servings
-            and costs $1.11 per cup. The bag price is identical â€” the dose determines the real value.
+            and costs $1.11 per cup. The bag price is identical – the dose determines the real value.
           </p>
           <p>
             The cheapest cost per cup comes from efficient brewing: pour over and drip methods use
@@ -107,13 +107,13 @@ export default function CoffeeCostCalculatorPage() {
           <p>
             Even premium specialty coffee brewed at home is dramatically cheaper than a cafe drink.
             A bag of high-quality single-origin coffee at $25 for 250g brews about 16 cups at
-            15g per cup â€” $1.56 per cup. A comparable pour over at a specialty cafe costs $5-$7.
+            15g per cup – $1.56 per cup. A comparable pour over at a specialty cafe costs $5-$7.
             For daily drinkers, the annual savings from home brewing are significant regardless
             of the coffee tier.
           </p>
           <p>
             The calculation changes for milk-based drinks. A home latte requires espresso equipment
-            and milk â€” the total cost including equipment amortisation is higher than a simple pour
+            and milk – the total cost including equipment amortisation is higher than a simple pour
             over setup. For espresso drinks at home, factor in the machine cost spread over its
             useful life to get a true cost comparison against cafe prices.
           </p>
@@ -123,14 +123,14 @@ export default function CoffeeCostCalculatorPage() {
           </h2>
           <p>
             Buying whole beans and grinding fresh at home gives the most cost-efficient quality.
-            Pre-ground coffee is convenient but degrades faster â€” you may end up using more to
+            Pre-ground coffee is convenient but degrades faster – you may end up using more to
             compensate for stale flavour. A burr grinder is a one-time investment that pays for
             itself quickly in quality improvement per dollar spent on beans.
           </p>
           <p>
             Subscriptions from specialty roasters often reduce per-bag cost by 10-20% versus retail.
             Buying in larger bags (500g or 1kg from a roaster you trust) reduces cost per gram,
-            as long as you can use the coffee before it goes stale â€” typically within 4-6 weeks
+            as long as you can use the coffee before it goes stale – typically within 4-6 weeks
             of roast for filter coffee.
           </p>
 

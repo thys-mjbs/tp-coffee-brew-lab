@@ -7,7 +7,7 @@ export default function Content() {
         The standard steep time for French press coffee is <strong>4 minutes</strong>.
         That is the starting point used by most specialty coffee guides, and it works
         reliably across most grind sizes and roast levels. But steep time alone does not
-        produce a great cup — the grind size, ratio, and technique all interact with how
+        produce a great cup – the grind size, ratio, and technique all interact with how
         long you let the coffee steep in the press.
       </p>
       <p>
@@ -20,7 +20,7 @@ export default function Content() {
         The target steep time is <strong>3.5 to 4 minutes</strong> for most French press
         brews. Four minutes is the most widely recommended time and produces a balanced,
         full-bodied cup at a standard 1:15 ratio. If you find the result too weak, steeping
-        to 4.5 or 5 minutes extracts more — but so does adjusting your ratio or grinding
+        to 4.5 or 5 minutes extracts more – but so does adjusting your ratio or grinding
         slightly finer, which are more controlled levers.
       </p>
       <p>
@@ -42,7 +42,7 @@ export default function Content() {
         Steeping French press coffee beyond 5-6 minutes causes over-extraction. The cup
         will taste bitter, harsh, or astringent. The longer the grounds stay in contact
         with hot water, the more bitter compounds are extracted. This is why you should
-        pour immediately after steeping — the grounds continue extracting even after
+        pour immediately after steeping – the grounds continue extracting even after
         plunging, so leaving coffee in the press is effectively extending the steep time
         after the fact.
       </p>
@@ -51,13 +51,13 @@ export default function Content() {
       <p>
         A steep of under 3 minutes usually produces under-extracted coffee: sour, sharp,
         lacking body, or hollow. If your coffee consistently tastes sour at 4 minutes,
-        the grind is more likely the issue than the steep time — a grind that is too
+        the grind is more likely the issue than the steep time – a grind that is too
         coarse cannot extract fully regardless of how long it steeps.
       </p>
 
       <h2>The ratio: how much coffee per cup</h2>
       <p>
-        The standard French press ratio is 1:15 — one gram of coffee per 15 grams of water.
+        The standard French press ratio is 1:15 – one gram of coffee per 15 grams of water.
         For a 600ml French press, that is 40g of coffee to 600g of water. For a 1-litre
         press, use 65-70g. For a single 350ml cup, use around 23g.
       </p>
@@ -71,7 +71,7 @@ export default function Content() {
 
       <h2>Grind size: coarse is non-negotiable</h2>
       <p>
-        Use a coarse grind — the texture of coarse sea salt or cracked peppercorn. A fine
+        Use a coarse grind – the texture of coarse sea salt or cracked peppercorn. A fine
         grind is the single most common cause of bad French press coffee: the grounds pass
         through the metal filter, the plunger becomes hard to press, and the cup tastes
         muddy and bitter even at correct steep times.
@@ -112,7 +112,7 @@ export default function Content() {
           Strong resistance means the grind is too fine.
         </li>
         <li>
-          <strong>Pour immediately.</strong> Do not leave brewed coffee in the press —
+          <strong>Pour immediately.</strong> Do not leave brewed coffee in the press –
           the grounds continue extracting and the cup will turn bitter within minutes.
         </li>
       </ul>

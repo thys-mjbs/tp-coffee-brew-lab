@@ -10,7 +10,7 @@ import { ShareBar } from "@/components/ShareBar"
 const tool = getToolBySlug("coffee-bloom-timer")!
 
 export const metadata: Metadata = {
-  title: "Coffee Bloom Timer â€” Pre-Infusion Countdown for Pour Over and AeroPress",
+  title: "Coffee Bloom Timer – Pre-Infusion Countdown for Pour Over and AeroPress",
   description:
     "A dedicated bloom timer for coffee pre-infusion. Set 30, 45, or 60 seconds, press Start, and get an alert when your bloom is done. Works for V60, Chemex, Kalita, and AeroPress.",
   alternates: { canonical: `${process.env.NEXT_PUBLIC_APP_URL ?? "https://brewlab.coffee"}/coffee-bloom-timer` },
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: "What is a coffee bloom and why does it matter?",
-    a: "The bloom (also called pre-infusion) is a short pour of hot water over freshly ground coffee before the main brew begins. The water triggers a release of CO2 gas trapped in the grounds from the roasting process â€” visible as bubbling or a rising crust on the coffee surface. Releasing this CO2 before the main pour improves extraction consistency, because CO2 repels water and causes uneven saturation if not released first.",
+    a: "The bloom (also called pre-infusion) is a short pour of hot water over freshly ground coffee before the main brew begins. The water triggers a release of CO2 gas trapped in the grounds from the roasting process – visible as bubbling or a rising crust on the coffee surface. Releasing this CO2 before the main pour improves extraction consistency, because CO2 repels water and causes uneven saturation if not released first.",
   },
   {
     q: "How long should the bloom be?",
@@ -36,15 +36,15 @@ const faqs = [
   },
   {
     q: "Does AeroPress need a bloom?",
-    a: "A bloom is optional for AeroPress but does improve extraction consistency, especially with fresh beans. Add water equal to twice the coffee weight, stir gently, and wait 30 seconds before filling the chamber. The James Hoffmann AeroPress method skips the bloom intentionally â€” all water is added at once without stirring, which produces very uniform saturation through a different mechanism.",
+    a: "A bloom is optional for AeroPress but does improve extraction consistency, especially with fresh beans. Add water equal to twice the coffee weight, stir gently, and wait 30 seconds before filling the chamber. The James Hoffmann AeroPress method skips the bloom intentionally – all water is added at once without stirring, which produces very uniform saturation through a different mechanism.",
   },
   {
     q: "What does a good bloom look like?",
-    a: "A good bloom shows visible bubbling or a gentle rising of the coffee bed as CO2 escapes. Very fresh beans (within two weeks of roast) may bubble vigorously â€” this is normal and desirable. Older beans bloom less noticeably. If you see almost no bloom activity with beans less than four weeks old, the grind may be too fine (preventing gas escape) or the water may not be hot enough.",
+    a: "A good bloom shows visible bubbling or a gentle rising of the coffee bed as CO2 escapes. Very fresh beans (within two weeks of roast) may bubble vigorously – this is normal and desirable. Older beans bloom less noticeably. If you see almost no bloom activity with beans less than four weeks old, the grind may be too fine (preventing gas escape) or the water may not be hot enough.",
   },
   {
     q: "Can I skip the bloom?",
-    a: "You can brew without a bloom and the coffee will still be drinkable, but you may notice uneven extraction â€” some grounds are under-extracted while others are over-extracted, producing a cup that is simultaneously weak and bitter. The 30 to 45 seconds the bloom takes is small relative to the total brew time and consistently improves the result for most pour over methods.",
+    a: "You can brew without a bloom and the coffee will still be drinkable, but you may notice uneven extraction – some grounds are under-extracted while others are over-extracted, producing a cup that is simultaneously weak and bitter. The 30 to 45 seconds the bloom takes is small relative to the total brew time and consistently improves the result for most pour over methods.",
   },
 ]
 
@@ -73,7 +73,7 @@ export default function CoffeeBloomTimerPage() {
 
         <CoffeeBloomTimer />
 
-        <ShareBar title="Coffee Bloom Timer — Coffee Brew Lab" url={`${process.env.NEXT_PUBLIC_APP_URL ?? "https://brewlab.coffee"}/coffee-bloom-timer`} />
+        <ShareBar title="Coffee Bloom Timer – Coffee Brew Lab" url={`${process.env.NEXT_PUBLIC_APP_URL ?? "https://brewlab.coffee"}/coffee-bloom-timer`} />
 
         <div className="mt-8">
           <AmazonLinks searchTerms={tool.amazonTerms} heading="Pour over essentials" />
@@ -85,7 +85,7 @@ export default function CoffeeBloomTimerPage() {
             CO2 is produced during coffee roasting and stays trapped in the bean's cellular
             structure. When you grind and brew, hot water releases this gas. If it escapes during
             the main brew pour, it creates bubbles that push water away from some grounds and cause
-            channelling â€” water finds the path of least resistance rather than flowing evenly
+            channelling – water finds the path of least resistance rather than flowing evenly
             through the entire coffee bed.
           </p>
           <p>
@@ -95,7 +95,7 @@ export default function CoffeeBloomTimerPage() {
           </p>
           <h2 className="text-xl font-semibold text-surface-800 dark:text-surface-100">Fresh beans bloom more</h2>
           <p>
-            Freshly roasted beans â€” within one to two weeks of the roast date â€” contain the most
+            Freshly roasted beans – within one to two weeks of the roast date – contain the most
             CO2 and produce the most visible bloom. If your beans are more than a month old, the
             bloom may be barely noticeable. This is one of the visible indicators of freshness:
             a vigorous bloom means you are working with fresh coffee that will extract its

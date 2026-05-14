@@ -27,9 +27,9 @@ export const allPosts: BlogPost[] = [
     slug: "the-golden-ratio",
     title: "How Much Ground Coffee Per Cup? The Golden Ratio Explained",
     description:
-      "How many coffee grounds per cup? The SCA Golden Ratio is 1g per 15-18g of water — roughly 15-17g of ground coffee per 250ml cup. Includes amounts by method, pot size, and roast level.",
+      "How many coffee grounds per cup? The SCA Golden Ratio is 1g per 15-18g of water – roughly 15-17g of ground coffee per 250ml cup. Includes amounts by method, pot size, and roast level.",
     excerpt:
-      "How many coffee grounds per cup? The answer is 15-17g per 250ml at the standard 1:15 ratio — here is what that looks like in tablespoons, scoops, and grams for every brew method.",
+      "How many coffee grounds per cup? The answer is 15-17g per 250ml at the standard 1:15 ratio – here is what that looks like in tablespoons, scoops, and grams for every brew method.",
     publishedAt: "2026-04-25",
     readingTime: 5,
     category: "Ratios and Basics",
@@ -40,7 +40,7 @@ export const allPosts: BlogPost[] = [
     slug: "perfect-v60-recipe",
     title: "The Perfect V60 Recipe: James Hoffmann's Method Explained",
     description:
-      "Step-by-step guide to James Hoffmann's V60 method — ratio, grind size, water temperature, and the four-pour sequence. Includes the Tetsu Kasuya 4:6 method and common fixes for bitter or sour V60.",
+      "Step-by-step guide to James Hoffmann's V60 method – ratio, grind size, water temperature, and the four-pour sequence. Includes the Tetsu Kasuya 4:6 method and common fixes for bitter or sour V60.",
     excerpt:
       "James Hoffmann's four-pour V60 method is the most-referenced home brew guide in specialty coffee. Here is every step, and why each one matters.",
     publishedAt: "2026-04-28",
@@ -55,7 +55,7 @@ export const allPosts: BlogPost[] = [
     description:
       "How long should French press coffee steep? The standard is 4 minutes at a 1:15 ratio with a coarse grind. This guide covers steep time, what happens if you go too long, ratio, grind size, and the five most common mistakes.",
     excerpt:
-      "The standard French press steep time is 4 minutes — but steep time alone does not make a great cup. Here is what actually matters and how to dial it all in.",
+      "The standard French press steep time is 4 minutes – but steep time alone does not make a great cup. Here is what actually matters and how to dial it all in.",
     publishedAt: "2026-05-01",
     readingTime: 5,
     category: "Brew Guides",
@@ -68,7 +68,7 @@ export const allPosts: BlogPost[] = [
     description:
       "The inverted AeroPress method flips the brewer upside down during steeping for full immersion and even extraction. Includes a standard inverted recipe, James Hoffmann's AeroPress method, ratio, steep time, and inverted vs standard comparison.",
     excerpt:
-      "The inverted AeroPress method stops water draining before the steep is done — giving you full immersion, an even extraction, and consistent results every time. Here is the recipe.",
+      "The inverted AeroPress method stops water draining before the steep is done – giving you full immersion, an even extraction, and consistent results every time. Here is the recipe.",
     publishedAt: "2026-05-04",
     readingTime: 6,
     category: "Brew Guides",
@@ -81,7 +81,7 @@ export const allPosts: BlogPost[] = [
     description:
       "The best grind size for espresso produces a 25-30g yield in 25-35 seconds. Includes an espresso grind size chart by grinder model, how to fix sour or bitter espresso, and a step-by-step dial-in sequence.",
     excerpt:
-      "The correct espresso grind is fine — but exactly how fine depends on your grinder, machine, and coffee. Here is how to find the right setting and dial it in from there.",
+      "The correct espresso grind is fine – but exactly how fine depends on your grinder, machine, and coffee. Here is how to find the right setting and dial it in from there.",
     publishedAt: "2026-05-07",
     readingTime: 6,
     category: "Grind and Technique",
@@ -105,7 +105,7 @@ export const allPosts: BlogPost[] = [
     slug: "moka-pot-mistakes",
     title: "Best Grind Size for Moka Pot (and the 5 Most Common Mistakes)",
     description:
-      "The best grind size for moka pot is medium-fine — finer than drip, coarser than espresso. Includes grind settings by grinder model, the 5 most common moka pot mistakes, ratio guide, and why moka pot coffee tastes bitter.",
+      "The best grind size for moka pot is medium-fine – finer than drip, coarser than espresso. Includes grind settings by grinder model, the 5 most common moka pot mistakes, ratio guide, and why moka pot coffee tastes bitter.",
     excerpt:
       "Medium-fine grind is the single most important setting for a good moka pot. Here are the reference settings by grinder and the five mistakes that ruin most home moka pot brews.",
     publishedAt: "2026-05-11",
@@ -120,7 +120,7 @@ export const allPosts: BlogPost[] = [
     description:
       "How to steep coffee: French press steeps 4 minutes at 90-96°C, cold brew 12-24 hours in the fridge, AeroPress 1-2 minutes at 80-92°C. Covers all immersion methods with specific times, temperatures, and grind sizes.",
     excerpt:
-      "Steeping time, water temperature, and grind size all interact — change one without the others and the result shifts. Here are the correct settings for every steeping method.",
+      "Steeping time, water temperature, and grind size all interact – change one without the others and the result shifts. Here are the correct settings for every steeping method.",
     publishedAt: "2026-05-12",
     readingTime: 6,
     category: "Ratios and Basics",
@@ -131,7 +131,7 @@ export const allPosts: BlogPost[] = [
     slug: "espresso-dial-in-guide",
     title: "Why Is My Espresso Sour or Bitter? How to Dial In Your Shot",
     description:
-      "Sour espresso means under-extraction — grind finer or increase dose. Bitter espresso means over-extraction — grind coarser or reduce shot time. Step-by-step dial-in sequence with a quick reference chart.",
+      "Sour espresso means under-extraction – grind finer or increase dose. Bitter espresso means over-extraction – grind coarser or reduce shot time. Step-by-step dial-in sequence with a quick reference chart.",
     excerpt:
       "Sour espresso is under-extracted. Bitter espresso is over-extracted. Here is the exact sequence to fix either problem without changing more than one variable at a time.",
     publishedAt: "2026-05-13",
@@ -146,7 +146,7 @@ export const allPosts: BlogPost[] = [
     description:
       "How to use cold brew: serve straight over ice (1:8 brew), dilute 1:1 with water or milk (concentrate), or heat gently for a smooth hot coffee. Covers storage, shelf life, iced latte ratios, and cold brew vs iced coffee.",
     excerpt:
-      "Cold brew concentrate is too strong to drink straight — dilute 1:1 before serving. Here is every practical way to use cold brew once you have brewed it.",
+      "Cold brew concentrate is too strong to drink straight – dilute 1:1 before serving. Here is every practical way to use cold brew once you have brewed it.",
     publishedAt: "2026-05-14",
     readingTime: 5,
     category: "Brew Guides",

@@ -10,7 +10,7 @@ import { ShareBar } from "@/components/ShareBar"
 const tool = getToolBySlug("moka-pot-calculator")!
 
 export const metadata: Metadata = {
-  title: "Moka Pot Brew Calculator â€” Coffee and Water for Every Size",
+  title: "Moka Pot Brew Calculator – Coffee and Water for Every Size",
   description:
     "Calculate how much coffee and water to use in your moka pot. Covers 1-cup, 3-cup, 6-cup, and 9-cup sizes with grind size advice and technique tips to avoid bitter results.",
   alternates: { canonical: `${process.env.NEXT_PUBLIC_APP_URL ?? "https://brewlab.coffee"}/moka-pot-calculator` },
@@ -77,7 +77,7 @@ export default function MokaPotCalculatorPage() {
 
         <MokaPotCalculator />
 
-        <ShareBar title="Moka Pot Brew Calculator — Coffee Brew Lab" url={`${process.env.NEXT_PUBLIC_APP_URL ?? "https://brewlab.coffee"}/moka-pot-calculator`} />
+        <ShareBar title="Moka Pot Brew Calculator – Coffee Brew Lab" url={`${process.env.NEXT_PUBLIC_APP_URL ?? "https://brewlab.coffee"}/moka-pot-calculator`} />
 
         <div className="mt-8">
           <AmazonLinks searchTerms={tool.amazonTerms} heading="Moka pot essentials" />

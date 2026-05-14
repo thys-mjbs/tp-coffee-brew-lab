@@ -30,7 +30,7 @@ const appUrl = process.env.NEXT_PUBLIC_APP_URL ?? "https://brewlab.coffee"
 export const metadata: Metadata = {
   metadataBase: new URL(appUrl),
   title: {
-    default: "Coffee Brew Lab — Ratio Calculators and Guides for Every Method",
+    default: "Coffee Brew Lab – Ratio Calculators and Guides for Every Method",
     template: "%s | Coffee Brew Lab",
   },
   description:

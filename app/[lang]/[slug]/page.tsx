@@ -81,7 +81,7 @@ export default async function LangToolPage(
 
         <ToolRenderer slug={slug} />
 
-        <ShareBar title={`${variant.h1} — Coffee Brew Lab`} url={`${appUrl}/${lang}/${slug}`} />
+        <ShareBar title={`${variant.h1} – Coffee Brew Lab`} url={`${appUrl}/${lang}/${slug}`} />
 
         <section className="mt-12 space-y-6">
           <h2 className="text-lg font-semibold text-surface-800 dark:text-surface-100">

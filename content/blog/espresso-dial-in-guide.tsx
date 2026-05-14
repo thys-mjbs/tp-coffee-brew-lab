@@ -4,9 +4,9 @@ export default function Content() {
   return (
     <>
       <p>
-        Why is your espresso sour? Because it is under-extracted — water moved through the
+        Why is your espresso sour? Because it is under-extracted – water moved through the
         puck too fast, pulling acidic early-extraction compounds without the sweetness and
-        body that follows. Why is your espresso bitter? Because it is over-extracted —
+        body that follows. Why is your espresso bitter? Because it is over-extracted –
         water spent too long in contact with the grounds, pulling harsh late-stage compounds.
         Both problems have the same fix: adjust grind size, dose, or yield to shift where
         extraction lands.
@@ -21,10 +21,10 @@ export default function Content() {
         Sour espresso is under-extracted. The most common causes, in order:
       </p>
       <ul>
-        <li><strong>Grind too coarse</strong> — water flows through too fast, not enough contact time</li>
-        <li><strong>Dose too low</strong> — not enough coffee to slow the water down</li>
-        <li><strong>Water temperature too low</strong> — insufficient heat to drive extraction</li>
-        <li><strong>Channelling</strong> — water finds a path of least resistance and bypasses most of the puck</li>
+        <li><strong>Grind too coarse</strong> – water flows through too fast, not enough contact time</li>
+        <li><strong>Dose too low</strong> – not enough coffee to slow the water down</li>
+        <li><strong>Water temperature too low</strong> – insufficient heat to drive extraction</li>
+        <li><strong>Channelling</strong> – water finds a path of least resistance and bypasses most of the puck</li>
       </ul>
       <p>
         Fix sour espresso in this order: first grind finer by 1-2 notches and pull again.
@@ -38,11 +38,11 @@ export default function Content() {
         Espresso too bitter means over-extraction. Most common causes:
       </p>
       <ul>
-        <li><strong>Grind too fine</strong> — water slows down, extracts too long</li>
-        <li><strong>Shot time too long</strong> — over 40 seconds almost always produces bitterness</li>
-        <li><strong>Dose too high</strong> — too much coffee relative to yield causes puck resistance and over-extraction</li>
-        <li><strong>Water temperature too high</strong> — above 96°C for most roasts accelerates extraction of bitter compounds</li>
-        <li><strong>Stale coffee</strong> — old beans have already oxidised; their remaining extractable compounds skew bitter</li>
+        <li><strong>Grind too fine</strong> – water slows down, extracts too long</li>
+        <li><strong>Shot time too long</strong> – over 40 seconds almost always produces bitterness</li>
+        <li><strong>Dose too high</strong> – too much coffee relative to yield causes puck resistance and over-extraction</li>
+        <li><strong>Water temperature too high</strong> – above 96°C for most roasts accelerates extraction of bitter compounds</li>
+        <li><strong>Stale coffee</strong> – old beans have already oxidised; their remaining extractable compounds skew bitter</li>
       </ul>
       <p>
         Fix: go coarser by 1-2 notches. If the shot was already running over 35 seconds,
@@ -57,7 +57,7 @@ export default function Content() {
         <li>Pull a shot at the same dose and target yield</li>
         <li>If shot time is now 25-35 seconds: taste. If balanced, stop here</li>
         <li>If still sour at 25-35 seconds: increase dose by 0.5g</li>
-        <li>If shot time is now over 40 seconds: you went too fine — back off 1 notch</li>
+        <li>If shot time is now over 40 seconds: you went too fine – back off 1 notch</li>
       </ul>
 
       <h2>How to fix bitter espresso: step by step</h2>
@@ -66,7 +66,7 @@ export default function Content() {
         <li>Grind 2 notches coarser</li>
         <li>Pull a shot at the same dose and target yield</li>
         <li>If shot time drops to 25-35 seconds: taste. If still bitter, increase yield by 5g (use more water relative to dose)</li>
-        <li>If shot time is now under 20 seconds: too coarse — add 1 notch back</li>
+        <li>If shot time is now under 20 seconds: too coarse – add 1 notch back</li>
         <li>If bitterness persists at good shot time and yield: check water temperature and coffee age</li>
       </ul>
 
@@ -75,11 +75,11 @@ export default function Content() {
         Change one variable at a time. This is the correct order:
       </p>
       <ul>
-        <li><strong>1. Grind size</strong> — the primary lever for shot time and extraction rate</li>
-        <li><strong>2. Dose</strong> — affects puck resistance and how much is extracted</li>
-        <li><strong>3. Yield (output weight)</strong> — changes the ratio and perceived strength without touching extraction rate much</li>
-        <li><strong>4. Water temperature</strong> — fine-tune after the above are dialled</li>
-        <li><strong>5. Brew time</strong> — a result, not a setting. If time is wrong, it is telling you to adjust grind</li>
+        <li><strong>1. Grind size</strong> – the primary lever for shot time and extraction rate</li>
+        <li><strong>2. Dose</strong> – affects puck resistance and how much is extracted</li>
+        <li><strong>3. Yield (output weight)</strong> – changes the ratio and perceived strength without touching extraction rate much</li>
+        <li><strong>4. Water temperature</strong> – fine-tune after the above are dialled</li>
+        <li><strong>5. Brew time</strong> – a result, not a setting. If time is wrong, it is telling you to adjust grind</li>
       </ul>
       <p>
         Use the{" "}
@@ -87,7 +87,7 @@ export default function Content() {
           Espresso Dial-In Calculator
         </Link>{" "}
         to enter your dose, yield, shot time, and taste and get a specific adjustment
-        recommendation — one change at a time.
+        recommendation – one change at a time.
       </p>
 
       <h2>Espresso ratio: what does 1:2 actually mean?</h2>

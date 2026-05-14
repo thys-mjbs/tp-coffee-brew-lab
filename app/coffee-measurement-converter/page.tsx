@@ -10,13 +10,13 @@ import { ShareBar } from "@/components/ShareBar"
 const tool = getToolBySlug("coffee-measurement-converter")!
 
 export const metadata: Metadata = {
-  title: "Coffee Measurement Converter â€” Grams to Tablespoons, Teaspoons, Scoops",
+  title: "Coffee Measurement Converter – Grams to Tablespoons, Teaspoons, Scoops",
   description:
     "Convert coffee measurements instantly: grams to tablespoons, tablespoons to teaspoons, scoops to grams, and more. Essential for following any coffee recipe accurately.",
   alternates: { canonical: `${process.env.NEXT_PUBLIC_APP_URL ?? "https://brewlab.coffee"}/coffee-measurement-converter` },
   openGraph: {
     title: "Coffee Measurement Converter",
-    description: "Convert grams to tablespoons, teaspoons to grams, scoops to oz â€” any coffee measurement unit instantly.",
+    description: "Convert grams to tablespoons, teaspoons to grams, scoops to oz – any coffee measurement unit instantly.",
     type: "website",
   },
 }
@@ -28,15 +28,15 @@ const faqs = [
   },
   {
     q: "How many tablespoons are in a coffee scoop?",
-    a: "A standard coffee scoop equals 2 level tablespoons, which is approximately 12 grams of medium-ground coffee. Some manufacturers include a smaller 1-tablespoon scoop â€” check the size of your scoop before relying on it. The converter uses the standard 2-tablespoon (12g) scoop definition.",
+    a: "A standard coffee scoop equals 2 level tablespoons, which is approximately 12 grams of medium-ground coffee. Some manufacturers include a smaller 1-tablespoon scoop – check the size of your scoop before relying on it. The converter uses the standard 2-tablespoon (12g) scoop definition.",
   },
   {
     q: "How many grams are in a teaspoon of ground coffee?",
-    a: "A level teaspoon of medium-ground coffee contains approximately 2 grams. Finer grinds pack more tightly and may weigh 2.5g per teaspoon. Coarser grinds weigh less at around 1.8g per teaspoon. Teaspoons are an imprecise unit for ground coffee â€” tablespoons or grams are more reliable for consistent brewing.",
+    a: "A level teaspoon of medium-ground coffee contains approximately 2 grams. Finer grinds pack more tightly and may weigh 2.5g per teaspoon. Coarser grinds weigh less at around 1.8g per teaspoon. Teaspoons are an imprecise unit for ground coffee – tablespoons or grams are more reliable for consistent brewing.",
   },
   {
     q: "How do I convert tablespoons of coffee to grams?",
-    a: "Multiply the number of tablespoons by 6 to get grams (for medium-ground coffee). For example: 3 tablespoons x 6g = 18g. For a coarse grind, use 7g per tablespoon; for fine grind, use 7 to 8g. The converter on this page handles this automatically â€” select Tablespoons, enter your amount, and it shows the gram equivalent alongside other units.",
+    a: "Multiply the number of tablespoons by 6 to get grams (for medium-ground coffee). For example: 3 tablespoons x 6g = 18g. For a coarse grind, use 7g per tablespoon; for fine grind, use 7 to 8g. The converter on this page handles this automatically – select Tablespoons, enter your amount, and it shows the gram equivalent alongside other units.",
   },
   {
     q: "How many grams are in an ounce of coffee?",
@@ -67,14 +67,14 @@ export default function CoffeeMeasurementConverterPage() {
           </h1>
           <p className="mt-3 text-base text-surface-600 dark:text-surface-300 leading-relaxed">
             Convert any coffee measurement to any other unit instantly. Grams to tablespoons,
-            tablespoons to teaspoons, scoops to ounces â€” select your starting unit and enter the
+            tablespoons to teaspoons, scoops to ounces – select your starting unit and enter the
             amount.
           </p>
         </div>
 
         <CoffeeMeasurementConverter />
 
-        <ShareBar title="Coffee Measurement Converter — Coffee Brew Lab" url={`${process.env.NEXT_PUBLIC_APP_URL ?? "https://brewlab.coffee"}/coffee-measurement-converter`} />
+        <ShareBar title="Coffee Measurement Converter – Coffee Brew Lab" url={`${process.env.NEXT_PUBLIC_APP_URL ?? "https://brewlab.coffee"}/coffee-measurement-converter`} />
 
         <div className="mt-8">
           <AmazonLinks searchTerms={tool.amazonTerms} heading="Make measuring easier" />
@@ -89,13 +89,13 @@ export default function CoffeeMeasurementConverterPage() {
             The standard conversion is 6 grams per level tablespoon for medium-ground coffee.
             This is the figure used in most brewing guides and by the Specialty Coffee Association
             for drip coffee references. It holds well for any brew method that uses a medium
-            grind â€” drip machines, Chemex, Kalita Wave, Aeropress at a medium-coarse setting.
+            grind – drip machines, Chemex, Kalita Wave, Aeropress at a medium-coarse setting.
           </p>
           <p>
             For coarser grinds (French press, cold brew), expect around 7g per tablespoon because
             the larger particles are less dense when packed into a spoon. For fine grinds (moka
             pot, espresso), each tablespoon holds 7 to 8g. If you are following a recipe that
-            specifies a particular grind size, this distinction matters â€” a tablespoon of espresso
+            specifies a particular grind size, this distinction matters – a tablespoon of espresso
             grind adds significantly more coffee than a tablespoon of filter grind.
           </p>
 
@@ -137,7 +137,7 @@ export default function CoffeeMeasurementConverterPage() {
             more reliable. A basic kitchen scale costs very little and removes all uncertainty about
             grind density, settling, and whether your spoon is level or heaped. Tablespoons and
             scoops remain useful when you are away from home, following a quick guideline, or do
-            not own a scale â€” this converter gives you the equivalent in both so you are never
+            not own a scale – this converter gives you the equivalent in both so you are never
             stuck.
           </p>
 

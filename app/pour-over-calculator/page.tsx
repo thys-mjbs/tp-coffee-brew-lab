@@ -10,7 +10,7 @@ import { ShareBar } from "@/components/ShareBar"
 const tool = getToolBySlug("pour-over-calculator")!
 
 export const metadata: Metadata = {
-  title: "Pour Over & V60 Recipe Calculator â€” Hoffmann, Kasuya 4:6, and Custom Ratios",
+  title: "Pour Over & V60 Recipe Calculator – Hoffmann, Kasuya 4:6, and Custom Ratios",
   description:
     "Calculate your pour over ratio and get step-by-step recipes for V60, Chemex, and Kalita Wave. Includes James Hoffmann and Tetsu Kasuya 4:6 method presets.",
   alternates: { canonical: `${process.env.NEXT_PUBLIC_APP_URL ?? "https://brewlab.coffee"}/pour-over-calculator` },
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: "What is the James Hoffmann V60 recipe?",
-    a: "James Hoffmann's V60 recipe uses 30g of coffee to 500ml of water (a 1:16.67 ratio). Pour 60ml of water for a 45-second bloom, then pour the remaining 440ml in a single slow continuous pour finishing around 3 to 3.5 minutes total. The key technique is a gentle swirl at the end to flatten the coffee bed and improve extraction evenness. Grind medium-fine â€” finer than filter grind but not espresso.",
+    a: "James Hoffmann's V60 recipe uses 30g of coffee to 500ml of water (a 1:16.67 ratio). Pour 60ml of water for a 45-second bloom, then pour the remaining 440ml in a single slow continuous pour finishing around 3 to 3.5 minutes total. The key technique is a gentle swirl at the end to flatten the coffee bed and improve extraction evenness. Grind medium-fine – finer than filter grind but not espresso.",
   },
   {
     q: "What is the Tetsu Kasuya 4:6 V60 method?",
@@ -36,11 +36,11 @@ const faqs = [
   },
   {
     q: "How fine should I grind for a V60?",
-    a: "V60 requires a medium-fine grind â€” finer than French press or cold brew, but coarser than espresso. A useful reference: the grounds should feel like table salt or slightly finer. On a Baratza Encore, setting 14 to 18 is a common starting range. On a Comandante C40, 20 to 26 clicks. Total brew time of 3 to 3.5 minutes is a good calibration target â€” if your brew runs faster, grind finer; if it runs slower, grind coarser.",
+    a: "V60 requires a medium-fine grind – finer than French press or cold brew, but coarser than espresso. A useful reference: the grounds should feel like table salt or slightly finer. On a Baratza Encore, setting 14 to 18 is a common starting range. On a Comandante C40, 20 to 26 clicks. Total brew time of 3 to 3.5 minutes is a good calibration target – if your brew runs faster, grind finer; if it runs slower, grind coarser.",
   },
   {
     q: "What is the difference between V60, Chemex, and Kalita Wave?",
-    a: "All three are pour over brewers but they produce different cup characteristics. The V60 has a single large hole and spiral ribs â€” fast flow, high clarity, brighter acidity. The Chemex uses a thick proprietary filter that removes more oils, producing the cleanest and lightest cup of the three. The Kalita Wave has three small holes and a flat bottom â€” more forgiving extraction, fuller body than V60, more consistent than Chemex for beginners. The ratios and pour sequences are similar across all three; this calculator supports all.",
+    a: "All three are pour over brewers but they produce different cup characteristics. The V60 has a single large hole and spiral ribs – fast flow, high clarity, brighter acidity. The Chemex uses a thick proprietary filter that removes more oils, producing the cleanest and lightest cup of the three. The Kalita Wave has three small holes and a flat bottom – more forgiving extraction, fuller body than V60, more consistent than Chemex for beginners. The ratios and pour sequences are similar across all three; this calculator supports all.",
   },
   {
     q: "How long should a pour over take?",
@@ -74,14 +74,14 @@ export default function PourOverCalculatorPage() {
             Pour Over & V60 Recipe Calculator
           </h1>
           <p className="mt-3 text-base text-surface-600 dark:text-surface-300 leading-relaxed">
-            Choose your brewer, pick a recipe â€” James Hoffmann, Tetsu Kasuya 4:6, or your own ratio
-            â€” enter your coffee dose, and get the water amount and full pour sequence.
+            Choose your brewer, pick a recipe – James Hoffmann, Tetsu Kasuya 4:6, or your own ratio
+            – enter your coffee dose, and get the water amount and full pour sequence.
           </p>
         </div>
 
         <PourOverCalculator />
 
-        <ShareBar title="Pour Over and V60 Recipe Calculator — Coffee Brew Lab" url={`${process.env.NEXT_PUBLIC_APP_URL ?? "https://brewlab.coffee"}/pour-over-calculator`} />
+        <ShareBar title="Pour Over and V60 Recipe Calculator – Coffee Brew Lab" url={`${process.env.NEXT_PUBLIC_APP_URL ?? "https://brewlab.coffee"}/pour-over-calculator`} />
 
         <div className="mt-8">
           <AmazonLinks searchTerms={tool.amazonTerms} heading="Pour over gear worth having" />
@@ -94,7 +94,7 @@ export default function PourOverCalculatorPage() {
           </h2>
           <p>
             Pour over coffee works by passing hot water through a bed of grounds in a single
-            direction â€” gravity pulls the water down, and the filter holds the grounds back. The
+            direction – gravity pulls the water down, and the filter holds the grounds back. The
             ratio of coffee to water determines strength; the pour technique determines how evenly
             the grounds are extracted. Both variables matter, and both are adjustable.
           </p>
@@ -106,7 +106,7 @@ export default function PourOverCalculatorPage() {
           </p>
 
           <h2 className="text-xl font-semibold text-surface-800 dark:text-surface-100">
-            Hoffmann vs. Kasuya â€” which recipe should you use?
+            Hoffmann vs. Kasuya – which recipe should you use?
           </h2>
           <p>
             The Hoffmann method is the easier starting point. One bloom pour, one main pour, a
@@ -127,7 +127,7 @@ export default function PourOverCalculatorPage() {
           <p>
             The ratio stays the same across V60, Chemex, and Kalita Wave. What changes is brew
             time and filter thickness. Chemex filters are significantly thicker than V60 filters,
-            which slows the flow rate and extends contact time â€” you may need a slightly coarser
+            which slows the flow rate and extends contact time – you may need a slightly coarser
             grind to compensate and avoid over-extraction. Kalita Wave's flat bed produces a more
             even extraction than the V60's cone, so it is more forgiving if your pour technique
             is inconsistent.

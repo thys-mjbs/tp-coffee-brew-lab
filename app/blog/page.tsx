@@ -4,12 +4,12 @@ import { Breadcrumb } from "@/components/layout/Breadcrumb"
 import { allPosts, formatDate } from "@/lib/blog"
 
 export const metadata: Metadata = {
-  title: "Brew Guides — Coffee Ratios, Methods, and Techniques",
+  title: "Brew Guides – Coffee Ratios, Methods, and Techniques",
   description:
     "In-depth guides on coffee ratios, brew methods, and technique. Learn the golden ratio, how to dial in espresso, the best V60 recipe, French press tips, and more.",
   alternates: { canonical: `${process.env.NEXT_PUBLIC_APP_URL ?? "https://brewlab.coffee"}/blog` },
   openGraph: {
-    title: "Brew Guides — Coffee Brew Lab",
+    title: "Brew Guides – Coffee Brew Lab",
     description: "In-depth guides on coffee ratios, brew methods, and technique.",
     type: "website",
   },

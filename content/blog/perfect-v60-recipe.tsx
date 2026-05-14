@@ -34,7 +34,7 @@ export default function Content() {
       <h2>Grind size</h2>
       <p>
         Use a medium-fine grind, similar to table salt or slightly coarser. The exact
-        setting depends on your grinder — on a Baratza Encore, this is around 14-18.
+        setting depends on your grinder – on a Baratza Encore, this is around 14-18.
         On a Comandante C40, around 25-30 clicks. On a 1Zpresso JX-Pro, around 2.2-2.5.
       </p>
       <p>
@@ -48,7 +48,7 @@ export default function Content() {
       <p>
         Hoffmann recommends 92-94°C for medium roasts and 85-90°C for light roasts.
         If you do not have a temperature-controlled kettle, bring water to a boil and
-        wait 30-45 seconds before pouring — this drops the temperature by roughly 3-5°C.
+        wait 30-45 seconds before pouring – this drops the temperature by roughly 3-5°C.
         Darker roasts tolerate a wider temperature range; lighter roasts benefit from
         slightly lower temperatures to reduce bitterness.
       </p>
@@ -132,7 +132,7 @@ export default function Content() {
         </li>
         <li>
           <strong>Too fast (&lt;2.5 minutes):</strong> Grind finer. Fast drawdown means
-          under-extraction — not enough contact time.
+          under-extraction – not enough contact time.
         </li>
         <li>
           <strong>Uneven extraction / muddy flavour:</strong> Use a spiral pour technique
