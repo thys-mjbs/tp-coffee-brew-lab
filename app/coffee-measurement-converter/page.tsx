@@ -114,9 +114,9 @@ export default function CoffeeMeasurementConverterPage() {
               </thead>
               <tbody className="divide-y divide-surface-200 dark:divide-surface-700">
                 {[
-                  ["1 teaspoon", "â‰ˆ 2g", "3 per tablespoon"],
-                  ["1 tablespoon", "â‰ˆ 6g", "Standard for medium grind"],
-                  ["1 scoop (2 tbsp)", "â‰ˆ 12g", "Most included scoops"],
+                  ["1 teaspoon", "≈ 2g", "3 per tablespoon"],
+                  ["1 tablespoon", "≈ 6g", "Standard for medium grind"],
+                  ["1 scoop (2 tbsp)", "≈ 12g", "Most included scoops"],
                   ["1 ounce", "28.35g", "About 4.7 tablespoons"],
                 ].map(([unit, grams, note]) => (
                   <tr key={unit} className="bg-white dark:bg-surface-900">

@@ -12,11 +12,11 @@ const tool = getToolBySlug("milk-coffee-ratio-calculator")!
 export const metadata: Metadata = {
   title: "Milk Coffee Ratio Calculator – Latte, Flat White, Cortado, Cappuccino",
   description:
-    "Find the right coffee-to-milk ratio for latte, flat white, cortado, cappuccino, cafÃ© au lait, and macchiato. Get exact ml amounts for any cup size.",
+    "Find the right coffee-to-milk ratio for latte, flat white, cortado, cappuccino, café au lait, and macchiato. Get exact ml amounts for any cup size.",
   alternates: { canonical: `${process.env.NEXT_PUBLIC_APP_URL ?? "https://brewlab.coffee"}/milk-coffee-ratio-calculator` },
   openGraph: {
     title: "Milk Coffee Ratio Calculator",
-    description: "Coffee to milk ratios for latte, flat white, cortado, cappuccino, cafÃ© au lait, and macchiato – with exact ml amounts.",
+    description: "Coffee to milk ratios for latte, flat white, cortado, cappuccino, café au lait, and macchiato – with exact ml amounts.",
     type: "website",
   },
 }
@@ -39,8 +39,8 @@ const faqs = [
     a: "A cappuccino uses equal thirds: espresso, steamed milk, and foam – producing a drink that is approximately 150 to 180ml total with a thick, dry foam layer on top. A latte uses far more milk (1:4 ratio) and has only a thin foam layer, producing a drink of 250 to 350ml. Cappuccinos have a more intense espresso flavour because of the lower milk ratio. Lattes are creamier and more approachable for people who find espresso too strong.",
   },
   {
-    q: "What is a cafÃ© au lait ratio?",
-    a: "CafÃ© au lait uses equal parts filter or drip coffee and warm (not steamed) milk – a 1:1 ratio. Unlike espresso-based drinks, cafÃ© au lait does not use espresso. A 300ml serving would be 150ml of strong drip coffee and 150ml of warm milk. The milk is heated rather than steamed, so there is no foam. It is a French breakfast drink and the base for New Orleans-style cafÃ© au lait, which uses chicory coffee.",
+    q: "What is a café au lait ratio?",
+    a: "Café au lait uses equal parts filter or drip coffee and warm (not steamed) milk – a 1:1 ratio. Unlike espresso-based drinks, café au lait does not use espresso. A 300ml serving would be 150ml of strong drip coffee and 150ml of warm milk. The milk is heated rather than steamed, so there is no foam. It is a French breakfast drink and the base for New Orleans-style café au lait, which uses chicory coffee.",
   },
   {
     q: "What milk is best for lattes and flat whites?",
@@ -67,7 +67,7 @@ export default function MilkCoffeeRatioCalculatorPage() {
           </h1>
           <p className="mt-3 text-base text-surface-600 dark:text-surface-300 leading-relaxed">
             Select your drink and cup size to get the exact coffee and milk amounts in millilitres.
-            Covers latte, flat white, cortado, cappuccino, cafÃ© au lait, and macchiato.
+            Covers latte, flat white, cortado, cappuccino, café au lait, and macchiato.
           </p>
         </div>
 
@@ -92,7 +92,7 @@ export default function MilkCoffeeRatioCalculatorPage() {
             and more milk-forward.
           </p>
           <p>
-            Understanding the ratio is more useful than memorising drink names, because cafÃ©
+            Understanding the ratio is more useful than memorising drink names, because café
             naming conventions vary by country and even by individual coffee shop. What one cafe
             calls a flat white, another calls a cortado. The ratio tells you exactly what you are
             getting regardless of what it is called.
