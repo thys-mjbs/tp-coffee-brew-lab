@@ -79,7 +79,7 @@ export const tools: Tool[] = [
       "The best AeroPress recipes in one place: standard method, inverted method, James Hoffmann recipe, and iced AeroPress. Includes ratio, grind, temperature, and timing.",
     category: "recipe",
     amazonTerms: ["aeropress coffee maker", "aeropress filter papers", "coffee scale"],
-    relatedSlugs: ["aeropress-timer", "aeropress-espresso", "coffee-ratio-calculator", "pour-over-calculator"],
+    relatedSlugs: ["aeropress-timer", "grind-size-guide", "coffee-ratio-calculator", "pour-over-calculator"],
   },
   {
     slug: "cold-brew-ratio-calculator",
