@@ -1,23 +1,9 @@
 import { ImageResponse } from "next/og"
 import { getPostBySlug } from "@/lib/blog"
 
+export const alt = "Coffee Brew Lab Brew Guide"
 export const size = { width: 1200, height: 630 }
 export const contentType = "image/png"
-
-export async function generateImageMetadata({
-  params,
-}: {
-  params: Promise<{ slug: string }>
-}) {
-  const { slug } = await params
-  const post = getPostBySlug(slug)
-  return [
-    {
-      id: slug,
-      alt: post?.title ?? "Coffee Brew Lab",
-    },
-  ]
-}
 
 export default async function Image({
   params,
