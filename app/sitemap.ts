@@ -1,0 +1,50 @@
+import type { MetadataRoute } from "next"
+import { tools } from "@/lib/tools"
+import { allPosts } from "@/lib/blog"
+
+const appUrl = process.env.NEXT_PUBLIC_APP_URL ?? "https://brewlab.coffee"
+
+export default function sitemap(): MetadataRoute.Sitemap {
+  const staticPages: MetadataRoute.Sitemap = [
+    {
+      url: appUrl,
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 1,
+    },
+    {
+      url: `${appUrl}/blog`,
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
+    {
+      url: `${appUrl}/about`,
+      lastModified: new Date(),
+      changeFrequency: "yearly",
+      priority: 0.4,
+    },
+    {
+      url: `${appUrl}/contact`,
+      lastModified: new Date(),
+      changeFrequency: "yearly",
+      priority: 0.3,
+    },
+  ]
+
+  const toolPages: MetadataRoute.Sitemap = tools.map((tool) => ({
+    url: `${appUrl}/${tool.slug}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly" as const,
+    priority: 0.8,
+  }))
+
+  const blogPages: MetadataRoute.Sitemap = allPosts.map((post) => ({
+    url: `${appUrl}/blog/${post.slug}`,
+    lastModified: new Date(post.publishedAt),
+    changeFrequency: "monthly" as const,
+    priority: 0.7,
+  }))
+
+  return [...staticPages, ...toolPages, ...blogPages]
+}

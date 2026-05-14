@@ -257,7 +257,7 @@ A tool **passes** if it offers at least one of these genuine advantages:
           Slug TBD: /blog/coffee-glossary (reference post, no primary keyword target)
 
 [ ] Phase 8: SEO Infrastructure & Launch Polish
-    [ ] Milestone 8.1: Sitemap.xml, robots.txt, dynamic per-tool OG images (opengraph-image.tsx)
+    [X] Milestone 8.1: Sitemap.xml, robots.txt, dynamic per-tool OG images (opengraph-image.tsx)
     [ ] Milestone 8.2: Site-wide OG image (og-image.png placeholder), favicon placeholder, apple-touch-icon placeholder
     [ ] Milestone 8.3: Full internal link audit — every tool links to at least 3 related tools
     [ ] Milestone 8.4: Schema validation — WebApplication, FAQPage, BreadcrumbList on every tool page
