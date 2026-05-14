@@ -196,16 +196,16 @@ A tool **passes** if it offers at least one of these genuine advantages:
         AI Friction: PASS — built as a batch configurator, not a static guide.
         Batch size (1 cup / 1 quart / half-gallon / 1 gallon) + strength (regular 1:8 / concentrate 1:5 / strong 1:4) + equipment (mason jar / French press / Toddy). Outputs exact coffee grams, water grams, steep time, estimated yield, and 6-step instructions tailored to equipment. CopyButton included.
 
-[ ] Phase 6: Specialty Calculators & Monetization Setup (Borderline — Tools 23–24 + Affiliate)
-    [ ] Milestone 6.1: Espresso Dial-In Calculator (Tool 23) + Coffee Cost Calculator (Tool 24)
+[X] Phase 6: Specialty Calculators & Monetization Setup (Borderline — Tools 23–24 + Affiliate)
+    [X] Milestone 6.1: Espresso Dial-In Calculator (Tool 23) + Coffee Cost Calculator (Tool 24)
         AI Friction: Both PASS definitively without retrofits needed.
         - Tool 23 (Espresso Dial-In): Precision recommendation engine. Inputs: current dose + yield + shot time + taste verdict (bitter/sour/balanced) → specific adjustment ("grind 1 notch finer", "reduce dose by 0.5g"). Deterministic, standards-based output — AI chat gives vague advice, this gives a specific number.
         - Tool 24 (Coffee Cost): Precision cost math. Inputs: bag price + bag weight + dose per brew + brew ratio → cost per cup + cups per bag + comparison tier (budget / mid / specialty). Include CopyButton. AI cannot compute this without the user typing all inputs anyway, but this does it instantly in one click.
     [X] Milestone 6.2: Amazon affiliate setup — lib/affiliate/config.ts + AmazonLinks component (done in 2.1)
-    [ ] Milestone 6.3: Wire AmazonLinks into all 25 tool pages with method-relevant search terms
+    [X] Milestone 6.3: Wire AmazonLinks into all 25 tool pages with method-relevant search terms
 
-[ ] Phase 7: Blog Content (Minimum 10 Posts at Launch)
-    [ ] Milestone 7.1: Blog infrastructure (layout, post template, schema, index page)
+[X] Phase 7: Blog Content (Minimum 10 Posts at Launch)
+    [X] Milestone 7.1: Blog infrastructure (layout, post template, schema, index page)
     [ ] Milestone 7.2: Blog posts 1–3 (Golden Ratio, Perfect V60, French Press Guide)
     [ ] Milestone 7.3: Blog posts 4–6 (AeroPress Recipes, Espresso Basics, Cold Brew at Home)
     [ ] Milestone 7.4: Blog posts 7–10 (Moka Pot Mistakes, Water Temperature, Dial In Espresso, Coffee Glossary)

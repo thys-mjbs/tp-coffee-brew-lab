@@ -34,6 +34,26 @@ export function faqSchema(faqs: { q: string; a: string }[]) {
   }
 }
 
+export function blogPostingSchema(post: {
+  title: string
+  description: string
+  publishedAt: string
+  slug: string
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline: post.title,
+    description: post.description,
+    datePublished: post.publishedAt,
+    dateModified: post.publishedAt,
+    author: { "@type": "Organization", name: "Coffee Brew Lab", url: appUrl },
+    publisher: { "@type": "Organization", name: "Coffee Brew Lab", url: appUrl },
+    url: `${appUrl}/blog/${post.slug}`,
+    mainEntityOfPage: { "@type": "WebPage", "@id": `${appUrl}/blog/${post.slug}` },
+  }
+}
+
 export function breadcrumbSchema(items: { name: string; href?: string }[]) {
   const all = [{ name: "Home", href: "/" }, ...items]
   return {

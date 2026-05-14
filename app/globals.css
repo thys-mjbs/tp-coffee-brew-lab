@@ -73,3 +73,31 @@ body {
   background-color: var(--bg);
   color: var(--fg);
 }
+
+/* Blog post prose styles */
+.prose-blog h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #453724;
+  margin-top: 0.25rem;
+}
+.dark .prose-blog h2 {
+  color: #f6f5f0;
+}
+.prose-blog ul {
+  list-style-type: disc;
+  padding-left: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+.prose-blog li {
+  line-height: 1.6;
+}
+.prose-blog strong {
+  font-weight: 600;
+  color: #453724;
+}
+.dark .prose-blog strong {
+  color: #f6f5f0;
+}
