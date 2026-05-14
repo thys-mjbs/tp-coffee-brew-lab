@@ -29,7 +29,7 @@
 ## Phase 4 — Wire up and fix hardcoded-English gaps
 - [x] 4.1 `generateStaticParams` auto-includes es — confirmed via `getAllI18nParams()`
 - [x] 4.2 Fix "English version" back-link label — `backLinkLabels` record added to `app/[lang]/[slug]/page.tsx`
-- [ ] 4.3 Fix ShareBar label strings — `components/ShareBar.tsx` has no `labels` prop yet
+- [x] 4.3 Fix ShareBar label strings — `labels` prop added to ShareBar; es/pt/fr strings wired in locale page
 
 ## Phase 5 — Sitemap and hreflang
 - [x] 5.1 es pages in sitemap — confirmed via `getAllI18nParams()` in `app/sitemap.ts`

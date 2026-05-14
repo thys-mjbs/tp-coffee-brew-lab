@@ -23,6 +23,12 @@ const backLinkLabels: Record<string, string> = {
   fr: "Version anglaise",
 }
 
+const shareLabels: Record<string, { share: string; shareVia: string; copyLink: string; copied: string }> = {
+  es: { share: "Compartir", shareVia: "Compartir vía", copyLink: "Copiar enlace", copied: "¡Copiado!" },
+  pt: { share: "Compartilhar", shareVia: "Compartilhar via", copyLink: "Copiar link", copied: "Copiado!" },
+  fr: { share: "Partager", shareVia: "Partager via", copyLink: "Copier le lien", copied: "Copié !" },
+}
+
 export function generateStaticParams() {
   return getAllI18nParams()
 }
@@ -87,7 +93,7 @@ export default async function LangToolPage(
 
         <ToolRenderer slug={slug} />
 
-        <ShareBar title={`${variant.h1} – Coffee Brew Lab`} url={`${appUrl}/${lang}/${slug}`} />
+        <ShareBar title={`${variant.h1} – Coffee Brew Lab`} url={`${appUrl}/${lang}/${slug}`} labels={shareLabels[lang]} />
 
         <section className="mt-12 space-y-6">
           <h2 className="text-lg font-semibold text-surface-800 dark:text-surface-100">
