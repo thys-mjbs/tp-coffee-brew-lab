@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next"
 import { tools } from "@/lib/tools"
 import { allPosts } from "@/lib/blog"
+import { servingVariants } from "@/lib/servingVariants"
 
 const appUrl = process.env.NEXT_PUBLIC_APP_URL ?? "https://brewlab.coffee"
 
@@ -46,5 +47,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }))
 
-  return [...staticPages, ...toolPages, ...blogPages]
+  const servingPages: MetadataRoute.Sitemap = servingVariants.map((v) => ({
+    url: `${appUrl}/coffee-ratio/${v.slug}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly" as const,
+    priority: 0.7,
+  }))
+
+  return [...staticPages, ...toolPages, ...blogPages, ...servingPages]
 }

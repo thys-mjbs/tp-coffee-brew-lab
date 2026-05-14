@@ -256,16 +256,16 @@ A tool **passes** if it offers at least one of these genuine advantages:
           ACTION: Retarget to "how to use cold brew" (170/mo, WINNABLE) or leave as reference-only
           Slug TBD: /blog/coffee-glossary (reference post, no primary keyword target)
 
-[ ] Phase 8: SEO Infrastructure & Launch Polish
+[X] Phase 8: SEO Infrastructure & Launch Polish
     [X] Milestone 8.1: Sitemap.xml, robots.txt, dynamic per-tool OG images (opengraph-image.tsx)
     [X] Milestone 8.2: Site-wide OG image (og-image.png placeholder), favicon placeholder, apple-touch-icon placeholder
     [X] Milestone 8.3: Full internal link audit — every tool links to at least 3 related tools
     [X] Milestone 8.4: Schema validation — WebApplication, FAQPage, BreadcrumbList on every tool page
     [X] Milestone 8.5: Core Web Vitals audit — PageSpeed Insights mobile score target 85+, INP, CLS
 
-[ ] Phase 9: Programmatic SEO Expansion
-    [ ] Milestone 9.1: Add tracking columns to keywords_serp.csv; cross-reference all 25 tools against keyword list
-    [ ] Milestone 9.2: Serving-size variant pages — /coffee-ratio/for-1-cup, /for-4-cups, /for-12-cups
+[X] Phase 9: Programmatic SEO Expansion
+    [X] Milestone 9.1: Add tracking columns to keywords_serp.csv; cross-reference all 25 tools against keyword list
+    [X] Milestone 9.2: Serving-size variant pages — /coffee-ratio/for-1-cup, /for-4-cups, /for-12-cups
     [ ] Milestone 9.3: Spanish language variants for top 10 tools
     [ ] Milestone 9.4: Portuguese + French language variants for top 10 tools
 
