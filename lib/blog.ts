@@ -18,11 +18,11 @@ export interface BlogPost {
 export const allPosts: BlogPost[] = [
   {
     slug: "the-golden-ratio",
-    title: "The Golden Ratio: How Much Coffee Per Cup?",
+    title: "How Much Ground Coffee Per Cup? The Golden Ratio Explained",
     description:
-      "The SCA Golden Ratio demystified. Learn what a 1:15 to 1:18 coffee-to-water ratio means in practice — in grams, tablespoons, and cups — and how to adjust it for any brew method.",
+      "How many coffee grounds per cup? The SCA Golden Ratio is 1g per 15-18g of water — roughly 15-17g of ground coffee per 250ml cup. Includes amounts by method, pot size, and roast level.",
     excerpt:
-      "The SCA Golden Ratio sets the standard for brewed coffee, but what does 1:15 or 1:18 actually mean at the kettle? Here is the practical guide.",
+      "How many coffee grounds per cup? The answer is 15-17g per 250ml at the standard 1:15 ratio — here is what that looks like in tablespoons, scoops, and grams for every brew method.",
     publishedAt: "2026-05-14",
     readingTime: 5,
     category: "Ratios and Basics",
@@ -44,11 +44,11 @@ export const allPosts: BlogPost[] = [
   },
   {
     slug: "french-press-guide",
-    title: "How to Make French Press Coffee: The Complete Guide",
+    title: "How Long to Steep French Press Coffee (Complete Brew Guide)",
     description:
-      "The complete French press guide: ratio, grind size, water temperature, step-by-step brew process, and the five most common mistakes. Includes cold brew in a French press.",
+      "How long should French press coffee steep? The standard is 4 minutes at a 1:15 ratio with a coarse grind. This guide covers steep time, what happens if you go too long, ratio, grind size, and the five most common mistakes.",
     excerpt:
-      "French press is the most forgiving brew method — but three common mistakes ruin most cups. Here is the complete guide to getting it right every time.",
+      "The standard French press steep time is 4 minutes — but steep time alone does not make a great cup. Here is what actually matters and how to dial it all in.",
     publishedAt: "2026-05-14",
     readingTime: 5,
     category: "Brew Guides",

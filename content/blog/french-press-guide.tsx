@@ -4,141 +4,162 @@ export default function Content() {
   return (
     <>
       <p>
-        The French press is the easiest full-immersion brew method and one of the most
-        forgiving. Unlike pour over, it requires no paper filter, no precise pouring
-        technique, and no gooseneck kettle. What it does require is the right ratio,
-        a coarse enough grind, and patience during the steep. Get those three things right
-        and a French press consistently produces a rich, full-bodied cup.
+        The standard steep time for French press coffee is <strong>4 minutes</strong>.
+        That is the starting point used by most specialty coffee guides, and it works
+        reliably across most grind sizes and roast levels. But steep time alone does not
+        produce a great cup — the grind size, ratio, and technique all interact with how
+        long you let the coffee steep in the press.
+      </p>
+      <p>
+        This guide covers how long to steep French press coffee, what happens if you steep
+        too long or too short, and everything else you need to brew a consistently good cup.
       </p>
 
-      <h2>The ratio: 1:12 to 1:15</h2>
+      <h2>How long should French press coffee steep?</h2>
       <p>
-        French press coffee is typically brewed at a slightly higher coffee-to-water ratio
-        than pour over because immersion brewing extracts differently from percolation.
-        A good starting point is 1:15 (1g coffee per 15g water). For a stronger, fuller
-        cup, move toward 1:12. For a lighter cup closer to drip coffee strength, try 1:17.
+        The target steep time is <strong>3.5 to 4 minutes</strong> for most French press
+        brews. Four minutes is the most widely recommended time and produces a balanced,
+        full-bodied cup at a standard 1:15 ratio. If you find the result too weak, steeping
+        to 4.5 or 5 minutes extracts more — but so does adjusting your ratio or grinding
+        slightly finer, which are more controlled levers.
       </p>
       <p>
-        For common press sizes: a 350ml French press uses around 23g of coffee; a 600ml
-        press uses around 40g; a 1-litre press uses around 65g. The{" "}
+        If you prefer a lighter, cleaner result, 3 to 3.5 minutes produces a slightly
+        less extracted cup. Light roasts sometimes benefit from a slightly shorter steep
+        because they extract faster at the high solubility end of their flavour curve.
+      </p>
+      <p>
+        Use the{" "}
+        <Link href="/french-press-timer" className="text-brand-600 hover:text-brand-700 dark:text-brand-400 dark:hover:text-brand-300 underline underline-offset-2">
+          French Press Brew Timer
+        </Link>{" "}
+        to count down the steep precisely and get a step-by-step prompt at each stage of
+        the brew.
+      </p>
+
+      <h2>What happens if you steep too long?</h2>
+      <p>
+        Steeping French press coffee beyond 5-6 minutes causes over-extraction. The cup
+        will taste bitter, harsh, or astringent. The longer the grounds stay in contact
+        with hot water, the more bitter compounds are extracted. This is why you should
+        pour immediately after steeping — the grounds continue extracting even after
+        plunging, so leaving coffee in the press is effectively extending the steep time
+        after the fact.
+      </p>
+
+      <h2>What happens if you steep too short?</h2>
+      <p>
+        A steep of under 3 minutes usually produces under-extracted coffee: sour, sharp,
+        lacking body, or hollow. If your coffee consistently tastes sour at 4 minutes,
+        the grind is more likely the issue than the steep time — a grind that is too
+        coarse cannot extract fully regardless of how long it steeps.
+      </p>
+
+      <h2>The ratio: how much coffee per cup</h2>
+      <p>
+        The standard French press ratio is 1:15 — one gram of coffee per 15 grams of water.
+        For a 600ml French press, that is 40g of coffee to 600g of water. For a 1-litre
+        press, use 65-70g. For a single 350ml cup, use around 23g.
+      </p>
+      <p>
+        For a stronger cup, move toward 1:12. For a lighter cup, move toward 1:17. The{" "}
         <Link href="/french-press-ratio-calculator" className="text-brand-600 hover:text-brand-700 dark:text-brand-400 dark:hover:text-brand-300 underline underline-offset-2">
           French Press Ratio Calculator
         </Link>{" "}
-        gives you exact grams and tablespoons for your press size and preferred strength.
+        gives you exact gram weights for your press size and strength preference.
       </p>
 
-      <h2>Grind size: coarse is critical</h2>
+      <h2>Grind size: coarse is non-negotiable</h2>
       <p>
-        Use a coarse grind — the texture of coarse sea salt or cracked peppercorn. This
-        is the single most important variable in French press brewing. If you grind too
-        fine, three things go wrong: the plunger becomes hard to press, grounds pass
-        through the metal filter into the cup, and the coffee over-extracts and tastes
-        bitter or muddy.
+        Use a coarse grind — the texture of coarse sea salt or cracked peppercorn. A fine
+        grind is the single most common cause of bad French press coffee: the grounds pass
+        through the metal filter, the plunger becomes hard to press, and the cup tastes
+        muddy and bitter even at correct steep times.
       </p>
       <p>
         On a Baratza Encore, coarse French press grind is around 28-35. On a Comandante
-        C40, around 35-42 clicks. If your coffee tastes gritty or has visible sediment
-        beyond a small amount at the bottom of the cup, grind coarser. The{" "}
+        C40, around 35-42 clicks. The{" "}
         <Link href="/grind-size-guide" className="text-brand-600 hover:text-brand-700 dark:text-brand-400 dark:hover:text-brand-300 underline underline-offset-2">
           Grind Size Guide
         </Link>{" "}
-        includes reference settings for the most common home grinders.
+        has reference settings for the most common home grinders.
       </p>
 
-      <h2>Water temperature</h2>
-      <p>
-        Use water between 90 and 96°C. Boiling water (100°C) is too hot for most coffees
-        and causes over-extraction of bitter compounds. If you do not have a
-        temperature-controlled kettle, bring water to a full boil and wait 30 seconds
-        before pouring — that is enough to drop the temperature into the right range.
-      </p>
-
-      <h2>The brew process</h2>
+      <h2>Step-by-step brew process</h2>
       <ul>
         <li>
-          <strong>Preheat the press.</strong> Pour a small amount of hot water into the
-          empty carafe, swirl, and discard. This stabilises the brew temperature and
-          prevents the glass from cracking with thermal shock.
+          <strong>Preheat the press</strong> with hot water, swirl, and discard. This
+          stabilises brew temperature and prevents thermal shock.
         </li>
         <li>
-          <strong>Add coffee.</strong> Add your ground coffee to the preheated carafe.
-          Level the grounds so they sit evenly.
+          <strong>Add coarse-ground coffee</strong> to the preheated carafe and level
+          the grounds.
         </li>
         <li>
-          <strong>Bloom pour.</strong> Pour a small amount of water — about twice the
-          weight of coffee — over the grounds. Wait 30 seconds. This bloom releases CO2
-          from fresh coffee and improves extraction.
+          <strong>Bloom pour:</strong> add hot water (90-96°C) equal to about twice the
+          coffee weight. Wait 30 seconds for the bloom.
         </li>
         <li>
-          <strong>Fill and stir.</strong> Pour the remaining water up to your target
-          weight. Stir gently to ensure all grounds are wet. Place the lid on the press
-          with the plunger pulled all the way up — do not press yet.
+          <strong>Fill and stir:</strong> pour the remaining water to your target weight,
+          stir once to wet all grounds, and place the lid on with the plunger up. Do not
+          press yet.
         </li>
         <li>
-          <strong>Steep for 4 minutes.</strong> The classic steep time is 4 minutes.
-          For a stronger cup, steep to 5 minutes. For lighter coffees or lighter
-          roasts, 3.5 minutes can work well. Use the{" "}
-          <Link href="/french-press-timer" className="text-brand-600 hover:text-brand-700 dark:text-brand-400 dark:hover:text-brand-300 underline underline-offset-2">
-            French Press Brew Timer
-          </Link>{" "}
-          to track the steep with a step-by-step countdown.
+          <strong>Steep for 4 minutes.</strong> Use a timer. Do not guess.
         </li>
         <li>
-          <strong>Press slowly.</strong> Press the plunger down with steady, even pressure
-          over about 20-30 seconds. If you feel strong resistance, your grind is too fine.
-          Stop pressing when the plunger reaches the grounds — do not force it through them.
+          <strong>Press slowly</strong> over 20-30 seconds with steady, even pressure.
+          Strong resistance means the grind is too fine.
         </li>
         <li>
-          <strong>Pour immediately.</strong> Do not let brewed coffee sit in the press.
-          The grounds continue extracting even after pressing. Pour everything into a mug
-          or carafe right away, or the coffee will over-extract and turn bitter.
+          <strong>Pour immediately.</strong> Do not leave brewed coffee in the press —
+          the grounds continue extracting and the cup will turn bitter within minutes.
         </li>
       </ul>
 
-      <h2>The most common French press mistakes</h2>
+      <h2>The five most common French press mistakes</h2>
       <ul>
         <li>
-          <strong>Leaving coffee in the press after plunging.</strong> The grounds continue
-          to steep against the coffee even after the plunger is down. Pour immediately,
-          or brew into a separate carafe.
+          <strong>Leaving coffee in the press after plunging.</strong> The grounds
+          continue to steep. Pour everything out right away, or brew into a separate carafe.
         </li>
         <li>
-          <strong>Grinding too fine.</strong> The most frequent cause of muddy, bitter,
-          gritty French press coffee. When in doubt, grind coarser.
+          <strong>Grinding too fine.</strong> The most common cause of muddy, bitter,
+          gritty French press coffee. When in doubt, go coarser.
         </li>
         <li>
-          <strong>Using too little coffee.</strong> Under-dosing produces thin, watery
-          coffee with a hollow finish. Start at 1:15 and adjust from there, not 1:18 or higher.
+          <strong>Under-dosing.</strong> Using too little coffee produces thin, watery
+          results even at perfect steep times. Start at 1:15, not 1:18 or higher.
         </li>
         <li>
-          <strong>Pressing too fast.</strong> A fast, hard press forces fines through
-          the filter and into the cup. Slow, steady pressure gives you a cleaner result.
+          <strong>Pressing too fast.</strong> A hard, fast press forces fines through
+          the filter. Slow and steady gives a cleaner cup.
         </li>
         <li>
-          <strong>Not preheating.</strong> A cold carafe drops the brew temperature by
-          2-5°C from the first pour, causing uneven extraction across the steep.
+          <strong>Not preheating.</strong> A cold carafe drops brew temperature by 3-5°C
+          from the first pour, causing uneven extraction across the steep.
         </li>
       </ul>
 
       <h2>Cold brew in a French press</h2>
       <p>
-        A French press is one of the best vessels for making cold brew at home. Use a
-        coarse grind (same as hot French press), a higher ratio around 1:5 for concentrate
-        or 1:8 for ready-to-drink, and steep in the fridge for 12-16 hours. Press the
-        plunger down and pour immediately.{" "}
-        The{" "}
+        A French press is one of the most practical vessels for home cold brew. Use the
+        same coarse grind, a 1:8 ratio for ready-to-drink cold brew or 1:5 for concentrate,
+        and steep in the fridge for 12-16 hours rather than 4 minutes. Press the plunger
+        and pour immediately. The{" "}
         <Link href="/cold-brew-ratio-calculator" className="text-brand-600 hover:text-brand-700 dark:text-brand-400 dark:hover:text-brand-300 underline underline-offset-2">
           Cold Brew Ratio Calculator
         </Link>{" "}
-        gives exact amounts for your preferred strength and batch size.
+        gives exact amounts for any batch size.
       </p>
 
       <p>
-        If your French press coffee still tastes off after adjusting grind and ratio, the{" "}
+        If your French press coffee still tastes off after adjusting steep time and grind,
+        the{" "}
         <Link href="/coffee-troubleshooter" className="text-brand-600 hover:text-brand-700 dark:text-brand-400 dark:hover:text-brand-300 underline underline-offset-2">
           Coffee Troubleshooter
         </Link>{" "}
-        walks through bitter, sour, weak, and muddy diagnoses with a specific fix for each.
+        gives a specific fix for bitter, sour, weak, and muddy results.
       </p>
     </>
   )
