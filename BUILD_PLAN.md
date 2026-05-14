@@ -226,7 +226,7 @@ A tool **passes** if it offers at least one of these genuine advantages:
           H1: How Long to Steep French Press Coffee (Complete Brew Guide)
           Slug: /blog/french-press-guide
           Secondary: "french press steep time" cluster, "how long should french press steep"
-    [ ] Milestone 7.3: Blog posts 4-6
+    [X] Milestone 7.3: Blog posts 4-6
         Post 4 — Primary: "inverted aeropress method" (2400/mo, WINNABLE)
           H1: The Inverted AeroPress Method: Step-by-Step Recipe Guide
           Slug: /blog/aeropress-inverted-method

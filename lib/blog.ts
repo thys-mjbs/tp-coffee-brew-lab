@@ -2,6 +2,9 @@ import type { ComponentType } from "react"
 import TheGoldenRatioContent from "@/content/blog/the-golden-ratio"
 import PerfectV60Content from "@/content/blog/perfect-v60-recipe"
 import FrenchPressGuideContent from "@/content/blog/french-press-guide"
+import AeroPressInvertedContent from "@/content/blog/aeropress-inverted-method"
+import EspressoGrindSizeContent from "@/content/blog/espresso-grind-size-guide"
+import ColdBrewAtHomeContent from "@/content/blog/cold-brew-at-home"
 
 export interface BlogPost {
   slug: string
@@ -54,6 +57,45 @@ export const allPosts: BlogPost[] = [
     category: "Brew Guides",
     relatedToolSlugs: ["french-press-ratio-calculator", "french-press-timer", "grind-size-guide", "cold-brew-ratio-calculator"],
     Content: FrenchPressGuideContent,
+  },
+  {
+    slug: "aeropress-inverted-method",
+    title: "The Inverted AeroPress Method: Step-by-Step Recipe Guide",
+    description:
+      "The inverted AeroPress method flips the brewer upside down during steeping for full immersion and even extraction. Includes a standard inverted recipe, James Hoffmann's AeroPress method, ratio, steep time, and inverted vs standard comparison.",
+    excerpt:
+      "The inverted AeroPress method stops water draining before the steep is done — giving you full immersion, an even extraction, and consistent results every time. Here is the recipe.",
+    publishedAt: "2026-05-14",
+    readingTime: 6,
+    category: "Brew Guides",
+    relatedToolSlugs: ["aeropress-recipe", "aeropress-timer", "grind-size-guide", "coffee-bloom-timer"],
+    Content: AeroPressInvertedContent,
+  },
+  {
+    slug: "espresso-grind-size-guide",
+    title: "Best Grind Size for Espresso: Chart, Dial-In Guide, and Fixes",
+    description:
+      "The best grind size for espresso produces a 25-30g yield in 25-35 seconds. Includes an espresso grind size chart by grinder model, how to fix sour or bitter espresso, and a step-by-step dial-in sequence.",
+    excerpt:
+      "The correct espresso grind is fine — but exactly how fine depends on your grinder, machine, and coffee. Here is how to find the right setting and dial it in from there.",
+    publishedAt: "2026-05-14",
+    readingTime: 6,
+    category: "Grind and Technique",
+    relatedToolSlugs: ["espresso-dial-in", "espresso-ratio-calculator", "grind-size-guide", "coffee-troubleshooter"],
+    Content: EspressoGrindSizeContent,
+  },
+  {
+    slug: "cold-brew-at-home",
+    title: "Cold Brew at Home: French Press Ratio, Steep Time, and Recipe",
+    description:
+      "The French press cold brew ratio is 1:8 for ready-to-drink (75g coffee per 600ml) or 1:5 for concentrate. Includes a full cold brew at home recipe, steep time guide, AeroPress cold brew method, and common mistakes.",
+    excerpt:
+      "French press cold brew uses a 1:8 ratio for ready-to-drink or 1:5 for concentrate. Steep in the fridge for 12-24 hours. Here is the full recipe and everything that affects the result.",
+    publishedAt: "2026-05-14",
+    readingTime: 5,
+    category: "Brew Guides",
+    relatedToolSlugs: ["cold-brew-ratio-calculator", "cold-brew-recipe", "french-press-ratio-calculator", "french-press-timer"],
+    Content: ColdBrewAtHomeContent,
   },
 ]
 
