@@ -56,17 +56,20 @@
 
 .dark {
   --bg: #141c14;
-  --fg: #f6f5f0;
+  --fg: #f0f5f0;
 
-  /* Remap surface tokens to green-shifted in dark mode */
-  --color-surface-50:  #1e2a1e;
-  --color-surface-100: #253025;
-  --color-surface-200: #2e3c2e;
-  --color-surface-300: #3a4f3a;
-  --color-surface-700: #3d4f3d;
-  --color-surface-800: #2a382a;
-  --color-surface-900: #1a261a;
-  --color-surface-950: #141c14;
+  /* Low tokens = light text; high tokens = dark backgrounds */
+  --color-surface-50:  #f0f5f0;
+  --color-surface-100: #d5e8d5;
+  --color-surface-200: #b0ceb0;
+  --color-surface-300: #88b088;
+  --color-surface-400: #6a9068;
+  --color-surface-500: #4e6e50;
+  --color-surface-600: #384a38;
+  --color-surface-700: #2a3a2a;
+  --color-surface-800: #1e2e1e;
+  --color-surface-900: #151e15;
+  --color-surface-950: #0f160f;
 }
 
 body {
