@@ -20,7 +20,9 @@
       "PowerShell(git push *)",
       "PowerShell(npx next build 2>&1 | Select-Object -Last 10)",
       "Bash(node -e ' *)",
-      "PowerShell(npx next build 2>&1 | Select-Object -Last 8)"
+      "PowerShell(npx next build 2>&1 | Select-Object -Last 8)",
+      "Bash(node *)",
+      "Bash(npm install *)"
     ]
   }
 }
