@@ -5,6 +5,10 @@ import FrenchPressGuideContent from "@/content/blog/french-press-guide"
 import AeroPressInvertedContent from "@/content/blog/aeropress-inverted-method"
 import EspressoGrindSizeContent from "@/content/blog/espresso-grind-size-guide"
 import ColdBrewAtHomeContent from "@/content/blog/cold-brew-at-home"
+import MokaPotMistakesContent from "@/content/blog/moka-pot-mistakes"
+import HowToSteepCoffeeContent from "@/content/blog/how-to-steep-coffee"
+import EspressoDialInGuideContent from "@/content/blog/espresso-dial-in-guide"
+import HowToUseColdBrewContent from "@/content/blog/how-to-use-cold-brew"
 
 export interface BlogPost {
   slug: string
@@ -96,6 +100,58 @@ export const allPosts: BlogPost[] = [
     category: "Brew Guides",
     relatedToolSlugs: ["cold-brew-ratio-calculator", "cold-brew-recipe", "french-press-ratio-calculator", "french-press-timer"],
     Content: ColdBrewAtHomeContent,
+  },
+  {
+    slug: "moka-pot-mistakes",
+    title: "Best Grind Size for Moka Pot (and the 5 Most Common Mistakes)",
+    description:
+      "The best grind size for moka pot is medium-fine — finer than drip, coarser than espresso. Includes grind settings by grinder model, the 5 most common moka pot mistakes, ratio guide, and why moka pot coffee tastes bitter.",
+    excerpt:
+      "Medium-fine grind is the single most important setting for a good moka pot. Here are the reference settings by grinder and the five mistakes that ruin most home moka pot brews.",
+    publishedAt: "2026-05-11",
+    readingTime: 5,
+    category: "Grind and Technique",
+    relatedToolSlugs: ["moka-pot-calculator", "grind-size-guide", "coffee-troubleshooter"],
+    Content: MokaPotMistakesContent,
+  },
+  {
+    slug: "how-to-steep-coffee",
+    title: "How to Steep Coffee: Brew Times, Water Temperature, and Method Guide",
+    description:
+      "How to steep coffee: French press steeps 4 minutes at 90-96°C, cold brew 12-24 hours in the fridge, AeroPress 1-2 minutes at 80-92°C. Covers all immersion methods with specific times, temperatures, and grind sizes.",
+    excerpt:
+      "Steeping time, water temperature, and grind size all interact — change one without the others and the result shifts. Here are the correct settings for every steeping method.",
+    publishedAt: "2026-05-12",
+    readingTime: 6,
+    category: "Ratios and Basics",
+    relatedToolSlugs: ["french-press-timer", "coffee-bloom-timer", "aeropress-recipe", "cold-brew-ratio-calculator"],
+    Content: HowToSteepCoffeeContent,
+  },
+  {
+    slug: "espresso-dial-in-guide",
+    title: "Why Is My Espresso Sour or Bitter? How to Dial In Your Shot",
+    description:
+      "Sour espresso means under-extraction — grind finer or increase dose. Bitter espresso means over-extraction — grind coarser or reduce shot time. Step-by-step dial-in sequence with a quick reference chart.",
+    excerpt:
+      "Sour espresso is under-extracted. Bitter espresso is over-extracted. Here is the exact sequence to fix either problem without changing more than one variable at a time.",
+    publishedAt: "2026-05-13",
+    readingTime: 6,
+    category: "Grind and Technique",
+    relatedToolSlugs: ["espresso-dial-in", "espresso-ratio-calculator", "grind-size-guide", "coffee-troubleshooter"],
+    Content: EspressoDialInGuideContent,
+  },
+  {
+    slug: "how-to-use-cold-brew",
+    title: "How to Use Cold Brew Coffee: Concentrate, Lattes, Hot and Iced",
+    description:
+      "How to use cold brew: serve straight over ice (1:8 brew), dilute 1:1 with water or milk (concentrate), or heat gently for a smooth hot coffee. Covers storage, shelf life, iced latte ratios, and cold brew vs iced coffee.",
+    excerpt:
+      "Cold brew concentrate is too strong to drink straight — dilute 1:1 before serving. Here is every practical way to use cold brew once you have brewed it.",
+    publishedAt: "2026-05-14",
+    readingTime: 5,
+    category: "Brew Guides",
+    relatedToolSlugs: ["cold-brew-ratio-calculator", "cold-brew-recipe", "iced-coffee-at-home"],
+    Content: HowToUseColdBrewContent,
   },
 ]
 

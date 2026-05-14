@@ -239,7 +239,7 @@ A tool **passes** if it offers at least one of these genuine advantages:
           H1: Cold Brew at Home: Ratios, Steep Time, and the French Press Method
           Slug: /blog/cold-brew-at-home
           Secondary: "cold brew at home recipe" (320), "aeropress cold brew recipe" (140)
-    [ ] Milestone 7.4: Blog posts 7-10
+    [X] Milestone 7.4: Blog posts 7-10
         Post 7 — Primary: "best grind size for moka pot" (140/mo, BORDERLINE) [limited CSV coverage]
           H1: Moka Pot Grind Size and the 5 Most Common Brew Mistakes
           Slug: /blog/moka-pot-mistakes
