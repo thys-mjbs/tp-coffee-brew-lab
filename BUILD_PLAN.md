@@ -206,7 +206,7 @@ A tool **passes** if it offers at least one of these genuine advantages:
 
 [X] Phase 7: Blog Content (Minimum 10 Posts at Launch)
     [X] Milestone 7.1: Blog infrastructure (layout, post template, schema, index page)
-    [ ] Milestone 7.2: Blog posts 1–3 (Golden Ratio, Perfect V60, French Press Guide)
+    [X] Milestone 7.2: Blog posts 1–3 (Golden Ratio, Perfect V60, French Press Guide)
     [ ] Milestone 7.3: Blog posts 4–6 (AeroPress Recipes, Espresso Basics, Cold Brew at Home)
     [ ] Milestone 7.4: Blog posts 7–10 (Moka Pot Mistakes, Water Temperature, Dial In Espresso, Coffee Glossary)
 
