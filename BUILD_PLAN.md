@@ -266,8 +266,8 @@ A tool **passes** if it offers at least one of these genuine advantages:
 [X] Phase 9: Programmatic SEO Expansion
     [X] Milestone 9.1: Add tracking columns to keywords_serp.csv; cross-reference all 25 tools against keyword list
     [X] Milestone 9.2: Serving-size variant pages — /coffee-ratio/for-1-cup, /for-4-cups, /for-12-cups
-    [ ] Milestone 9.3: Spanish language variants for top 10 tools
-    [ ] Milestone 9.4: Portuguese + French language variants for top 10 tools
+    [X] Milestone 9.3: Spanish language variants for top 10 tools
+    [X] Milestone 9.4: Portuguese + French language variants for top 10 tools
 
 ---
 

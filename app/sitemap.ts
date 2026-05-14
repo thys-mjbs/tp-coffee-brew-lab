@@ -2,6 +2,7 @@ import type { MetadataRoute } from "next"
 import { tools } from "@/lib/tools"
 import { allPosts } from "@/lib/blog"
 import { servingVariants } from "@/lib/servingVariants"
+import { getAllI18nParams } from "@/lib/i18nVariants"
 
 const appUrl = process.env.NEXT_PUBLIC_APP_URL ?? "https://brewlab.coffee"
 
@@ -54,5 +55,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }))
 
-  return [...staticPages, ...toolPages, ...blogPages, ...servingPages]
+  const langPages: MetadataRoute.Sitemap = getAllI18nParams().map(({ lang, slug }) => ({
+    url: `${appUrl}/${lang}/${slug}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly" as const,
+    priority: 0.6,
+  }))
+
+  return [...staticPages, ...toolPages, ...blogPages, ...servingPages, ...langPages]
 }
